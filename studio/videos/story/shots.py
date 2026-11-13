@@ -1055,7 +1055,7 @@ def s19(t0, t1):
     D_.pose(tc + 0.3, head=(0, 0, 0))
     D_.face(tc + 0.3, eyes="closed", mouth="smile")
     cam = Cam()
-    cam.push(t0, t1, (-8.5, 4.5, 5.0), 11.0, 8.0, yaw=-30, pitch=24, lens=24, yaw1=-14)
+    cam.push(t0, t1, (-8.5, 4.5, 5.0), 11.0, 8.0, yaw=22, pitch=24, lens=24, yaw1=8)
     cam.crash(tc, 24, 30, 0.08)
     cam.handheld(0.8)
     sfx(tc, "sneeze", 0.8)
