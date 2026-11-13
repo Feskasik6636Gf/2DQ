@@ -45,7 +45,7 @@ jobs:
           NAME=$(printf 'c%02d' ${{ matrix.chunk }})
           echo "frames $A-$B"
           for try in 1 2 3; do
-            npx remotion render Long "out/$NAME.mp4" --frames=$A-$B --muted --gl=angle --concurrency=4 --crf=20 --log=error && break
+            npx remotion render Long "out/$NAME.mp4" --frames=$A-$B --muted --gl=angle --concurrency=4 --crf=20 --timeout=120000 --log=error && break
             echo "retry $try"
           done
           ls -la out
