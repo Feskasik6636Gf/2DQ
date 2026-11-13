@@ -10,3 +10,4 @@ studio/videos/*/render_log_*.txt
 studio/videos/*/audio/raw_fast.wav
 studio/videos/*/audio/trimmed.wav
 studio/videos/*/audio/whisper.json
+studio/videos/*/audio/mix.m4a
