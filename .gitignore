@@ -1,0 +1,5 @@
+__pycache__/
+studio/config.json
+studio/videos/*/frames/
+studio/videos/*/blend/
+studio/videos/*/preview/

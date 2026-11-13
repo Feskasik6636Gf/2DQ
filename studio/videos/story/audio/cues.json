@@ -1,0 +1,764 @@
+[
+ {
+  "t": 0.388,
+  "name": "sneeze",
+  "vol": 1.0,
+  "shot": 1
+ },
+ {
+  "t": 0.711,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 1
+ },
+ {
+  "t": 1.489,
+  "name": "whoosh",
+  "vol": 0.8,
+  "shot": 2
+ },
+ {
+  "t": 2.121,
+  "name": "sneeze",
+  "vol": 1.0,
+  "shot": 2
+ },
+ {
+  "t": 2.831,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 3
+ },
+ {
+  "t": 2.931,
+  "name": "wind",
+  "vol": 0.6,
+  "dur": 1.2040000000000002,
+  "shot": 3
+ },
+ {
+  "t": 3.935,
+  "name": "whoosh",
+  "vol": 0.7,
+  "shot": 4
+ },
+ {
+  "t": 4.987,
+  "name": "meow",
+  "vol": 1.0,
+  "shot": 5
+ },
+ {
+  "t": 5.478,
+  "name": "u_notif",
+  "vol": 0.8,
+  "shot": 6
+ },
+ {
+  "t": 6.307,
+  "name": "pop",
+  "vol": 0.7,
+  "shot": 7
+ },
+ {
+  "t": 7.322,
+  "name": "sneeze",
+  "vol": 0.9,
+  "shot": 7
+ },
+ {
+  "t": 7.784,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 8
+ },
+ {
+  "t": 8.308,
+  "name": "whoosh",
+  "vol": 0.8,
+  "shot": 9
+ },
+ {
+  "t": 8.408,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 9
+ },
+ {
+  "t": 8.802,
+  "name": "u_squeak",
+  "vol": 0.8,
+  "shot": 9
+ },
+ {
+  "t": 9.786,
+  "name": "sneeze",
+  "vol": 0.8,
+  "shot": 10
+ },
+ {
+  "t": 10.057,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 10
+ },
+ {
+  "t": 10.257,
+  "name": "boing",
+  "vol": 0.5,
+  "shot": 10
+ },
+ {
+  "t": 11.262,
+  "name": "ding",
+  "vol": 0.6,
+  "shot": 11
+ },
+ {
+  "t": 12.194,
+  "name": "u_pay",
+  "vol": 0.9,
+  "shot": 11
+ },
+ {
+  "t": 12.871,
+  "name": "crickets",
+  "vol": 0.8,
+  "dur": 1.424999999999999,
+  "shot": 12
+ },
+ {
+  "t": 14.196,
+  "name": "footsteps",
+  "vol": 0.5,
+  "dur": 0.8650000000000002,
+  "shot": 13
+ },
+ {
+  "t": 15.771,
+  "name": "sneeze",
+  "vol": 0.9,
+  "shot": 14
+ },
+ {
+  "t": 15.991,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 14
+ },
+ {
+  "t": 16.266,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 15
+ },
+ {
+  "t": 16.502,
+  "name": "aww",
+  "vol": 0.7,
+  "shot": 15
+ },
+ {
+  "t": 18.081,
+  "name": "sneeze",
+  "vol": 0.9,
+  "shot": 16
+ },
+ {
+  "t": 18.639,
+  "name": "u_squeak",
+  "vol": 0.5,
+  "shot": 16
+ },
+ {
+  "t": 19.47,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 17
+ },
+ {
+  "t": 19.65,
+  "name": "thud",
+  "vol": 0.8,
+  "shot": 17
+ },
+ {
+  "t": 20.454,
+  "name": "u_quack",
+  "vol": 0.8,
+  "shot": 18
+ },
+ {
+  "t": 21.487,
+  "name": "sneeze",
+  "vol": 0.8,
+  "shot": 19
+ },
+ {
+  "t": 21.93,
+  "name": "pop",
+  "vol": 0.7,
+  "shot": 19
+ },
+ {
+  "t": 22.886,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 20
+ },
+ {
+  "t": 23.812,
+  "name": "ding",
+  "vol": 0.6,
+  "shot": 20
+ },
+ {
+  "t": 24.673,
+  "name": "u_faaaa",
+  "vol": 0.8,
+  "shot": 21
+ },
+ {
+  "t": 25.525,
+  "name": "u_correct",
+  "vol": 0.35,
+  "shot": 22
+ },
+ {
+  "t": 26.934,
+  "name": "sneeze",
+  "vol": 0.9,
+  "shot": 23
+ },
+ {
+  "t": 28.273,
+  "name": "pop",
+  "vol": 0.7,
+  "shot": 24
+ },
+ {
+  "t": 28.273,
+  "name": "sparkle",
+  "vol": 0.7,
+  "shot": 24
+ },
+ {
+  "t": 28.738,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 24
+ },
+ {
+  "t": 29.307,
+  "name": "u_bruh",
+  "vol": 1.0,
+  "shot": 25
+ },
+ {
+  "t": 29.864,
+  "name": "whoosh",
+  "vol": 0.8,
+  "shot": 26
+ },
+ {
+  "t": 30.02,
+  "name": "u_notif",
+  "vol": 0.9,
+  "shot": 26
+ },
+ {
+  "t": 30.868,
+  "name": "snort",
+  "vol": 0.8,
+  "shot": 27
+ },
+ {
+  "t": 32.037,
+  "name": "meow",
+  "vol": 1.0,
+  "shot": 28
+ },
+ {
+  "t": 32.462,
+  "name": "poof",
+  "vol": 0.6,
+  "shot": 29
+ },
+ {
+  "t": 32.886,
+  "name": "sparkle",
+  "vol": 0.6,
+  "shot": 30
+ },
+ {
+  "t": 33.429,
+  "name": "u_slap",
+  "vol": 0.6,
+  "shot": 31
+ },
+ {
+  "t": 34.305,
+  "name": "clink",
+  "vol": 0.7,
+  "shot": 32
+ },
+ {
+  "t": 34.555,
+  "name": "clink",
+  "vol": 0.5,
+  "shot": 32
+ },
+ {
+  "t": 35.55,
+  "name": "u_squeak",
+  "vol": 0.9,
+  "shot": 33
+ },
+ {
+  "t": 36.361,
+  "name": "sneeze",
+  "vol": 0.8,
+  "shot": 34
+ },
+ {
+  "t": 36.756,
+  "name": "pop",
+  "vol": 0.7,
+  "shot": 34
+ },
+ {
+  "t": 37.616,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 35
+ },
+ {
+  "t": 38.054,
+  "name": "splat",
+  "vol": 0.5,
+  "shot": 35
+ },
+ {
+  "t": 38.415,
+  "name": "u_quack",
+  "vol": 0.7,
+  "shot": 35
+ },
+ {
+  "t": 39.975,
+  "name": "wind",
+  "vol": 0.5,
+  "dur": 1.3230000000000004,
+  "shot": 37
+ },
+ {
+  "t": 41.298,
+  "name": "meow",
+  "vol": 0.8,
+  "shot": 38
+ },
+ {
+  "t": 41.498,
+  "name": "footsteps",
+  "vol": 0.6,
+  "dur": 1.8659999999999997,
+  "shot": 38
+ },
+ {
+  "t": 43.064,
+  "name": "wind",
+  "vol": 1.0,
+  "dur": 1.2819999999999978,
+  "shot": 39
+ },
+ {
+  "t": 43.164,
+  "name": "u_boom",
+  "vol": 0.35,
+  "shot": 39
+ },
+ {
+  "t": 44.046,
+  "name": "wind",
+  "vol": 0.6,
+  "dur": 1.3569999999999993,
+  "shot": 40
+ },
+ {
+  "t": 44.589,
+  "name": "footsteps",
+  "vol": 0.5,
+  "dur": 1.0,
+  "shot": 40
+ },
+ {
+  "t": 45.403,
+  "name": "aww",
+  "vol": 0.6,
+  "shot": 41
+ },
+ {
+  "t": 46.878,
+  "name": "whoosh",
+  "vol": 0.6,
+  "shot": 42
+ },
+ {
+  "t": 48.269,
+  "name": "pop",
+  "vol": 0.7,
+  "shot": 43
+ },
+ {
+  "t": 48.269,
+  "name": "u_correct",
+  "vol": 0.8,
+  "shot": 43
+ },
+ {
+  "t": 50.05,
+  "name": "buzzer",
+  "vol": 0.5,
+  "shot": 44
+ },
+ {
+  "t": 51.305,
+  "name": "u_fart",
+  "vol": 1.0,
+  "shot": 45
+ },
+ {
+  "t": 52.933,
+  "name": "door",
+  "vol": 0.6,
+  "shot": 46
+ },
+ {
+  "t": 53.033,
+  "name": "sparkle",
+  "vol": 0.9,
+  "shot": 46
+ },
+ {
+  "t": 53.711,
+  "name": "click",
+  "vol": 0.7,
+  "shot": 47
+ },
+ {
+  "t": 53.917,
+  "name": "pop",
+  "vol": 0.8,
+  "shot": 47
+ },
+ {
+  "t": 54.595,
+  "name": "wind",
+  "vol": 0.9,
+  "dur": 1.544000000000004,
+  "shot": 48
+ },
+ {
+  "t": 54.595,
+  "name": "jet",
+  "vol": 0.4,
+  "shot": 48
+ },
+ {
+  "t": 56.189,
+  "name": "splat",
+  "vol": 0.4,
+  "shot": 49
+ },
+ {
+  "t": 56.97,
+  "name": "u_faaah",
+  "vol": 0.9,
+  "shot": 50
+ },
+ {
+  "t": 58.615,
+  "name": "pop",
+  "vol": 0.7,
+  "shot": 51
+ },
+ {
+  "t": 60.243,
+  "name": "u_riser",
+  "vol": 1.0,
+  "shot": 51
+ },
+ {
+  "t": 60.363,
+  "name": "sneeze",
+  "vol": 1.0,
+  "shot": 52
+ },
+ {
+  "t": 60.363,
+  "name": "u_boom",
+  "vol": 0.8,
+  "shot": 52
+ },
+ {
+  "t": 60.563,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 52
+ },
+ {
+  "t": 60.803,
+  "name": "wind",
+  "vol": 0.8,
+  "dur": 2.0,
+  "shot": 53
+ },
+ {
+  "t": 60.903,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 53
+ },
+ {
+  "t": 60.953,
+  "name": "thud",
+  "vol": 0.9,
+  "shot": 53
+ },
+ {
+  "t": 62.448,
+  "name": "whoosh",
+  "vol": 0.8,
+  "shot": 55
+ },
+ {
+  "t": 62.567,
+  "name": "gasp",
+  "vol": 0.8,
+  "shot": 55
+ },
+ {
+  "t": 62.855,
+  "name": "u_riser",
+  "vol": 0.0,
+  "shot": 56
+ },
+ {
+  "t": 63.971,
+  "name": "meow",
+  "vol": 0.7,
+  "shot": 57
+ },
+ {
+  "t": 64.89,
+  "name": "sparkle",
+  "vol": 0.8,
+  "shot": 58
+ },
+ {
+  "t": 66.569,
+  "name": "clink",
+  "vol": 0.4,
+  "shot": 60
+ },
+ {
+  "t": 66.869,
+  "name": "clink",
+  "vol": 0.4,
+  "shot": 60
+ },
+ {
+  "t": 67.027,
+  "name": "crickets",
+  "vol": 0.5,
+  "dur": 0.6,
+  "shot": 60
+ },
+ {
+  "t": 67.169,
+  "name": "clink",
+  "vol": 0.4,
+  "shot": 60
+ },
+ {
+  "t": 67.536,
+  "name": "wind",
+  "vol": 0.9,
+  "dur": 0.7289999999999992,
+  "shot": 61
+ },
+ {
+  "t": 68.961,
+  "name": "u_correct",
+  "vol": 0.9,
+  "shot": 62
+ },
+ {
+  "t": 69.571,
+  "name": "u_rizz",
+  "vol": 0.7,
+  "shot": 63
+ },
+ {
+  "t": 70.572,
+  "name": "whoosh",
+  "vol": 0.7,
+  "shot": 64
+ },
+ {
+  "t": 70.772,
+  "name": "u_slap",
+  "vol": 0.5,
+  "shot": 64
+ },
+ {
+  "t": 71.35,
+  "name": "meow",
+  "vol": 1.0,
+  "shot": 65
+ },
+ {
+  "t": 72.183,
+  "name": "meow",
+  "vol": 0.8,
+  "shot": 66
+ },
+ {
+  "t": 72.844,
+  "name": "snort",
+  "vol": 0.8,
+  "shot": 66
+ },
+ {
+  "t": 73.608,
+  "name": "pop",
+  "vol": 0.7,
+  "shot": 67
+ },
+ {
+  "t": 74.49,
+  "name": "u_riser",
+  "vol": 0.7,
+  "shot": 67
+ },
+ {
+  "t": 74.59,
+  "name": "sneeze",
+  "vol": 1.0,
+  "shot": 68
+ },
+ {
+  "t": 74.59,
+  "name": "u_boom",
+  "vol": 0.9,
+  "shot": 68
+ },
+ {
+  "t": 74.77,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 68
+ },
+ {
+  "t": 75.048,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 69
+ },
+ {
+  "t": 75.228,
+  "name": "thud",
+  "vol": 1.0,
+  "shot": 69
+ },
+ {
+  "t": 75.298,
+  "name": "clink",
+  "vol": 0.8,
+  "shot": 69
+ },
+ {
+  "t": 76.474,
+  "name": "gasp",
+  "vol": 0.9,
+  "shot": 70
+ },
+ {
+  "t": 77.185,
+  "name": "aww",
+  "vol": 0.9,
+  "shot": 71
+ },
+ {
+  "t": 78.526,
+  "name": "u_squeak",
+  "vol": 0.9,
+  "shot": 72
+ },
+ {
+  "t": 79.829,
+  "name": "meow",
+  "vol": 0.9,
+  "shot": 73
+ },
+ {
+  "t": 80.002,
+  "name": "sparkle",
+  "vol": 0.6,
+  "shot": 73
+ },
+ {
+  "t": 80.684,
+  "name": "poof",
+  "vol": 0.8,
+  "shot": 74
+ },
+ {
+  "t": 80.985,
+  "name": "u_notif",
+  "vol": 0.8,
+  "shot": 74
+ },
+ {
+  "t": 80.992,
+  "name": "poof",
+  "vol": 0.8,
+  "shot": 74
+ },
+ {
+  "t": 81.301,
+  "name": "poof",
+  "vol": 0.8,
+  "shot": 74
+ },
+ {
+  "t": 81.609,
+  "name": "poof",
+  "vol": 0.8,
+  "shot": 74
+ },
+ {
+  "t": 82.546,
+  "name": "pop",
+  "vol": 0.7,
+  "shot": 75
+ },
+ {
+  "t": 83.121,
+  "name": "sneeze",
+  "vol": 0.9,
+  "shot": 75
+ },
+ {
+  "t": 83.341,
+  "name": "poof",
+  "vol": 1.0,
+  "shot": 76
+ },
+ {
+  "t": 83.479,
+  "name": "u_rizz",
+  "vol": 0.9,
+  "shot": 76
+ }
+]
