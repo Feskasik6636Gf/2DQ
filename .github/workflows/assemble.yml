@@ -33,7 +33,7 @@ jobs:
           open('renders/missing.txt','w').write(f"max {mx}\nmissing {len(miss)}: {miss[:200]}\n")
           print(open('renders/missing.txt').read())
           PY
-          ffmpeg -v error -y -framerate 30 -i dl/videos/insult/frames/%04d.png -c:v libx264 -preset slow -crf 9 -pix_fmt yuv444p renders/insult_frames.mkv
+          ffmpeg -v error -y -framerate 30 -i dl/videos/insult/frames/%04d.png -c:v libx264 -preset slow -crf 13 -pix_fmt yuv444p renders/insult_frames.mkv
           ls -la renders
           git config user.name "render-bot"
           git config user.email "render-bot@users.noreply.github.com"
