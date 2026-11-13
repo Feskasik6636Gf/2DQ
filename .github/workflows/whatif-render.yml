@@ -1,0 +1,79 @@
+name: whatif-render
+on:
+  push:
+    branches: [ccr-94526252-rcpup7]
+    paths: [whatif-red/render_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: whatif-render
+  cancel-in-progress: true
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.c.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: c
+        run: |
+          N=$(python3 -c "import json;print(json.load(open('whatif-red/render_chunks.json'))['n'])")
+          echo "chunks=$(python3 -c "import json;print(json.dumps(list(range($N))))")" >> "$GITHUB_OUTPUT"
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: install
+        working-directory: whatif-red
+        run: |
+          npm ci --no-audit --no-fund --loglevel=error
+          npx remotion browser ensure
+      - name: render chunk
+        working-directory: whatif-red
+        run: |
+          read A B < <(python3 -c "import json;c=json.load(open('render_chunks.json'));i=${{ matrix.chunk }};s=c['size'];t=c['total'];print(i*s, min(t, (i+1)*s)-1)")
+          NAME=$(printf 'c%02d' ${{ matrix.chunk }})
+          echo "frames $A-$B"
+          for try in 1 2 3; do
+            npx remotion render Long "out/$NAME.mp4" --frames=$A-$B --muted --gl=angle --concurrency=4 --crf=20 --log=error && break
+            echo "retry $try"
+          done
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.chunk }}
+          path: whatif-red/out/c*.mp4
+          retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: render
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: dl
+          merge-multiple: true
+      - name: commit chunks
+        run: |
+          mkdir -p whatif-red/renders
+          rm -f whatif-red/renders/c*.mp4
+          cp dl/c*.mp4 whatif-red/renders/
+          ls -la whatif-red/renders
+          git config user.name "render-bot"
+          git config user.email "render-bot@users.noreply.github.com"
+          git add whatif-red/renders
+          git commit -m "What-if video: rendered chunks"
+          for i in 1 2 3 4; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done
