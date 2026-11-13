@@ -11,3 +11,5 @@ studio/videos/*/audio/raw_fast.wav
 studio/videos/*/audio/trimmed.wav
 studio/videos/*/audio/whisper.json
 studio/videos/*/audio/mix.m4a
+studio/videos/*/out/
+studio/videos/*/captions.ass
