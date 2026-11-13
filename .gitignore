@@ -4,3 +4,9 @@ studio/videos/*/frames/
 studio/videos/*/blend/
 studio/videos/*/preview/
 out/sneeze_story_final.mp4
+studio/videos/*/preview/
+studio/videos/*/*.jpg
+studio/videos/*/render_log_*.txt
+studio/videos/*/audio/raw_fast.wav
+studio/videos/*/audio/trimmed.wav
+studio/videos/*/audio/whisper.json
