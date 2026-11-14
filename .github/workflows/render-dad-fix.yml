@@ -1,0 +1,84 @@
+name: render-dad-fix
+on:
+  push:
+    branches: [ccr-dba9d14a-2mnfez]
+    paths: [render_dad_fix_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+env:
+  PREV_RUN: "43565002823"
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: system libs
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libegl1 libgl1 libxi6 libxkbcommon0 libxrender1 libxxf86vm1 libxfixes3 libsm6 libice6 libgles2 libegl-mesa0 libgl1-mesa-dri >/dev/null
+      - name: blender
+        run: |
+          curl -sSL -o b.tar.xz https://download.blender.org/release/Blender5.2/blender-5.2.0-linux-x64.tar.xz
+          tar xf b.tar.xz && mv blender-5.2.0-linux-x64 "$HOME/blender" && rm b.tar.xz
+          mkdir -p ~/.fonts && cp studio/fonts/*.ttf ~/.fonts/ && fc-cache -f >/dev/null || true
+      - name: render chunk 7 (36-40) with retries
+        run: |
+          cd studio
+          echo "{\"blender\": \"$HOME/blender/blender\"}" > config.json
+          for i in 1 2 3; do
+            FINAL_PCT=50 python3 tools/blend.py dad final "36,37,38,39,40" 5 --verbose 2>&1 | tail -40 | tee render_fix.log
+            n=$(ls videos/dad/frames 2>/dev/null | wc -l); echo "frames: $n"
+            [ "$n" -gt 100 ] && break
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frames-fix7
+          path: |
+            studio/videos/dad/frames/*.png
+            studio/render_fix.log
+          retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: frames-*
+          path: dl
+          merge-multiple: true
+          run-id: ${{ env.PREV_RUN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: frames-fix7
+          path: dl
+      - name: finish
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig >/dev/null
+          pip install -q numpy
+          mkdir -p ~/.fonts && cp studio/fonts/*.ttf ~/.fonts/ && fc-cache -f
+          mkdir -p studio/videos/dad/frames
+          cp dl/videos/dad/frames/*.png studio/videos/dad/frames/
+          python3 - <<'PY'
+          import os
+          have={int(f[:4]) for f in os.listdir('studio/videos/dad/frames')}
+          mx=max(have); miss=[i for i in range(1,mx+1) if i not in have]
+          print("max",mx,"missing",len(miss),miss[:80])
+          PY
+          cd studio
+          echo '{"music_speed": 1.0, "caption_font": "Titan One"}' > config.json
+          python3 tools/finish.py dad
+      - name: commit result
+        run: |
+          mkdir -p out/dad
+          cp studio/videos/dad/out/final_phone.mp4 out/dad/dad_phone.mp4
+          ffmpeg -v error -y -i studio/videos/dad/out/final.mp4 -c:v libx264 -preset slow -b:v 3800k -maxrate 4400k -bufsize 8000k -vf scale=720:1280 -c:a aac -b:a 160k -movflags +faststart out/dad/dad_720.mp4
+          git config user.name "render-bot"; git config user.email "render-bot@users.noreply.github.com"
+          git add out/dad
+          git commit -m "Dad video: full render after re-rendering shots 36-40"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
