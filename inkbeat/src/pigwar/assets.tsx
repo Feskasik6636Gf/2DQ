@@ -9,7 +9,7 @@ const cs = (n: number) => n; // keep numbers readable
 /** a big black pig, 1 unit = 1 m, standing on y=0, facing +z */
 export const Pig: React.FC<{ p: V3; yaw?: number; s?: number; t?: number; eat?: boolean; fat?: number }> = ({ p, yaw = 0, s = 1, t = 0, eat = false, fat = 1 }) => {
   const nod = eat ? Math.sin(t * 5) * 0.12 : Math.sin(t * 1.6) * 0.02;
-  const body = "#383240";
+  const body = "#2a2630";
   const skin = "#e89aa0";
   return (
     <group position={p} rotation={[0, yaw, 0]} scale={s}>
@@ -223,12 +223,12 @@ export const Farmhouse: React.FC<{ p: V3; yaw?: number }> = ({ p, yaw = 0 }) => 
 /** water + island base + grass; the sea is a big flat toon plane */
 export const Island: React.FC<{ t?: number }> = ({ t = 0 }) => (
   <group>
-    <M g={boxG(600, 0.2, 600)} c="#3f86c8" p={[0, -0.9, 0]} cast={false} />
+    <M g={boxG(600, 0.2, 600)} c="#2f78b8" p={[0, -0.9, 0]} cast={false} />
     {[0, 1, 2, 3].map((i) => (
       <M key={i} g={boxG(40 + i * 5, 0.06, 0.18)} c="#bfe0ff" p={[Math.sin(t * 0.4 + i) * 6 + i * 9 - 14, -0.78, -34 - i * 4]} cast={false} />
     ))}
     <M g={cylG(52, 56, 1.2, 64)} c="#d8c48a" tex="sand" p={[0, -0.62, 0]} />
-    <M g={cylG(49, 50, 0.3, 64)} c="#6cb050" tex="grass" ts={0.5} p={[0, -0.02, 0]} />
+    <M g={cylG(49, 50, 0.3, 64)} c="#5aa23c" tex="grass" ts={0.5} p={[0, -0.02, 0]} />
   </group>
 );
 void cs;
