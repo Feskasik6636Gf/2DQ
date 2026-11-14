@@ -1,0 +1,97 @@
+name: render-quentin
+on:
+  push:
+    branches: [ccr-6301a97b-6ts8wv]
+    paths: [quentin/render_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: render-quentin
+  cancel-in-progress: true
+defaults:
+  run:
+    working-directory: quentin
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: system libs for headless chrome
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libnss3 libdbus-1-3 libatk1.0-0t64 libatk-bridge2.0-0t64 libasound2t64 libxrandr2 libxkbcommon-x11-0 libxfixes3 libxcomposite1 libxdamage1 libgbm-dev libcups2t64 libpango-1.0-0 libcairo2 >/dev/null
+      - run: npm ci
+      - name: render this part (200-frame chunks, 720p)
+        run: |
+          chmod +x node_modules/@remotion/compositor-linux-x64-gnu/* || true
+          TOTAL=$(node -e "console.log(JSON.parse(require('fs').readFileSync('src/story/timeline.json','utf8')).total)")
+          NCH=$(( (TOTAL + 199) / 200 ))
+          PER=$(( (NCH + 11) / 12 ))
+          PART=${{ matrix.part }}
+          echo "total frames $TOTAL, chunks $NCH, $PER per part"
+          mkdir -p out/chunks_Long
+          for n in $(seq $((PART * PER)) $((PART * PER + PER - 1))); do
+            [ "$n" -ge "$NCH" ] && break
+            s=$((n * 200)); e=$((s + 199)); [ "$e" -ge "$TOTAL" ] && e=$((TOTAL - 1))
+            f=out/chunks_Long/c$(printf %02d "$n").mp4
+            ok=0
+            for try in 1 2 3; do
+              if npx remotion render Long "$f" --frames=$s-$e --muted --gl=angle --scale=0.6667 --concurrency=3 --crf=18 --log=error --timeout=120000; then ok=1; break; fi
+              rm -f "$f"; echo "chunk $n try $try failed"
+            done
+            [ "$ok" = 1 ] || { echo "chunk $n FAILED"; exit 1; }
+            echo "chunk $n done"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunks-${{ matrix.part }}
+          path: quentin/out/chunks_Long/*.mp4
+          retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunks-*
+          path: quentin/out/chunks_Long
+          merge-multiple: true
+      - name: sound, join, mix, normalise
+        run: |
+          chmod +x node_modules/@remotion/compositor-linux-x64-gnu/* || true
+          ls out/chunks_Long | wc -l
+          node tools/make-sound.mjs
+          node tools/render.mjs Long --chunk 200
+          ls -la out
+      - name: phone-friendly copy under 100 MB and commit it
+        run: |
+          mkdir -p renders
+          ffmpeg -v error -y -i out/Long.mp4 -c:v libx264 -preset slow -crf 27 -maxrate 700k -bufsize 1400k -c:a aac -b:a 96k -movflags +faststart renders/quentin_720p.mp4
+          ls -la renders
+          git config user.name "render-bot"
+          git config user.email "render-bot@users.noreply.github.com"
+          git add renders
+          git commit -m "Rendered quentin video (720p)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Long-full-quality
+          path: quentin/out/Long.mp4
+          retention-days: 7
+          compression-level: 0

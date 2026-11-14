@@ -1,0 +1,4 @@
+{
+ "long": {"name": "Long", "bed": "sfx/bed.wav", "concurrency": 3, "scale": 0.6667},
+ "short": {"name": "Short", "bed": "sfx/bed.wav", "timeline": "src/story/short-timeline.json"}
+}

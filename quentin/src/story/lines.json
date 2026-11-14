@@ -1,0 +1,1424 @@
+[
+{
+"id": "001_N",
+"sp": "N",
+"t": "Dinner's ready, buddy.",
+"start": 0.0
+},
+{
+"id": "002_N",
+"sp": "N",
+"t": "Your mom's voice comes from the kitchen.",
+"start": 1.6
+},
+{
+"id": "003_N",
+"sp": "N",
+"t": "You're on the living room floor, reaching behind the couch for your phone charger.",
+"start": 4.0
+},
+{
+"id": "004_N",
+"sp": "N",
+"t": "You say what you always say.",
+"start": 8.6
+},
+{
+"id": "005_N",
+"sp": "N",
+"t": "One minute. Your hand goes through the wall, not into it.",
+"start": 10.8
+},
+{
+"id": "006_N",
+"sp": "N",
+"t": "Through it, the wall feels like cold water for a second.",
+"start": 15.5
+},
+{
+"id": "007_N",
+"sp": "N",
+"t": "Then the floor disappears and you fall about a meter onto something soft and damp.",
+"start": 18.8
+},
+{
+"id": "008_N",
+"sp": "N",
+"t": "You open your eyes and your whole world is yellow.",
+"start": 23.4
+},
+{
+"id": "009_N",
+"sp": "N",
+"t": "Yellow wallpaper. Yellow carpet that smells like an old sponge, a ceiling of flickering lights,",
+"start": 27.0
+},
+{
+"id": "010_N",
+"sp": "N",
+"t": "humming one long, flat note.",
+"start": 32.2
+},
+{
+"id": "011_N",
+"sp": "N",
+"t": "A hallway turns left, then right, then left.",
+"start": 34.0
+},
+{
+"id": "012_N",
+"sp": "N",
+"t": "No windows, no doors, no end.",
+"start": 36.5
+},
+{
+"id": "013_N",
+"sp": "N",
+"t": "You look at your phone. 6.42 p.m., no signal.",
+"start": 39.6
+},
+{
+"id": "014_N",
+"sp": "N",
+"t": "You check again 20 minutes later, still 6.42.",
+"start": 42.8
+},
+{
+"id": "015_N",
+"sp": "N",
+"t": "Here's what you don't know yet.",
+"start": 46.9
+},
+{
+"id": "016_N",
+"sp": "N",
+"t": "You're about to spend a hundred days in this place.",
+"start": 48.7
+},
+{
+"id": "017_N",
+"sp": "N",
+"t": "You'll lose count of the days.",
+"start": 51.6
+},
+{
+"id": "018_N",
+"sp": "N",
+"t": "You'll hear your mom call you for dinner from the end of an empty hallway.",
+"start": 53.9
+},
+{
+"id": "019_N",
+"sp": "N",
+"t": "You'll find a stranger who has been here for three years.",
+"start": 58.0
+},
+{
+"id": "020_N",
+"sp": "N",
+"t": "And on day 100, you'll stand in front of the only door out and you'll realize you have to decide",
+"start": 61.5
+},
+{
+"id": "021_N",
+"sp": "N",
+"t": "who gets to leave first.",
+"start": 67.4
+},
+{
+"id": "022_N",
+"sp": "N",
+"t": "And when you finally get home, your mom will still be calling you to dinner.",
+"start": 69.6
+},
+{
+"id": "023_N",
+"sp": "N",
+"t": "Day one, you walk, you shout, nothing answers.",
+"start": 74.7
+},
+{
+"id": "024_N",
+"sp": "N",
+"t": "The hum swallows your voice after about three seconds.",
+"start": 78.6
+},
+{
+"id": "025_N",
+"sp": "N",
+"t": "There's a strange thing about that hum.",
+"start": 81.6
+},
+{
+"id": "026_N",
+"sp": "N",
+"t": "The lights flicker very fast, much faster than your eyes can see.",
+"start": 83.5
+},
+{
+"id": "027_N",
+"sp": "N",
+"t": "In most countries, the electricity in the wall changes direction 50 or 60 times a second.",
+"start": 87.4
+},
+{
+"id": "028_N",
+"sp": "N",
+"t": "A fluorescent tube lights up and dims on every change.",
+"start": 93.4
+},
+{
+"id": "029_N",
+"sp": "N",
+"t": "So it flickers 100 or 120 times every second.",
+"start": 97.0
+},
+{
+"id": "030_N",
+"sp": "N",
+"t": "Your brain doesn't notice, but after a few hours you start to feel it.",
+"start": 100.9
+},
+{
+"id": "031_N",
+"sp": "N",
+"t": "Dull headache, tight jaw, tired eyes.",
+"start": 104.7
+},
+{
+"id": "032_N",
+"sp": "N",
+"t": "By evening, you're thirsty.",
+"start": 108.0
+},
+{
+"id": "033_N",
+"sp": "N",
+"t": "Here's the rule you learned in school and now it's the only one that matters.",
+"start": 110.0
+},
+{
+"id": "034_N",
+"sp": "N",
+"t": "A person can live about three weeks without food, but without water, about three days.",
+"start": 114.5
+},
+{
+"id": "035_N",
+"sp": "N",
+"t": "Day two, you walk faster.",
+"start": 120.1
+},
+{
+"id": "036_N",
+"sp": "N",
+"t": "Hallway after hallway, every turn looks identical.",
+"start": 121.8
+},
+{
+"id": "037_N",
+"sp": "N",
+"t": "The same stain, the same smell, the same hum.",
+"start": 124.8
+},
+{
+"id": "038_N",
+"sp": "N",
+"t": "By lunchtime, your mouth feels like sandpaper.",
+"start": 127.8
+},
+{
+"id": "039_N",
+"sp": "N",
+"t": "By evening, your lips crack.",
+"start": 130.4
+},
+{
+"id": "040_N",
+"sp": "N",
+"t": "Day three, your hands shake and you find it.",
+"start": 132.8
+},
+{
+"id": "041_N",
+"sp": "N",
+"t": "A tiny room about the size of a closet.",
+"start": 136.1
+},
+{
+"id": "042_N",
+"sp": "N",
+"t": "On the floor, a row of plastic bottles with no labels.",
+"start": 138.8
+},
+{
+"id": "043_N",
+"sp": "N",
+"t": "You unscrew one with shaking fingers.",
+"start": 142.2
+},
+{
+"id": "044_N",
+"sp": "N",
+"t": "The water inside is clear and cold and it tastes faintly of almonds.",
+"start": 144.5
+},
+{
+"id": "045_N",
+"sp": "N",
+"t": "You drink the whole bottle.",
+"start": 148.2
+},
+{
+"id": "046_N",
+"sp": "N",
+"t": "Then you sit on the carpet and cry.",
+"start": 149.8
+},
+{
+"id": "047_N",
+"sp": "N",
+"t": "Whatever this place is, it wants you alive, which is almost worse.",
+"start": 152.5
+},
+{
+"id": "048_N",
+"sp": "N",
+"t": "You carry five bottles with you.",
+"start": 157.0
+},
+{
+"id": "049_N",
+"sp": "N",
+"t": "You write on the wall with a pen from your pocket.",
+"start": 159.2
+},
+{
+"id": "050_N",
+"sp": "N",
+"t": "Water, room 14, because here's another rule you learn fast.",
+"start": 162.0
+},
+{
+"id": "051_N",
+"sp": "N",
+"t": "If you don't mark where you've been, every hallway becomes the same hallway.",
+"start": 166.7
+},
+{
+"id": "052_N",
+"sp": "N",
+"t": "Day nine, you can't sleep.",
+"start": 171.1
+},
+{
+"id": "053_N",
+"sp": "N",
+"t": "The lights never turn off. There's no night and the human body has a clock inside it.",
+"start": 173.2
+},
+{
+"id": "054_N",
+"sp": "N",
+"t": "Scientists found out how strong it is in 1962.",
+"start": 178.2
+},
+{
+"id": "055_N",
+"sp": "N",
+"t": "A French researcher named Michel Sifra spent two months alone in a cave",
+"start": 182.0
+},
+{
+"id": "056_N",
+"sp": "N",
+"t": "with no sun, no clock and no calendar.",
+"start": 186.2
+},
+{
+"id": "057_N",
+"sp": "N",
+"t": "When his team called to tell him his time was up, he thought it was only the middle of the experiment.",
+"start": 190.0
+},
+{
+"id": "058_N",
+"sp": "N",
+"t": "He was off by nearly a month.",
+"start": 194.9
+},
+{
+"id": "059_N",
+"sp": "N",
+"t": "Without daylight, his body kept sleeping and waking on its own schedule a little longer",
+"start": 197.2
+},
+{
+"id": "060_N",
+"sp": "N",
+"t": "than 24 hours, and his mind kept losing days.",
+"start": 201.7
+},
+{
+"id": "061_N",
+"sp": "N",
+"t": "That's what happens to you too.",
+"start": 205.7
+},
+{
+"id": "062_N",
+"sp": "N",
+"t": "You sleep when you can't stay awake anymore.",
+"start": 207.6
+},
+{
+"id": "063_N",
+"sp": "N",
+"t": "You wake when your stomach tells you.",
+"start": 210.3
+},
+{
+"id": "064_N",
+"sp": "N",
+"t": "You stop knowing if it's morning or if you've slept for two hours or 12.",
+"start": 212.4
+},
+{
+"id": "065_N",
+"sp": "N",
+"t": "You try counting your sleeps on the wall, one scratch per sleep.",
+"start": 216.8
+},
+{
+"id": "066_N",
+"sp": "N",
+"t": "But some sleeps are short and some are long and some stays you can't remember if you scratched or not.",
+"start": 221.2
+},
+{
+"id": "067_N",
+"sp": "N",
+"t": "On day 16, you start seeing things, faces in the wallpaper, shapes at the edge of the hallway",
+"start": 227.3
+},
+{
+"id": "068_N",
+"sp": "N",
+"t": "that vanish when you turn. It isn't magic and it isn't ghosts.",
+"start": 233.0
+},
+{
+"id": "069_N",
+"sp": "N",
+"t": "When your eyes stare at one flat, empty color for long enough, the brain gets desperate",
+"start": 237.0
+},
+{
+"id": "070_N",
+"sp": "N",
+"t": "for something to look at, so it invents it.",
+"start": 242.0
+},
+{
+"id": "071_N",
+"sp": "N",
+"t": "Scientists call it the Gansfeld effect.",
+"start": 244.2
+},
+{
+"id": "072_N",
+"sp": "N",
+"t": "Even healthy people start to hallucinate after a few hours.",
+"start": 246.9
+},
+{
+"id": "073_N",
+"sp": "N",
+"t": "You've had weeks.",
+"start": 251.0
+},
+{
+"id": "074_N",
+"sp": "N",
+"t": "By day 18, you've stopped talking to yourself.",
+"start": 252.6
+},
+{
+"id": "075_N",
+"sp": "N",
+"t": "By day 23, you've started talking to the carpet.",
+"start": 256.3
+},
+{
+"id": "076_N",
+"sp": "N",
+"t": "By day 30, you can recite your mom's lasagna recipe from memory, just so you remember",
+"start": 259.6
+},
+{
+"id": "077_N",
+"sp": "N",
+"t": "what a real kitchen smells like.",
+"start": 265.1
+},
+{
+"id": "078_N",
+"sp": "N",
+"t": "You tell the wallpaper about your little brother, Noah, who still sleeps with the hall light on.",
+"start": 267.4
+},
+{
+"id": "079_N",
+"sp": "N",
+"t": "You tell it about school.",
+"start": 273.3
+},
+{
+"id": "080_N",
+"sp": "N",
+"t": "You tell it about the dumb argument you had with your mom last Tuesday.",
+"start": 275.0
+},
+{
+"id": "081_N",
+"sp": "N",
+"t": "About the dishes. You'd give anything to have that argument again.",
+"start": 279.2
+},
+{
+"id": "082_N",
+"sp": "N",
+"t": "Day 40, you're sitting on the floor in a long hallway when you hear it.",
+"start": 283.7
+},
+{
+"id": "083_N",
+"sp": "N",
+"t": "A voice far away from around the corner.",
+"start": 287.8
+},
+{
+"id": "084_N",
+"sp": "N",
+"t": "Dinner's ready. Your heart stops.",
+"start": 291.2
+},
+{
+"id": "085_N",
+"sp": "N",
+"t": "It's your mom, the exact voice.",
+"start": 294.0
+},
+{
+"id": "086_N",
+"sp": "N",
+"t": "The exact tone, a little tired, a little sing song.",
+"start": 295.8
+},
+{
+"id": "087_N",
+"sp": "N",
+"t": "The way she says it every night, you jump up.",
+"start": 298.7
+},
+{
+"id": "088_N",
+"sp": "N",
+"t": "You run toward it, tripping, shouting, mom, mom!",
+"start": 301.0
+},
+{
+"id": "089_N",
+"sp": "N",
+"t": "Around the corner, there's an empty hallway and again from the other end.",
+"start": 304.8
+},
+{
+"id": "090_N",
+"sp": "N",
+"t": "Dinner's ready. You stop.",
+"start": 309.4
+},
+{
+"id": "091_N",
+"sp": "N",
+"t": "Your legs are shaking. You look down the hall.",
+"start": 311.8
+},
+{
+"id": "092_N",
+"sp": "N",
+"t": "Nothing there. Then the voice comes again.",
+"start": 314.5
+},
+{
+"id": "093_N",
+"sp": "N",
+"t": "From right behind your shoulder, so close you can feel the breath.",
+"start": 317.3
+},
+{
+"id": "094_N",
+"sp": "N",
+"t": "Dinner's ready. And it stops, right where the last word should be.",
+"start": 321.1
+},
+{
+"id": "095_N",
+"sp": "N",
+"t": "It's the same voice, the same tone, even the same tiny breath she takes before she says it.",
+"start": 325.9
+},
+{
+"id": "096_N",
+"sp": "N",
+"t": "But the voice never says, buddy.",
+"start": 332.0
+},
+{
+"id": "097_N",
+"sp": "N",
+"t": "It never gets to the end.",
+"start": 333.9
+},
+{
+"id": "098_N",
+"sp": "N",
+"t": "It's like a recording of your mom with the most important part cut out.",
+"start": 335.5
+},
+{
+"id": "099_N",
+"sp": "N",
+"t": "Whatever is out there copied what you heard right before you fell, perfectly.",
+"start": 339.7
+},
+{
+"id": "100_N",
+"sp": "N",
+"t": "But it doesn't know the word that only she says.",
+"start": 344.8
+},
+{
+"id": "101_N",
+"sp": "N",
+"t": "You back away. You don't run.",
+"start": 347.8
+},
+{
+"id": "102_N",
+"sp": "N",
+"t": "You walk slowly, quietly, the way you'd walk away from a dog that might bite.",
+"start": 350.3
+},
+{
+"id": "103_N",
+"sp": "N",
+"t": "The voice follows for a long time, repeating the same two words, getting softer and softer.",
+"start": 355.0
+},
+{
+"id": "104_N",
+"sp": "N",
+"t": "When it finally stops, you realize you've been holding your breath for almost a minute.",
+"start": 360.8
+},
+{
+"id": "105_N",
+"sp": "N",
+"t": "That night, you don't sleep.",
+"start": 365.9
+},
+{
+"id": "106_N",
+"sp": "N",
+"t": "For the first time since you fell, you're afraid of the hum instead of annoyed by it",
+"start": 368.0
+},
+{
+"id": "107_N",
+"sp": "N",
+"t": "because the hum might hide something else.",
+"start": 372.9
+},
+{
+"id": "108_N",
+"sp": "N",
+"t": "Day 52, you find the chalk.",
+"start": 375.4
+},
+{
+"id": "109_N",
+"sp": "N",
+"t": "At first, it's just a single line, low on a wall, a white tally mark, then two.",
+"start": 377.8
+},
+{
+"id": "110_N",
+"sp": "N",
+"t": "Then a whole column of them, hundreds, neat bundles of five, marching down the hallway.",
+"start": 383.1
+},
+{
+"id": "111_N",
+"sp": "N",
+"t": "And at the end of the column, there's a hand-drawn arrow and under it a single word.",
+"start": 388.0
+},
+{
+"id": "112_N",
+"sp": "N",
+"t": "Hi.",
+"start": 393.0
+},
+{
+"id": "113_N",
+"sp": "N",
+"t": "You run following the arrow.",
+"start": 394.7
+},
+{
+"id": "114_N",
+"sp": "N",
+"t": "Around five corners, you find a small room made of stacked cardboard boxes,",
+"start": 396.6
+},
+{
+"id": "115_N",
+"sp": "N",
+"t": "a blanket, a tiny pile of water bottles, and sitting in the corner hugging her knees,",
+"start": 401.0
+},
+{
+"id": "116_N",
+"sp": "N",
+"t": "a girl about your age, dirty hoodie, tangled hair, a piece of white chalk in her hand.",
+"start": 405.3
+},
+{
+"id": "117_N",
+"sp": "N",
+"t": "She stares at you for a long time.",
+"start": 411.8
+},
+{
+"id": "118_N",
+"sp": "N",
+"t": "When she finally speaks, her voice is cracked, like it's been years since she used it.",
+"start": 414.3
+},
+{
+"id": "119_N",
+"sp": "N",
+"t": "You're real?",
+"start": 419.5
+},
+{
+"id": "120_N",
+"sp": "N",
+"t": "I think so. She laughs and then she cries and then she laughs again.",
+"start": 421.7
+},
+{
+"id": "121_N",
+"sp": "N",
+"t": "Her name is Iris. She tells you she's been here for 1,094 days.",
+"start": 426.9
+},
+{
+"id": "122_N",
+"sp": "N",
+"t": "Three years, give or take.",
+"start": 432.1
+},
+{
+"id": "123_N",
+"sp": "N",
+"t": "She counted everyone with chalk, even the days she was sure she'd lost.",
+"start": 434.1
+},
+{
+"id": "124_N",
+"sp": "N",
+"t": "She's 15. She was 15 when she fell.",
+"start": 438.0
+},
+{
+"id": "125_N",
+"sp": "N",
+"t": "She says it like she's still not sure it's true.",
+"start": 441.1
+},
+{
+"id": "126_N",
+"sp": "N",
+"t": "How is that possible, you ask?",
+"start": 444.1
+},
+{
+"id": "127_N",
+"sp": "N",
+"t": "I've been here 50 days.",
+"start": 445.9
+},
+{
+"id": "128_N",
+"sp": "N",
+"t": "She shows you her phone. The screen says 317 a.m.",
+"start": 448.1
+},
+{
+"id": "129_N",
+"sp": "N",
+"t": "She turns it on every single day.",
+"start": 451.8
+},
+{
+"id": "130_N",
+"sp": "N",
+"t": "And every single day, it says 317.",
+"start": 453.8
+},
+{
+"id": "131_N",
+"sp": "N",
+"t": "Time doesn't work right here, she says it's slow.",
+"start": 457.3
+},
+{
+"id": "132_N",
+"sp": "N",
+"t": "It's really, really slow. I think out there, it hasn't even been a day.",
+"start": 460.5
+},
+{
+"id": "133_N",
+"sp": "N",
+"t": "For the first time in 52 days, you let yourself believe it.",
+"start": 464.9
+},
+{
+"id": "134_N",
+"sp": "N",
+"t": "Your mom doesn't know you're gone.",
+"start": 468.8
+},
+{
+"id": "135_N",
+"sp": "N",
+"t": "She's still standing in the kitchen, waiting for her son to come to dinner.",
+"start": 471.1
+},
+{
+"id": "136_N",
+"sp": "N",
+"t": "It's only been a few seconds.",
+"start": 475.1
+},
+{
+"id": "137_N",
+"sp": "N",
+"t": "Iris teaches you everything she's learned.",
+"start": 477.3
+},
+{
+"id": "138_N",
+"sp": "N",
+"t": "Don't walk in straight lines.",
+"start": 479.8
+},
+{
+"id": "139_N",
+"sp": "N",
+"t": "The place bends if you do.",
+"start": 481.7
+},
+{
+"id": "140_N",
+"sp": "N",
+"t": "Don't whistle. The voice thing likes whistling.",
+"start": 483.8
+},
+{
+"id": "141_N",
+"sp": "N",
+"t": "Never follow a sound you recognize.",
+"start": 487.2
+},
+{
+"id": "142_N",
+"sp": "N",
+"t": "Only follow ones you don't.",
+"start": 489.5
+},
+{
+"id": "143_N",
+"sp": "N",
+"t": "And stay close to the chalk.",
+"start": 491.6
+},
+{
+"id": "144_N",
+"sp": "N",
+"t": "Over the next weeks, you learn about each other.",
+"start": 493.9
+},
+{
+"id": "145_N",
+"sp": "N",
+"t": "She had a little brother, too.",
+"start": 496.7
+},
+{
+"id": "146_N",
+"sp": "N",
+"t": "Leo, eight years old.",
+"start": 498.5
+},
+{
+"id": "147_N",
+"sp": "N",
+"t": "She was walking him home from school when she reached for a dropped glove behind a vending machine.",
+"start": 500.1
+},
+{
+"id": "148_N",
+"sp": "N",
+"t": "She says she hears him laugh sometimes down the hallways and she's learned not to follow it.",
+"start": 505.3
+},
+{
+"id": "149_N",
+"sp": "N",
+"t": "Some nights, you both sit on the floor and pretend to make dinner.",
+"start": 511.1
+},
+{
+"id": "150_N",
+"sp": "N",
+"t": "You cook lasagna out of nothing, layer by layer from memory, arguing about how much cheese is enough.",
+"start": 514.9
+},
+{
+"id": "151_N",
+"sp": "N",
+"t": "She says more. You say less.",
+"start": 521.1
+},
+{
+"id": "152_N",
+"sp": "N",
+"t": "Neither of you wins.",
+"start": 523.1
+},
+{
+"id": "153_N",
+"sp": "N",
+"t": "For the next 40 days, you explore together.",
+"start": 524.8
+},
+{
+"id": "154_N",
+"sp": "N",
+"t": "You map the hallways on the back of a cardboard box.",
+"start": 527.5
+},
+{
+"id": "155_N",
+"sp": "N",
+"t": "You build a bigger and bigger drawing with arrows and symbols and little notes.",
+"start": 530.9
+},
+{
+"id": "156_N",
+"sp": "N",
+"t": "The first time you play a game of tic-tac-toe on the wall, Iris laughs so hard she has to sit down.",
+"start": 536.0
+},
+{
+"id": "157_N",
+"sp": "N",
+"t": "You find out something the loneliest people already know.",
+"start": 542.1
+},
+{
+"id": "158_N",
+"sp": "N",
+"t": "100 days alone is a lot harder than 100 days with one other person.",
+"start": 545.5
+},
+{
+"id": "159_N",
+"sp": "N",
+"t": "100 days together is practically a vacation.",
+"start": 550.3
+},
+{
+"id": "160_N",
+"sp": "N",
+"t": "Day 70, she shows you the map she's been making for three years.",
+"start": 554.3
+},
+{
+"id": "161_N",
+"sp": "N",
+"t": "Most of it is crossed out, dead ends, loops.",
+"start": 557.9
+},
+{
+"id": "162_N",
+"sp": "N",
+"t": "One section deep in the left side is circled in red.",
+"start": 561.4
+},
+{
+"id": "163_N",
+"sp": "N",
+"t": "This is the only place I haven't gone, she says.",
+"start": 564.9
+},
+{
+"id": "164_N",
+"sp": "N",
+"t": "I'm scared. Why?",
+"start": 567.5
+},
+{
+"id": "165_N",
+"sp": "N",
+"t": "Because the last time I heard my brother, you understand, neither of you talks for a while.",
+"start": 570.4
+},
+{
+"id": "166_N",
+"sp": "N",
+"t": "Day 98, you go together.",
+"start": 576.5
+},
+{
+"id": "167_N",
+"sp": "N",
+"t": "The hallway starts to change.",
+"start": 579.0
+},
+{
+"id": "168_N",
+"sp": "N",
+"t": "The carpet gets thinner, the lights get brighter, the hum gets quieter, and then stops.",
+"start": 580.8
+},
+{
+"id": "169_N",
+"sp": "N",
+"t": "For the first time in 98 days, there's silence and it feels so strange you wanna scream.",
+"start": 586.6
+},
+{
+"id": "170_N",
+"sp": "N",
+"t": "At the end of the hall, there's a door, plain white with a normal silver handle.",
+"start": 592.4
+},
+{
+"id": "171_N",
+"sp": "N",
+"t": "A door like you'd find in any house.",
+"start": 597.7
+},
+{
+"id": "172_N",
+"sp": "N",
+"t": "A thin line of warm light glows along the bottom and from the other side, very faintly,",
+"start": 600.3
+},
+{
+"id": "173_N",
+"sp": "N",
+"t": "you can smell something that makes you wanna fall to your knees.",
+"start": 605.3
+},
+{
+"id": "174_N",
+"sp": "N",
+"t": "Dishwasher soap, lasagna, carpet that's actually clean.",
+"start": 609.2
+},
+{
+"id": "175_N",
+"sp": "N",
+"t": "Next to the door, there's a lever, a big iron one, taller than you, bolted into the wall.",
+"start": 613.3
+},
+{
+"id": "176_N",
+"sp": "N",
+"t": "It's sticky with old dust.",
+"start": 618.9
+},
+{
+"id": "177_N",
+"sp": "N",
+"t": "At the top, someone has scratched a tiny message into the metal, in handwriting that isn't irises.",
+"start": 620.7
+},
+{
+"id": "178_N",
+"sp": "N",
+"t": "Hold it down, door opens, let go, door closes.",
+"start": 626.7
+},
+{
+"id": "179_N",
+"sp": "N",
+"t": "Virus reads it three times.",
+"start": 629.9
+},
+{
+"id": "180_N",
+"sp": "N",
+"t": "Then she sits down very slowly on the carpet.",
+"start": 631.7
+},
+{
+"id": "181_N",
+"sp": "N",
+"t": "That's why nobody gets out, she says.",
+"start": 634.7
+},
+{
+"id": "182_N",
+"sp": "N",
+"t": "Somebody has to hold the lever and whoever holds it can't go through.",
+"start": 637.1
+},
+{
+"id": "183_N",
+"sp": "N",
+"t": "You look at the door, you look at the lever, you look at her.",
+"start": 641.7
+},
+{
+"id": "184_N",
+"sp": "N",
+"t": "One person goes, she says, one person stays.",
+"start": 645.8
+},
+{
+"id": "185_N",
+"sp": "N",
+"t": "We'll figure it out.",
+"start": 649.3
+},
+{
+"id": "186_N",
+"sp": "N",
+"t": "No, she shakes her head, she's smiling, but her hands are shaking.",
+"start": 651.1
+},
+{
+"id": "187_N",
+"sp": "N",
+"t": "I've had three years to figure it out.",
+"start": 655.4
+},
+{
+"id": "188_N",
+"sp": "N",
+"t": "You go, your mom's waiting, your brother's waiting, go.",
+"start": 657.6
+},
+{
+"id": "189_N",
+"sp": "N",
+"t": "I'm not leaving you. You have to.",
+"start": 661.2
+},
+{
+"id": "190_N",
+"sp": "N",
+"t": "No. You walk to the lever, you wrap both hands around it",
+"start": 664.3
+},
+{
+"id": "191_N",
+"sp": "N",
+"t": "and push down with your whole body.",
+"start": 668.8
+},
+{
+"id": "192_N",
+"sp": "N",
+"t": "The door clicks open.",
+"start": 670.9
+},
+{
+"id": "193_N",
+"sp": "N",
+"t": "Warm light spills into the hall and through the crack, you can hear it.",
+"start": 672.7
+},
+{
+"id": "194_N",
+"sp": "N",
+"t": "The clink of a fork, the hum of a refrigerator, someone coughing softly in another room.",
+"start": 677.1
+},
+{
+"id": "195_N",
+"sp": "N",
+"t": "You turn to Iris, go through, what?",
+"start": 683.2
+},
+{
+"id": "196_N",
+"sp": "N",
+"t": "You've been here three years, you go.",
+"start": 685.9
+},
+{
+"id": "197_N",
+"sp": "N",
+"t": "I'll hold it. She stares at you.",
+"start": 688.2
+},
+{
+"id": "198_N",
+"sp": "N",
+"t": "Then she stands up and for the first time in three years, she walks toward the door.",
+"start": 690.9
+},
+{
+"id": "199_N",
+"sp": "N",
+"t": "And right before she steps through, she stops.",
+"start": 695.8
+},
+{
+"id": "200_N",
+"sp": "N",
+"t": "She turns around and she says something that nobody had said to you in a hundred days.",
+"start": 698.7
+},
+{
+"id": "201_N",
+"sp": "N",
+"t": "Don't hold it, pull it.",
+"start": 704.1
+},
+{
+"id": "202_N",
+"sp": "N",
+"t": "You don't understand. Look at the lever, she says.",
+"start": 706.3
+},
+{
+"id": "203_N",
+"sp": "N",
+"t": "It's built so someone can hold it down from the other side too.",
+"start": 710.1
+},
+{
+"id": "204_N",
+"sp": "N",
+"t": "And that's when you see it. On the back of the door, bolted to the frame",
+"start": 713.9
+},
+{
+"id": "205_N",
+"sp": "N",
+"t": "is a second lever, smaller, rusty, facing the other way and the engraving beneath it",
+"start": 717.5
+},
+{
+"id": "206_N",
+"sp": "N",
+"t": "in the same careful handwriting.",
+"start": 723.7
+},
+{
+"id": "207_N",
+"sp": "N",
+"t": "If you go through, turn around.",
+"start": 725.9
+},
+{
+"id": "208_N",
+"sp": "N",
+"t": "Every single person who ever escaped this place",
+"start": 728.5
+},
+{
+"id": "209_N",
+"sp": "N",
+"t": "walked through that door and never once looked back.",
+"start": 731.6
+},
+{
+"id": "210_N",
+"sp": "N",
+"t": "Iris steps through the door, you hear her gasp.",
+"start": 735.3
+},
+{
+"id": "211_N",
+"sp": "N",
+"t": "Then you hear her cry out, a wild, crazy, happy shout and the sound of her running.",
+"start": 738.3
+},
+{
+"id": "212_N",
+"sp": "N",
+"t": "And then she comes back. She appears in the doorway, tears all over her face,",
+"start": 743.6
+},
+{
+"id": "213_N",
+"sp": "N",
+"t": "holding the outer lever with both hands.",
+"start": 747.5
+},
+{
+"id": "214_N",
+"sp": "N",
+"t": "Go, she says, I've got it, go home.",
+"start": 750.3
+},
+{
+"id": "215_N",
+"sp": "N",
+"t": "You let go of the lever on your side.",
+"start": 753.4
+},
+{
+"id": "216_N",
+"sp": "N",
+"t": "You step through the door and Iris lets go behind you.",
+"start": 755.6
+},
+{
+"id": "217_N",
+"sp": "N",
+"t": "The door clicks shut.",
+"start": 759.3
+},
+{
+"id": "218_N",
+"sp": "N",
+"t": "When you turn around, it's just a wall and you're standing behind your living room couch.",
+"start": 761.1
+},
+{
+"id": "219_N",
+"sp": "N",
+"t": "The light is the warm light of your house.",
+"start": 766.7
+},
+{
+"id": "220_N",
+"sp": "N",
+"t": "The air smells like lasagna.",
+"start": 769.1
+},
+{
+"id": "221_N",
+"sp": "N",
+"t": "Your phone is in your hand. You look at the screen.",
+"start": 771.2
+},
+{
+"id": "222_N",
+"sp": "N",
+"t": "6.43 PM, Iris is standing next to you, shaking, laughing, crying all at once.",
+"start": 774.7
+},
+{
+"id": "223_N",
+"sp": "N",
+"t": "You're both still holding hands.",
+"start": 781.1
+},
+{
+"id": "224_N",
+"sp": "N",
+"t": "You both have dirty hair, ragged clothes and thinner arms than you remember.",
+"start": 782.7
+},
+{
+"id": "225_N",
+"sp": "N",
+"t": "You've been gone for a hundred days.",
+"start": 787.1
+},
+{
+"id": "226_N",
+"sp": "N",
+"t": "Your mom has been waiting for one minute.",
+"start": 789.3
+},
+{
+"id": "227_N",
+"sp": "N",
+"t": "On the table, in the kitchen, there's a plate with your name on it.",
+"start": 791.9
+},
+{
+"id": "228_N",
+"sp": "N",
+"t": "You look at Iris, she looks at you and neither of you says a word because there's nothing you can say.",
+"start": 796.2
+},
+{
+"id": "229_N",
+"sp": "N",
+"t": "So would you have gone back for someone you barely knew?",
+"start": 803.4
+},
+{
+"id": "230_N",
+"sp": "N",
+"t": "If you were Iris, would you have let him go through first?",
+"start": 806.5
+},
+{
+"id": "231_N",
+"sp": "N",
+"t": "Tell us in the comments.",
+"start": 810.1
+},
+{
+"id": "232_N",
+"sp": "N",
+"t": "And just when you think it's over, you hear it.",
+"start": 811.9
+},
+{
+"id": "233_N",
+"sp": "N",
+"t": "From the kitchen, your mom's voice.",
+"start": 815.2
+},
+{
+"id": "234_N",
+"sp": "N",
+"t": "Dinner's ready, buddy.",
+"start": 817.3
+},
+{
+"id": "235_N",
+"sp": "N",
+"t": "And from somewhere inside the wall behind you, soft and perfectly in sync, you hear it again.",
+"start": 819.2
+},
+{
+"id": "236_N",
+"sp": "N",
+"t": "Dinner's ready. Then for the first time ever, it finishes the sentence.",
+"start": 826.0
+},
+{
+"id": "237_N",
+"sp": "N",
+"t": "Buddy, hit like and subscribe for part two.",
+"start": 830.9
+}
+]
