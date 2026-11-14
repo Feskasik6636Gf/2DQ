@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { PigWar, PigLook, TOTAL_FRAMES } from "./pigwar/Short";
 import { Demo, DEMO_MOODS } from "./demo/Demo";
 import { DemoCast } from "./demo/DemoCast";
 import { DemoMove, MOVE_FRAMES } from "./demo/DemoMove";
@@ -10,6 +11,9 @@ import { SUB } from "./inkbeat/core/frame";
 // DemoMove: a 3 s beat-rig move (sharp). DemoMoveSub: the same at SUB × fps for motion blur (average with ffmpeg tmix).
 export const Root: React.FC = () => (
   <>
+    <Composition id="PigWar" component={PigWar} durationInFrames={TOTAL_FRAMES} fps={30} width={1080} height={1920} defaultProps={{ sub: false }} />
+    <Composition id="PigWarSub" component={PigWar} durationInFrames={TOTAL_FRAMES * 4} fps={120} width={1080} height={1920} defaultProps={{ sub: true }} />
+    <Composition id="PigLook" component={PigLook} durationInFrames={1} fps={30} width={1080} height={1920} defaultProps={{ id: "S01" }} />
     <Composition id="Demo" component={Demo} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={{ mood: "day", wide: false }} />
     <Composition id="DemoHero" component={Demo} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={{ mood: "dusk", wide: false, hero: true }} />
     <Composition id="DemoWide" component={Demo} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={{ mood: "day", wide: true }} />
