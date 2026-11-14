@@ -1,0 +1,104 @@
+name: render-dad
+on:
+  push:
+    branches: [ccr-dba9d14a-2mnfez]
+    paths: [render_dad_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: render-dad
+  cancel-in-progress: true
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.c.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: c
+        run: echo "chunks=$(python3 -c "import json;print(json.dumps(list(range(len(json.load(open('studio/videos/dad/chunks.json')))))))")" >> "$GITHUB_OUTPUT"
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: system libs
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libegl1 libgl1 libxi6 libxkbcommon0 libxrender1 libxxf86vm1 libxfixes3 libsm6 libice6 libgles2 libegl-mesa0 >/dev/null
+      - name: blender
+        run: |
+          curl -sSL -o b.tar.xz https://download.blender.org/release/Blender5.2/blender-5.2.0-linux-x64.tar.xz
+          tar xf b.tar.xz && mv blender-5.2.0-linux-x64 "$HOME/blender" && rm b.tar.xz
+          mkdir -p ~/.fonts && cp studio/fonts/*.ttf ~/.fonts/ && fc-cache -f >/dev/null || true
+      - name: render chunk
+        run: |
+          cd studio
+          echo "{\"blender\": \"$HOME/blender/blender\"}" > config.json
+          IDS=$(python3 -c "import json;print(json.load(open('videos/dad/chunks.json'))[${{ matrix.chunk }}])")
+          echo "shots: $IDS"
+          FINAL_PCT=50 python3 tools/blend.py dad final "$IDS" 5 | tee render_${{ matrix.chunk }}.log
+          echo "frames: $(ls videos/dad/frames | wc -l)"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frames-${{ matrix.chunk }}
+          path: |
+            studio/videos/dad/frames/*.png
+            studio/render_${{ matrix.chunk }}.log
+          retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: render
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: frames-*
+          path: dl
+          merge-multiple: true
+      - name: finish (mix, captions, encode)
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig >/dev/null
+          pip install -q numpy
+          mkdir -p ~/.fonts && cp studio/fonts/*.ttf ~/.fonts/ && fc-cache -f
+          fc-list | grep -i "titan" || true
+          mkdir -p studio/videos/dad/frames
+          cp dl/videos/dad/frames/*.png studio/videos/dad/frames/
+          ls studio/videos/dad/frames | wc -l
+          python3 - <<'PY'
+          import os
+          have={int(f[:4]) for f in os.listdir('studio/videos/dad/frames')}
+          mx=max(have); miss=[i for i in range(1,mx+1) if i not in have]
+          print("max",mx,"missing",len(miss),miss[:50])
+          PY
+          cd studio
+          echo '{"music_speed": 1.0, "caption_font": "Titan One"}' > config.json
+          python3 tools/finish.py dad
+          ls -la videos/dad/out
+      - name: commit result
+        run: |
+          mkdir -p out/dad
+          cp studio/videos/dad/out/final_phone.mp4 out/dad/dad_phone.mp4
+          ffmpeg -v error -y -i studio/videos/dad/out/final.mp4 -c:v libx264 -preset slow -b:v 3800k -maxrate 4400k -bufsize 8000k -vf scale=720:1280 -c:a aac -b:a 160k -movflags +faststart out/dad/dad_720.mp4
+          cp studio/videos/dad/captions.ass out/dad/captions.ass
+          ls -la out/dad
+          git config user.name "render-bot"
+          git config user.email "render-bot@users.noreply.github.com"
+          git add out/dad
+          git commit -m "Dad video: final render (x1.15, Titan One captions, SFX)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dad-final-1080p
+          path: |
+            studio/videos/dad/out/final.mp4
+            studio/videos/dad/out/final_nocaptions.mp4
+          retention-days: 7
