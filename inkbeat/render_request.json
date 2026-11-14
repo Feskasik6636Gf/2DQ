@@ -1,1 +1,1 @@
-{"comp": "PigWarSub", "frames": 26160, "chunks": 40, "scale": 0.666667, "note": "Pig War final: 54.5 s at 120 fps sub-frames (4x motion blur), 720x1280"}
+{"comp": "PigWarSub", "frames": 26160, "chunks": 40, "scale": 0.5, "note": "Pig War pass 1: 540x960 render, upscaled to 720x1280 in assemble"}
