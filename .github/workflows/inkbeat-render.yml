@@ -5,7 +5,7 @@ on:
     paths: [inkbeat/render_request.json]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: inkbeat-render
   cancel-in-progress: true
@@ -21,7 +21,7 @@ jobs:
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import json,math
           r=json.load(open("inkbeat/render_request.json"))
-          n=r["frames"]; c=r["chunks"]; per=math.ceil(n/c)
+          n=r["frames"]; c=r["chunks"]; per=math.ceil(n/c/4)*4   # multiple of 4: motion-blur groups never straddle a chunk
           items=[{"i":i,"a":i*per,"b":min(n,(i+1)*per)-1} for i in range(c) if i*per<n]
           print("matrix="+json.dumps({"include":items}))
           PY
@@ -31,6 +31,7 @@ jobs:
     timeout-minutes: 340
     strategy:
       fail-fast: false
+      max-parallel: 20
       matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
@@ -46,12 +47,49 @@ jobs:
           SCALE=$(python3 -c "import json;print(json.load(open('render_request.json'))['scale'])")
           mkdir -p out
           if [ "${{ matrix.b }}" = "0" ]; then
-            npx remotion still src/index.ts "$COMP" out/chunk_${{ matrix.i }}.png --gl=swangle --scale=$SCALE --timeout=240000
+            npx remotion still src/index.ts "$COMP" out/chunk_${{ matrix.i }}.png --gl=swangle --scale=$SCALE --timeout=900000
           else
-            npx remotion render src/index.ts "$COMP" out/chunk_${{ matrix.i }}.mp4 --frames=${{ matrix.a }}-${{ matrix.b }} --gl=swangle --scale=$SCALE --concurrency=4 --codec=h264 --crf=12 --pixel-format=yuv420p --muted --timeout=240000
+            npx remotion render src/index.ts "$COMP" out/chunk_${{ matrix.i }}.mp4 --frames=${{ matrix.a }}-${{ matrix.b }} --gl=swangle --scale=$SCALE --concurrency=4 --codec=h264 --crf=12 --pixel-format=yuv420p --muted --timeout=900000
           fi
       - uses: actions/upload-artifact@v4
         with:
           name: chunk-${{ matrix.i }}
           path: inkbeat/out/chunk_*
           retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: chunks
+      - name: motion blur + audio
+        run: |
+          sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
+          cd chunks
+          ls -1 chunk-*/chunk_*.mp4 | sort -t_ -k3 -n > ../list_raw.txt
+          python3 - <<'PY'
+          import re
+          fs=[l.strip() for l in open("../list_raw.txt")]
+          fs.sort(key=lambda f:int(re.search(r"chunk_(\d+)",f).group(1)))
+          open("../list.txt","w").write("".join(f"file 'chunks/{f}'\n" for f in fs))
+          PY
+          cd ..
+          ffmpeg -v error -y -f concat -safe 0 -i list.txt -vf "tmix=frames=4:weights='1 1 1 1',select='eq(mod(n\,4)\,3)',setpts=N/30/TB" -r 30 -c:v libx264 -crf 16 -pix_fmt yuv420p picture.mp4
+          mkdir -p inkbeat/out
+          ffmpeg -v error -y -i picture.mp4 -i inkbeat/audio/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -movflags +faststart -t 54.5 inkbeat/out/pigwar_final.mp4
+          ffprobe -v error -show_entries format=duration:stream=width,height,nb_frames -of compact inkbeat/out/pigwar_final.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pigwar-final
+          path: inkbeat/out/pigwar_final.mp4
+          retention-days: 14
+      - name: commit final video to the branch
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f inkbeat/out/pigwar_final.mp4
+          git commit -m "Pig War: final render" && git push || true
