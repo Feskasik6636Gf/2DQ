@@ -1,0 +1,57 @@
+name: inkbeat-render
+on:
+  push:
+    branches: [ccr-fb004e41-nonmst]
+    paths: [inkbeat/render_request.json]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: inkbeat-render
+  cancel-in-progress: true
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json,math
+          r=json.load(open("inkbeat/render_request.json"))
+          n=r["frames"]; c=r["chunks"]; per=math.ceil(n/c)
+          items=[{"i":i,"a":i*per,"b":min(n,(i+1)*per)-1} for i in range(c) if i*per<n]
+          print("matrix="+json.dumps({"include":items}))
+          PY
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: install
+        working-directory: inkbeat
+        run: npm ci --no-audit --no-fund
+      - name: render chunk (CPU WebGL)
+        working-directory: inkbeat
+        run: |
+          COMP=$(python3 -c "import json;print(json.load(open('render_request.json'))['comp'])")
+          SCALE=$(python3 -c "import json;print(json.load(open('render_request.json'))['scale'])")
+          mkdir -p out
+          if [ "${{ matrix.b }}" = "0" ]; then
+            npx remotion still src/index.ts "$COMP" out/chunk_${{ matrix.i }}.png --gl=swangle --scale=$SCALE --timeout=240000
+          else
+            npx remotion render src/index.ts "$COMP" out/chunk_${{ matrix.i }}.mp4 --frames=${{ matrix.a }}-${{ matrix.b }} --gl=swangle --scale=$SCALE --concurrency=4 --codec=h264 --crf=12 --pixel-format=yuv420p --muted --timeout=240000
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.i }}
+          path: inkbeat/out/chunk_*
+          retention-days: 3
