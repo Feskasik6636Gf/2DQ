@@ -78,7 +78,7 @@ jobs:
           open("../list.txt","w").write("".join(f"file 'chunks/{f}'\n" for f in fs))
           PY
           cd ..
-          ffmpeg -v error -y -f concat -safe 0 -i list.txt -vf "tmix=frames=4:weights='1 1 1 1',select='eq(mod(n\,4)\,3)',setpts=N/30/TB,scale=720:1280:flags=lanczos" -r 30 -c:v libx264 -crf 16 -pix_fmt yuv420p picture.mp4
+          ffmpeg -v error -y -f concat -safe 0 -i list.txt -vf "tmix=frames=4:weights='1 1 1 1',select='eq(mod(n\,4)\,3)',setpts=N/30/TB" -r 30 -c:v libx264 -crf 16 -pix_fmt yuv420p picture.mp4
           mkdir -p inkbeat/out
           ffmpeg -v error -y -i picture.mp4 -i inkbeat/audio/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -movflags +faststart -t 54.5 inkbeat/out/pigwar_final.mp4
           ffprobe -v error -show_entries format=duration:stream=width,height,nb_frames -of compact inkbeat/out/pigwar_final.mp4
