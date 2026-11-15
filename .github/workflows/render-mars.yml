@@ -33,14 +33,16 @@ jobs:
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import json, os
           total = json.load(open('src/story/timeline.json'))['total']
-          mode = os.environ.get('INPUT_MODE') or open('render_request.txt').read().split()[0]
+          req = open('render_request.txt').read().split()
+          mode = os.environ.get('INPUT_MODE') or req[0]
           chunk = int(os.environ['CHUNK'])
           out, s, i = [], 0, 0
           while s < total:
               out.append({"i": i, "from": s, "to": min(total - 1, s + chunk - 1)})
               s += chunk; i += 1
           if mode == 'test':
-              out = [{"i": 0, "from": 3000, "to": 3089}]
+              a, b = (req[1].split('-') if len(req) > 1 and '-' in req[1] else ('3000', '3089'))
+              out = [{"i": 0, "from": int(a), "to": int(b)}]
           print("mode=" + mode)
           print("chunks=" + json.dumps(out))
           PY
@@ -74,7 +76,7 @@ jobs:
           for try in 1 2 3; do
             conc=$((4 - try))
             [ $conc -lt 1 ] && conc=1
-            if npx remotion render Long out/chunk.mp4 --frames=${{ matrix.chunk.from }}-${{ matrix.chunk.to }} --muted --gl=angle --concurrency=$conc --crf=18 --log=error --timeout=240000; then ok=1; break; fi
+            if npx remotion render Long out/chunk.mp4 --frames=${{ matrix.chunk.from }}-${{ matrix.chunk.to }} --muted --gl=angle --concurrency=$conc --crf=18 --log=error --timeout=900000; then ok=1; break; fi
             echo "retry $try"
           done
           [ "$ok" = 1 ]
