@@ -1,0 +1,2137 @@
+[
+{
+"id": "001_N",
+"sp": "N",
+"t": "Somewhere on a server you've never seen.",
+"s": 0.0,
+"gap": 0.22
+},
+{
+"id": "002_N",
+"sp": "N",
+"t": "In a building you'll never visit,",
+"s": 2.5,
+"gap": 0.22
+},
+{
+"id": "003_N",
+"sp": "N",
+"t": "there's a voice message from your grandmother.",
+"s": 4.4,
+"gap": 0.22
+},
+{
+"id": "004_N",
+"sp": "N",
+"t": "It's 41 seconds long.",
+"s": 7.1,
+"gap": 0.22
+},
+{
+"id": "005_N",
+"sp": "N",
+"t": "She's laughing at something off camera.",
+"s": 9.2,
+"gap": 0.22
+},
+{
+"id": "006_N",
+"sp": "N",
+"t": "She calls you my little pirate.",
+"s": 11.4,
+"gap": 0.22
+},
+{
+"id": "007_N",
+"sp": "N",
+"t": "And at the end she says, don't forget to eat.",
+"s": 13.3,
+"gap": 0.22
+},
+{
+"id": "008_N",
+"sp": "N",
+"t": "It's the only recording of her voice that exists.",
+"s": 16.4,
+"gap": 0.22
+},
+{
+"id": "009_N",
+"sp": "N",
+"t": "In four minutes it will be gone.",
+"s": 19.3,
+"gap": 0.22
+},
+{
+"id": "010_N",
+"sp": "N",
+"t": "And so will every photo you ever took,",
+"s": 21.8,
+"gap": 0.22
+},
+{
+"id": "011_N",
+"sp": "N",
+"t": "every message you ever sent,",
+"s": 23.9,
+"gap": 0.22
+},
+{
+"id": "012_N",
+"sp": "N",
+"t": "and every video you ever saved.",
+"s": 25.5,
+"gap": 0.22
+},
+{
+"id": "013_N",
+"sp": "N",
+"t": "At 3.07 a.m. every screen on Earth",
+"s": 28.1,
+"gap": 0.22
+},
+{
+"id": "014_N",
+"sp": "N",
+"t": "shows the same two words, no connection.",
+"s": 30.1,
+"gap": 0.22
+},
+{
+"id": "015_N",
+"sp": "N",
+"t": "Not for an hour, not for a week, forever.",
+"s": 32.7,
+"gap": 0.22
+},
+{
+"id": "016_N",
+"sp": "N",
+"t": "10 years from now you'll be sitting at a kitchen table",
+"s": 36.1,
+"gap": 0.22
+},
+{
+"id": "017_N",
+"sp": "N",
+"t": "trying to remember a song you heard exactly once.",
+"s": 39.0,
+"gap": 0.22
+},
+{
+"id": "018_N",
+"sp": "N",
+"t": "And you'll realize that the thing you lost",
+"s": 42.8,
+"gap": 0.22
+},
+{
+"id": "019_N",
+"sp": "N",
+"t": "wasn't the one you thought.",
+"s": 45.0,
+"gap": 0.22
+},
+{
+"id": "020_N",
+"sp": "N",
+"t": "But first you need to get through the first morning, day one.",
+"s": 47.0,
+"gap": 0.22
+},
+{
+"id": "021_N",
+"sp": "N",
+"t": "You wake up at seven and reach for your phone,",
+"s": 50.7,
+"gap": 0.22
+},
+{
+"id": "022_N",
+"sp": "N",
+"t": "no bars, no wifi, you reboot it, nothing.",
+"s": 52.9,
+"gap": 0.22
+},
+{
+"id": "023_N",
+"sp": "N",
+"t": "In the kitchen, your dad is staring at the router",
+"s": 55.6,
+"gap": 0.22
+},
+{
+"id": "024_N",
+"sp": "N",
+"t": "like it insulted him.",
+"s": 58.2,
+"gap": 0.22
+},
+{
+"id": "025_N",
+"sp": "N",
+"t": "Your mom, a night shift nurse, is just coming home.",
+"s": 59.9,
+"gap": 0.22
+},
+{
+"id": "026_N",
+"sp": "N",
+"t": "She's standing in the doorway with her bag, looking exhausted.",
+"s": 63.1,
+"gap": 0.22
+},
+{
+"id": "027_N",
+"sp": "N",
+"t": "The whole hospital's down, she says.",
+"s": 66.9,
+"gap": 0.22
+},
+{
+"id": "028_N",
+"sp": "N",
+"t": "Every computer, every system.",
+"s": 69.3,
+"gap": 0.22
+},
+{
+"id": "029_N",
+"sp": "N",
+"t": "At first, everyone thinks it's a hack,",
+"s": 71.9,
+"gap": 0.22
+},
+{
+"id": "030_N",
+"sp": "N",
+"t": "then a blackout, then a glitch.",
+"s": 74.0,
+"gap": 0.22
+},
+{
+"id": "031_N",
+"sp": "N",
+"t": "But the lights work, the water works,",
+"s": 76.2,
+"gap": 0.22
+},
+{
+"id": "032_N",
+"sp": "N",
+"t": "the power is fine, only one thing is missing.",
+"s": 78.2,
+"gap": 0.22
+},
+{
+"id": "033_N",
+"sp": "N",
+"t": "On the radio a calm voice says it's not just your town,",
+"s": 81.5,
+"gap": 0.22
+},
+{
+"id": "034_N",
+"sp": "N",
+"t": "it's not just your country.",
+"s": 85.0,
+"gap": 0.22
+},
+{
+"id": "035_N",
+"sp": "N",
+"t": "Phone calls still work, barely, in short crackling bursts.",
+"s": 86.8,
+"gap": 0.22
+},
+{
+"id": "036_N",
+"sp": "N",
+"t": "But the network that connects computers to each other is gone.",
+"s": 90.7,
+"gap": 0.22
+},
+{
+"id": "037_N",
+"sp": "N",
+"t": "All of it, everywhere.",
+"s": 93.8,
+"gap": 0.22
+},
+{
+"id": "038_N",
+"sp": "N",
+"t": "Today, about two out of every three people on earth use the internet.",
+"s": 96.0,
+"gap": 0.22
+},
+{
+"id": "039_N",
+"sp": "N",
+"t": "That's over five billion people.",
+"s": 100.5,
+"gap": 0.22
+},
+{
+"id": "040_N",
+"sp": "N",
+"t": "Within 10 minutes, every one of them has the same thought.",
+"s": 102.3,
+"gap": 0.22
+},
+{
+"id": "041_N",
+"sp": "N",
+"t": "Wait, what do I do now?",
+"s": 106.1,
+"gap": 0.22
+},
+{
+"id": "042_N",
+"sp": "N",
+"t": "Day two is almost fun, school is canceled.",
+"s": 107.9,
+"gap": 0.22
+},
+{
+"id": "043_N",
+"sp": "N",
+"t": "Your boss calls to say not to come in,",
+"s": 110.6,
+"gap": 0.22
+},
+{
+"id": "044_N",
+"sp": "N",
+"t": "which is strange because phones barely work.",
+"s": 112.6,
+"gap": 0.22
+},
+{
+"id": "045_N",
+"sp": "N",
+"t": "Nobody can stream a movie, nobody can play online,",
+"s": 115.6,
+"gap": 0.22
+},
+{
+"id": "046_N",
+"sp": "N",
+"t": "nobody can scroll, and the streets fill up.",
+"s": 118.5,
+"gap": 0.22
+},
+{
+"id": "047_N",
+"sp": "N",
+"t": "For the first time, you see your neighbors,",
+"s": 121.5,
+"gap": 0.22
+},
+{
+"id": "048_N",
+"sp": "N",
+"t": "not as profile pictures, as actual people.",
+"s": 123.8,
+"gap": 0.22
+},
+{
+"id": "049_N",
+"sp": "N",
+"t": "A man two doors down turns out to know",
+"s": 127.2,
+"gap": 0.22
+},
+{
+"id": "050_N",
+"sp": "N",
+"t": "how to play the harmonica.",
+"s": 129.4,
+"gap": 0.22
+},
+{
+"id": "051_N",
+"sp": "N",
+"t": "The woman across the street used to be a pilot.",
+"s": 130.9,
+"gap": 0.22
+},
+{
+"id": "052_N",
+"sp": "N",
+"t": "Your little brother Jonah plays soccer in the road",
+"s": 133.7,
+"gap": 0.22
+},
+{
+"id": "053_N",
+"sp": "N",
+"t": "with six kids you've never seen before.",
+"s": 136.1,
+"gap": 0.22
+},
+{
+"id": "054_N",
+"sp": "N",
+"t": "Someone starts a barbecue.",
+"s": 138.9,
+"gap": 0.22
+},
+{
+"id": "055_N",
+"sp": "N",
+"t": "By evening, the whole block is eating together,",
+"s": 140.7,
+"gap": 0.22
+},
+{
+"id": "056_N",
+"sp": "N",
+"t": "and nobody has looked at a screen once.",
+"s": 143.5,
+"gap": 0.22
+},
+{
+"id": "057_N",
+"sp": "N",
+"t": "Your grandmother Rosa sits on the porch with her tea,",
+"s": 146.5,
+"gap": 0.22
+},
+{
+"id": "058_N",
+"sp": "N",
+"t": "watching it all with a small smile.",
+"s": 149.5,
+"gap": 0.22
+},
+{
+"id": "059_N",
+"sp": "N",
+"t": "She's 78, last year you set up her phone,",
+"s": 152.1,
+"gap": 0.22
+},
+{
+"id": "060_N",
+"sp": "N",
+"t": "and she never really used it.",
+"s": 154.9,
+"gap": 0.22
+},
+{
+"id": "061_N",
+"sp": "N",
+"t": "Look at that, she says, everyone's outside.",
+"s": 156.9,
+"gap": 0.22
+},
+{
+"id": "062_N",
+"sp": "N",
+"t": "On day three, the fun stops.",
+"s": 160.1,
+"gap": 0.22
+},
+{
+"id": "063_N",
+"sp": "N",
+"t": "Your dad comes home from the grocery store",
+"s": 162.6,
+"gap": 0.22
+},
+{
+"id": "064_N",
+"sp": "N",
+"t": "with his hands empty.",
+"s": 164.4,
+"gap": 0.22
+},
+{
+"id": "065_N",
+"sp": "N",
+"t": "They won't take my card, he says.",
+"s": 166.4,
+"gap": 0.22
+},
+{
+"id": "066_N",
+"sp": "N",
+"t": "Every card machine needs a connection.",
+"s": 168.0,
+"gap": 0.22
+},
+{
+"id": "067_N",
+"sp": "N",
+"t": "So does every register, every ATM,",
+"s": 170.7,
+"gap": 0.22
+},
+{
+"id": "068_N",
+"sp": "N",
+"t": "and here's the strange thing about money.",
+"s": 172.4,
+"gap": 0.22
+},
+{
+"id": "069_N",
+"sp": "N",
+"t": "Most of the world's money isn't paper or coins.",
+"s": 174.6,
+"gap": 0.22
+},
+{
+"id": "070_N",
+"sp": "N",
+"t": "It's numbers stored on computers, your mom's paycheck,",
+"s": 177.2,
+"gap": 0.22
+},
+{
+"id": "071_N",
+"sp": "N",
+"t": "your dad's savings, your college fund.",
+"s": 180.7,
+"gap": 0.22
+},
+{
+"id": "072_N",
+"sp": "N",
+"t": "All of it is just numbers,",
+"s": 183.8,
+"gap": 0.22
+},
+{
+"id": "073_N",
+"sp": "N",
+"t": "sitting on machines that can't talk to each other anymore.",
+"s": 185.4,
+"gap": 0.22
+},
+{
+"id": "074_N",
+"sp": "N",
+"t": "Cash is the only thing that works,",
+"s": 188.9,
+"gap": 0.22
+},
+{
+"id": "075_N",
+"sp": "N",
+"t": "and almost nobody has any.",
+"s": 190.7,
+"gap": 0.22
+},
+{
+"id": "076_N",
+"sp": "N",
+"t": "Then the shelves start to empty.",
+"s": 192.9,
+"gap": 0.22
+},
+{
+"id": "077_N",
+"sp": "N",
+"t": "A typical grocery store only keeps about three days of food.",
+"s": 195.2,
+"gap": 0.22
+},
+{
+"id": "078_N",
+"sp": "N",
+"t": "The rest arrives by truck, constantly.",
+"s": 198.9,
+"gap": 0.22
+},
+{
+"id": "079_N",
+"sp": "N",
+"t": "Trucks that are scheduled, tracked, and routed by computers.",
+"s": 201.7,
+"gap": 0.22
+},
+{
+"id": "080_N",
+"sp": "N",
+"t": "No computers, no schedules.",
+"s": 205.2,
+"gap": 0.22
+},
+{
+"id": "081_N",
+"sp": "N",
+"t": "Your dad drives a delivery truck.",
+"s": 207.8,
+"gap": 0.22
+},
+{
+"id": "082_N",
+"sp": "N",
+"t": "Every week he gets his route on his phone.",
+"s": 209.9,
+"gap": 0.22
+},
+{
+"id": "083_N",
+"sp": "N",
+"t": "Today, there's no route.",
+"s": 212.2,
+"gap": 0.22
+},
+{
+"id": "084_N",
+"sp": "N",
+"t": "His boss doesn't know where the warehouse has its stock.",
+"s": 214.1,
+"gap": 0.22
+},
+{
+"id": "085_N",
+"sp": "N",
+"t": "The warehouse doesn't know where the stores need it.",
+"s": 217.1,
+"gap": 0.22
+},
+{
+"id": "086_N",
+"sp": "N",
+"t": "By day five, the bread aisle is empty.",
+"s": 220.1,
+"gap": 0.22
+},
+{
+"id": "087_N",
+"sp": "N",
+"t": "By day seven, there's no milk.",
+"s": 222.7,
+"gap": 0.22
+},
+{
+"id": "088_N",
+"sp": "N",
+"t": "People stop being friendly.",
+"s": 224.6,
+"gap": 0.22
+},
+{
+"id": "089_N",
+"sp": "N",
+"t": "On day eight, you see a fight in the store parking lot",
+"s": 226.5,
+"gap": 0.22
+},
+{
+"id": "090_N",
+"sp": "N",
+"t": "over the last bag of rice.",
+"s": 229.5,
+"gap": 0.22
+},
+{
+"id": "091_N",
+"sp": "N",
+"t": "Two grown men, he's shoving each other.",
+"s": 231.3,
+"gap": 0.22
+},
+{
+"id": "092_N",
+"sp": "N",
+"t": "One of them is the man who played harmonica at the barbecue.",
+"s": 233.6,
+"gap": 0.22
+},
+{
+"id": "093_N",
+"sp": "N",
+"t": "He sees you watching, and he lets go,",
+"s": 236.7,
+"gap": 0.22
+},
+{
+"id": "094_N",
+"sp": "N",
+"t": "read in the face, and walks away without saying a word.",
+"s": 239.1,
+"gap": 0.22
+},
+{
+"id": "095_N",
+"sp": "N",
+"t": "That night, he knocks on your door",
+"s": 242.4,
+"gap": 0.22
+},
+{
+"id": "096_N",
+"sp": "N",
+"t": "with a sack of potatoes from his garden.",
+"s": 244.0,
+"gap": 0.22
+},
+{
+"id": "097_N",
+"sp": "N",
+"t": "I'm sorry, he says.",
+"s": 246.6,
+"gap": 0.22
+},
+{
+"id": "098_N",
+"sp": "N",
+"t": "I don't know who I was today.",
+"s": 248.2,
+"gap": 0.22
+},
+{
+"id": "099_N",
+"sp": "N",
+"t": "Your dad nods. Nobody does.",
+"s": 250.3,
+"gap": 0.22
+},
+{
+"id": "100_N",
+"sp": "N",
+"t": "That's the first thing the silence teaches you.",
+"s": 253.3,
+"gap": 0.22
+},
+{
+"id": "101_N",
+"sp": "N",
+"t": "When nobody can see what you do online,",
+"s": 255.9,
+"gap": 0.22
+},
+{
+"id": "102_N",
+"sp": "N",
+"t": "you only have the people right in front of you,",
+"s": 258.0,
+"gap": 0.22
+},
+{
+"id": "103_N",
+"sp": "N",
+"t": "and they're still counting on you.",
+"s": 260.1,
+"gap": 0.22
+},
+{
+"id": "104_N",
+"sp": "N",
+"t": "Here's something most people don't realize.",
+"s": 262.5,
+"gap": 0.22
+},
+{
+"id": "105_N",
+"sp": "N",
+"t": "The internet isn't in the sky.",
+"s": 265.0,
+"gap": 0.22
+},
+{
+"id": "106_N",
+"sp": "N",
+"t": "It's mostly made of cables",
+"s": 266.9,
+"gap": 0.22
+},
+{
+"id": "107_N",
+"sp": "N",
+"t": "lying on the floor of the ocean.",
+"s": 268.5,
+"gap": 0.22
+},
+{
+"id": "108_N",
+"sp": "N",
+"t": "About 95% of the world's international data travels through them.",
+"s": 270.6,
+"gap": 0.22
+},
+{
+"id": "109_N",
+"sp": "N",
+"t": "Engineers who inspect those cables,",
+"s": 274.1,
+"gap": 0.22
+},
+{
+"id": "110_N",
+"sp": "N",
+"t": "one by one, report the same thing. They're fine. They're intact. Nothing's cut.",
+"s": 275.6,
+"gap": 0.22
+},
+{
+"id": "111_N",
+"sp": "N",
+"t": "The machines at both ends are working,",
+"s": 282.1,
+"gap": 0.22
+},
+{
+"id": "112_N",
+"sp": "N",
+"t": "but the connection between them is just gone.",
+"s": 284.3,
+"gap": 0.22
+},
+{
+"id": "113_N",
+"sp": "N",
+"t": "Nobody knows why, not the best scientists,",
+"s": 288.6,
+"gap": 0.22
+},
+{
+"id": "114_N",
+"sp": "N",
+"t": "not the governments, not the companies who built it,",
+"s": 291.9,
+"gap": 0.22
+},
+{
+"id": "115_N",
+"sp": "N",
+"t": "and the longer the silence goes on,",
+"s": 295.0,
+"gap": 0.22
+},
+{
+"id": "116_N",
+"sp": "N",
+"t": "the more people understand that it isn't coming back.",
+"s": 297.2,
+"gap": 0.22
+},
+{
+"id": "117_N",
+"sp": "N",
+"t": "Day 10, your mom comes home with red eyes.",
+"s": 300.5,
+"gap": 0.22
+},
+{
+"id": "118_N",
+"sp": "N",
+"t": "Before the network went down,",
+"s": 303.9,
+"gap": 0.22
+},
+{
+"id": "119_N",
+"sp": "N",
+"t": "the hospital kept almost everything on computers.",
+"s": 305.6,
+"gap": 0.22
+},
+{
+"id": "120_N",
+"sp": "N",
+"t": "Patient files, allergies, medication schedules.",
+"s": 308.7,
+"gap": 0.22
+},
+{
+"id": "121_N",
+"sp": "N",
+"t": "Now, nurses are rewriting everything by hand,",
+"s": 312.1,
+"gap": 0.22
+},
+{
+"id": "122_N",
+"sp": "N",
+"t": "from memory, from what patients can remember.",
+"s": 315.0,
+"gap": 0.22
+},
+{
+"id": "123_N",
+"sp": "N",
+"t": "Last night, she almost gave someone the wrong medicine.",
+"s": 317.4,
+"gap": 0.22
+},
+{
+"id": "124_N",
+"sp": "N",
+"t": "She tells you the story on the couch,",
+"s": 321.1,
+"gap": 0.22
+},
+{
+"id": "125_N",
+"sp": "N",
+"t": "with her head on your shoulder,",
+"s": 323.0,
+"gap": 0.22
+},
+{
+"id": "126_N",
+"sp": "N",
+"t": "and your dad finds out something that surprises him.",
+"s": 325.0,
+"gap": 0.22
+},
+{
+"id": "127_N",
+"sp": "N",
+"t": "His truck still has a GPS,",
+"s": 327.8,
+"gap": 0.22
+},
+{
+"id": "128_N",
+"sp": "N",
+"t": "because GPS uses satellites, not the internet,",
+"s": 329.6,
+"gap": 0.22
+},
+{
+"id": "129_N",
+"sp": "N",
+"t": "but the maps on it are old.",
+"s": 333.0,
+"gap": 0.22
+},
+{
+"id": "130_N",
+"sp": "N",
+"t": "Roads change bridges close.",
+"s": 334.7,
+"gap": 0.22
+},
+{
+"id": "131_N",
+"sp": "N",
+"t": "Nobody's updated them.",
+"s": 336.4,
+"gap": 0.22
+},
+{
+"id": "132_N",
+"sp": "N",
+"t": "He needs a paper map,",
+"s": 337.5,
+"gap": 0.22
+},
+{
+"id": "133_N",
+"sp": "N",
+"t": "and he hasn't used one since he was 19.",
+"s": 339.0,
+"gap": 0.22
+},
+{
+"id": "134_N",
+"sp": "N",
+"t": "So Grandma Rosa walks to the hall closet",
+"s": 342.1,
+"gap": 0.22
+},
+{
+"id": "135_N",
+"sp": "N",
+"t": "and pulls out a road atlas she's had since 1994.",
+"s": 344.4,
+"gap": 0.22
+},
+{
+"id": "136_N",
+"sp": "N",
+"t": "Slowly, a strange thing starts to happen.",
+"s": 349.0,
+"gap": 0.22
+},
+{
+"id": "137_N",
+"sp": "N",
+"t": "The people everyone laughed at",
+"s": 352.3,
+"gap": 0.22
+},
+{
+"id": "138_N",
+"sp": "N",
+"t": "become the most valuable people in town.",
+"s": 353.6,
+"gap": 0.22
+},
+{
+"id": "139_N",
+"sp": "N",
+"t": "Grandma knows how to preserve food.",
+"s": 356.5,
+"gap": 0.22
+},
+{
+"id": "140_N",
+"sp": "N",
+"t": "She teaches the whole street",
+"s": 358.7,
+"gap": 0.22
+},
+{
+"id": "141_N",
+"sp": "N",
+"t": "how to can tomatoes in jars.",
+"s": 360.2,
+"gap": 0.22
+},
+{
+"id": "142_N",
+"sp": "N",
+"t": "She knows which plants calm a cough,",
+"s": 362.4,
+"gap": 0.22
+},
+{
+"id": "143_N",
+"sp": "N",
+"t": "and which ones you should never touch.",
+"s": 364.5,
+"gap": 0.22
+},
+{
+"id": "144_N",
+"sp": "N",
+"t": "She knows how to fix a hem without a machine,",
+"s": 366.7,
+"gap": 0.22
+},
+{
+"id": "145_N",
+"sp": "N",
+"t": "how to start a fire with damp wood,",
+"s": 369.2,
+"gap": 0.22
+},
+{
+"id": "146_N",
+"sp": "N",
+"t": "how to cook a meal for 12 with one pot.",
+"s": 371.3,
+"gap": 0.22
+},
+{
+"id": "147_N",
+"sp": "N",
+"t": "For years, nobody asked her anything.",
+"s": 374.1,
+"gap": 0.22
+},
+{
+"id": "148_N",
+"sp": "N",
+"t": "She was a nice old lady",
+"s": 376.5,
+"gap": 0.22
+},
+{
+"id": "149_N",
+"sp": "N",
+"t": "who texted in all capital letters.",
+"s": 377.6,
+"gap": 0.22
+},
+{
+"id": "150_N",
+"sp": "N",
+"t": "Now there's a line outside her door.",
+"s": 380.4,
+"gap": 0.22
+},
+{
+"id": "151_N",
+"sp": "N",
+"t": "The old man at the corner who fixes radios",
+"s": 382.9,
+"gap": 0.22
+},
+{
+"id": "152_N",
+"sp": "N",
+"t": "becomes the town's most important person.",
+"s": 385.2,
+"gap": 0.22
+},
+{
+"id": "153_N",
+"sp": "N",
+"t": "The retired librarian, who nobody noticed in years,",
+"s": 388.1,
+"gap": 0.22
+},
+{
+"id": "154_N",
+"sp": "N",
+"t": "opens the school basement as a library,",
+"s": 391.3,
+"gap": 0.22
+},
+{
+"id": "155_N",
+"sp": "N",
+"t": "and 400 people show up the first day.",
+"s": 393.3,
+"gap": 0.22
+},
+{
+"id": "156_N",
+"sp": "N",
+"t": "By month one, the world has changed.",
+"s": 396.8,
+"gap": 0.22
+},
+{
+"id": "157_N",
+"sp": "N",
+"t": "Companies with no internet can't operate.",
+"s": 399.4,
+"gap": 0.22
+},
+{
+"id": "158_N",
+"sp": "N",
+"t": "Whole industries just stop.",
+"s": 401.8,
+"gap": 0.22
+},
+{
+"id": "159_N",
+"sp": "N",
+"t": "Millions lose their jobs. Stock markets close.",
+"s": 403.6,
+"gap": 0.22
+},
+{
+"id": "160_N",
+"sp": "N",
+"t": "Governments announce emergency plans",
+"s": 407.1,
+"gap": 0.22
+},
+{
+"id": "161_N",
+"sp": "N",
+"t": "and they have to spread the news by radio,",
+"s": 408.7,
+"gap": 0.22
+},
+{
+"id": "162_N",
+"sp": "N",
+"t": "newspaper, and men on bicycles with megaphones.",
+"s": 411.1,
+"gap": 0.22
+},
+{
+"id": "163_N",
+"sp": "N",
+"t": "Schools reopen with chalkboards.",
+"s": 414.7,
+"gap": 0.22
+},
+{
+"id": "164_N",
+"sp": "N",
+"t": "You've never seen a chalkboard in your life.",
+"s": 416.9,
+"gap": 0.22
+},
+{
+"id": "165_N",
+"sp": "N",
+"t": "Your teacher doesn't know how to use one either",
+"s": 419.2,
+"gap": 0.22
+},
+{
+"id": "166_N",
+"sp": "N",
+"t": "and she laughs with you while she coughs up chalk dust. Your little brother Jonah,",
+"s": 421.8,
+"gap": 0.22
+},
+{
+"id": "167_N",
+"sp": "N",
+"t": "who's eight, learns to read from actual books.",
+"s": 426.7,
+"gap": 0.22
+},
+{
+"id": "168_N",
+"sp": "N",
+"t": "Slowly, then quickly. By the end of the month,",
+"s": 430.1,
+"gap": 0.22
+},
+{
+"id": "169_N",
+"sp": "N",
+"t": "he's reading to Grandma Rosa every night.",
+"s": 433.3,
+"gap": 0.22
+},
+{
+"id": "170_N",
+"sp": "N",
+"t": "The letters start arriving around week six.",
+"s": 436.1,
+"gap": 0.22
+},
+{
+"id": "171_N",
+"sp": "N",
+"t": "Your friend, who moved to another city last summer,",
+"s": 438.8,
+"gap": 0.22
+},
+{
+"id": "172_N",
+"sp": "N",
+"t": "writes you a real letter with real stamps",
+"s": 441.7,
+"gap": 0.22
+},
+{
+"id": "173_N",
+"sp": "N",
+"t": "and it takes nine days to arrive.",
+"s": 444.4,
+"gap": 0.22
+},
+{
+"id": "174_N",
+"sp": "N",
+"t": "It's three pages long, he tells you everything.",
+"s": 446.8,
+"gap": 0.22
+},
+{
+"id": "175_N",
+"sp": "N",
+"t": "It's the best thing you've ever received",
+"s": 450.0,
+"gap": 0.22
+},
+{
+"id": "176_N",
+"sp": "N",
+"t": "because for the first time in your life,",
+"s": 452.2,
+"gap": 0.22
+},
+{
+"id": "177_N",
+"sp": "N",
+"t": "somebody has taken an hour to write to you and only you.",
+"s": 454.3,
+"gap": 0.22
+},
+{
+"id": "178_N",
+"sp": "N",
+"t": "You write him back.",
+"s": 458.4,
+"gap": 0.22
+},
+{
+"id": "179_N",
+"sp": "N",
+"t": "It takes you two hours.",
+"s": 459.8,
+"gap": 0.22
+},
+{
+"id": "180_N",
+"sp": "N",
+"t": "You cross out half of it.",
+"s": 461.5,
+"gap": 0.22
+},
+{
+"id": "181_N",
+"sp": "N",
+"t": "You mail it with your heart pounding",
+"s": 463.4,
+"gap": 0.22
+},
+{
+"id": "182_N",
+"sp": "N",
+"t": "like you're sending a love confession.",
+"s": 465.1,
+"gap": 0.22
+},
+{
+"id": "183_N",
+"sp": "N",
+"t": "By year one, the world is smaller, quieter, and stranger.",
+"s": 467.6,
+"gap": 0.22
+},
+{
+"id": "184_N",
+"sp": "N",
+"t": "People stop living in cities",
+"s": 471.3,
+"gap": 0.22
+},
+{
+"id": "185_N",
+"sp": "N",
+"t": "because it's too hard to feed them.",
+"s": 472.9,
+"gap": 0.22
+},
+{
+"id": "186_N",
+"sp": "N",
+"t": "Families move closer to farms, closer to each other.",
+"s": 474.9,
+"gap": 0.22
+},
+{
+"id": "187_N",
+"sp": "N",
+"t": "Your family moves in with Grandma Rosa.",
+"s": 477.2,
+"gap": 0.22
+},
+{
+"id": "188_N",
+"sp": "N",
+"t": "Your mom works at a small clinic in town.",
+"s": 480.1,
+"gap": 0.22
+},
+{
+"id": "189_N",
+"sp": "N",
+"t": "Your dad drives a short route for the local market. The kids in your neighborhood",
+"s": 482.5,
+"gap": 0.22
+},
+{
+"id": "190_N",
+"sp": "N",
+"t": "are bored for the first time in their lives",
+"s": 486.1,
+"gap": 0.22
+},
+{
+"id": "191_N",
+"sp": "N",
+"t": "and they invent games, plays, songs,",
+"s": 488.6,
+"gap": 0.22
+},
+{
+"id": "192_N",
+"sp": "N",
+"t": "a band called The Disconnects.",
+"s": 493.5,
+"gap": 0.22
+},
+{
+"id": "193_N",
+"sp": "N",
+"t": "In a drawer in your room,",
+"s": 496.0,
+"gap": 0.22
+},
+{
+"id": "194_N",
+"sp": "N",
+"t": "your old phone sits like a black stone.",
+"s": 497.4,
+"gap": 0.22
+},
+{
+"id": "195_N",
+"sp": "N",
+"t": "For a while, you take it out every night and stare at it.",
+"s": 499.9,
+"gap": 0.22
+},
+{
+"id": "196_N",
+"sp": "N",
+"t": "Photos you can't open.",
+"s": 503.0,
+"gap": 0.22
+},
+{
+"id": "197_N",
+"sp": "N",
+"t": "Contacts you can't reach.",
+"s": 504.6,
+"gap": 0.22
+},
+{
+"id": "198_N",
+"sp": "N",
+"t": "A whole life trapped behind glass.",
+"s": 506.6,
+"gap": 0.22
+},
+{
+"id": "199_N",
+"sp": "N",
+"t": "Then one night, you put it back in the drawer and close it.",
+"s": 509.1,
+"gap": 0.22
+},
+{
+"id": "200_N",
+"sp": "N",
+"t": "Gently, like closing a book you won't read again.",
+"s": 511.9,
+"gap": 0.22
+},
+{
+"id": "201_N",
+"sp": "N",
+"t": "For the first time ever, you get lost.",
+"s": 515.4,
+"gap": 0.22
+},
+{
+"id": "202_N",
+"sp": "N",
+"t": "You take a wrong turn on your way home",
+"s": 518.0,
+"gap": 0.22
+},
+{
+"id": "203_N",
+"sp": "N",
+"t": "and you spend an hour wandering",
+"s": 520.1,
+"gap": 0.22
+},
+{
+"id": "204_N",
+"sp": "N",
+"t": "through unfamiliar streets.",
+"s": 521.9,
+"gap": 0.22
+},
+{
+"id": "205_N",
+"sp": "N",
+"t": "A woman gives you directions and a cookie.",
+"s": 524.0,
+"gap": 0.22
+},
+{
+"id": "206_N",
+"sp": "N",
+"t": "You think I would never have met her",
+"s": 526.6,
+"gap": 0.22
+},
+{
+"id": "207_N",
+"sp": "N",
+"t": "if I'd had my phone.",
+"s": 528.3,
+"gap": 0.22
+},
+{
+"id": "208_N",
+"sp": "N",
+"t": "By year three, the old internet feels like a dream.",
+"s": 530.2,
+"gap": 0.22
+},
+{
+"id": "209_N",
+"sp": "N",
+"t": "Kids born after the day it disappeared",
+"s": 533.4,
+"gap": 0.22
+},
+{
+"id": "210_N",
+"sp": "N",
+"t": "don't know what it was.",
+"s": 535.1,
+"gap": 0.22
+},
+{
+"id": "211_N",
+"sp": "N",
+"t": "When you try to explain, your little cousin looks at you",
+"s": 536.9,
+"gap": 0.22
+},
+{
+"id": "212_N",
+"sp": "N",
+"t": "like you're describing magic.",
+"s": 539.7,
+"gap": 0.22
+},
+{
+"id": "213_N",
+"sp": "N",
+"t": "So you could ask anything and it just knew. Anything.",
+"s": 541.4,
+"gap": 0.22
+},
+{
+"id": "214_N",
+"sp": "N",
+"t": "And everyone had it, everyone.",
+"s": 544.9,
+"gap": 0.22
+},
+{
+"id": "215_N",
+"sp": "N",
+"t": "And nobody liked it, you pause.",
+"s": 547.1,
+"gap": 0.22
+},
+{
+"id": "216_N",
+"sp": "N",
+"t": "A lot of people loved it.",
+"s": 549.5,
+"gap": 0.22
+},
+{
+"id": "217_N",
+"sp": "N",
+"t": "You realize it's hard to describe something that big",
+"s": 551.4,
+"gap": 0.22
+},
+{
+"id": "218_N",
+"sp": "N",
+"t": "and a little hard to explain why you miss it.",
+"s": 555.0,
+"gap": 0.22
+},
+{
+"id": "219_N",
+"sp": "N",
+"t": "By year five, the world finds a new rhythm.",
+"s": 557.9,
+"gap": 0.22
+},
+{
+"id": "220_N",
+"sp": "N",
+"t": "It isn't better, it isn't worse, it's just slower.",
+"s": 560.5,
+"gap": 0.22
+},
+{
+"id": "221_N",
+"sp": "N",
+"t": "People still get sick, still fall in love,",
+"s": 563.4,
+"gap": 0.22
+},
+{
+"id": "222_N",
+"sp": "N",
+"t": "still argue over politics,",
+"s": 566.2,
+"gap": 0.22
+},
+{
+"id": "223_N",
+"sp": "N",
+"t": "but now they do it face to face.",
+"s": 567.7,
+"gap": 0.22
+},
+{
+"id": "224_N",
+"sp": "N",
+"t": "Scientists share discoveries through printed journals",
+"s": 570.2,
+"gap": 0.22
+},
+{
+"id": "225_N",
+"sp": "N",
+"t": "which take months and sometimes a year",
+"s": 572.7,
+"gap": 0.22
+},
+{
+"id": "226_N",
+"sp": "N",
+"t": "to cross an ocean by ship.",
+"s": 575.1,
+"gap": 0.22
+},
+{
+"id": "227_N",
+"sp": "N",
+"t": "Doctors rely on thick books",
+"s": 577.1,
+"gap": 0.22
+},
+{
+"id": "228_N",
+"sp": "N",
+"t": "and what they've learned from each other.",
+"s": 578.9,
+"gap": 0.22
+},
+{
+"id": "229_N",
+"sp": "N",
+"t": "Some things get lost, 100 million photos,",
+"s": 581.4,
+"gap": 0.22
+},
+{
+"id": "230_N",
+"sp": "N",
+"t": "millions of books that only existed on screens,",
+"s": 584.5,
+"gap": 0.22
+},
+{
+"id": "231_N",
+"sp": "N",
+"t": "whole libraries of music, art, history,",
+"s": 587.3,
+"gap": 0.22
+},
+{
+"id": "232_N",
+"sp": "N",
+"t": "gone like they were never made.",
+"s": 590.1,
+"gap": 0.22
+},
+{
+"id": "233_N",
+"sp": "N",
+"t": "And some things you didn't expect to find.",
+"s": 592.5,
+"gap": 0.22
+},
+{
+"id": "234_N",
+"sp": "N",
+"t": "You and Jonah sit on the roof one summer night",
+"s": 595.4,
+"gap": 0.22
+},
+{
+"id": "235_N",
+"sp": "N",
+"t": "and he asks, do you think people were happier",
+"s": 597.7,
+"gap": 0.22
+},
+{
+"id": "236_N",
+"sp": "N",
+"t": "before the internet?",
+"s": 600.4,
+"gap": 0.22
+},
+{
+"id": "237_N",
+"sp": "N",
+"t": "You think about it for a long time.",
+"s": 601.9,
+"gap": 0.22
+},
+{
+"id": "238_N",
+"sp": "N",
+"t": "I think they were different, you say.",
+"s": 604.2,
+"gap": 0.22
+},
+{
+"id": "239_N",
+"sp": "N",
+"t": "Some things were better, some things were worse. What was better?",
+"s": 606.3,
+"gap": 0.22
+},
+{
+"id": "240_N",
+"sp": "N",
+"t": "We had every answer you say,",
+"s": 611.0,
+"gap": 0.22
+},
+{
+"id": "241_N",
+"sp": "N",
+"t": "but I don't remember asking better questions.",
+"s": 612.3,
+"gap": 0.22
+},
+{
+"id": "242_N",
+"sp": "N",
+"t": "In year six, Grandma Rosa gets sick.",
+"s": 614.9,
+"gap": 0.22
+},
+{
+"id": "243_N",
+"sp": "N",
+"t": "It isn't sudden, she just slows down.",
+"s": 618.1,
+"gap": 0.22
+},
+{
+"id": "244_N",
+"sp": "N",
+"t": "She spends more time in her chair, more time sleeping.",
+"s": 620.3,
+"gap": 0.22
+},
+{
+"id": "245_N",
+"sp": "N",
+"t": "One evening, the whole family sits around her,",
+"s": 624.4,
+"gap": 0.22
+},
+{
+"id": "246_N",
+"sp": "N",
+"t": "the way they've done a thousand times",
+"s": 626.9,
+"gap": 0.22
+},
+{
+"id": "247_N",
+"sp": "N",
+"t": "and she starts to sing.",
+"s": 628.9,
+"gap": 0.22
+},
+{
+"id": "248_N",
+"sp": "N",
+"t": "It's an old song in a language you barely know.",
+"s": 630.6,
+"gap": 0.22
+},
+{
+"id": "249_N",
+"sp": "N",
+"t": "She sang it to your mom when she was little.",
+"s": 634.0,
+"gap": 0.22
+},
+{
+"id": "250_N",
+"sp": "N",
+"t": "She says her own mother sang it to her.",
+"s": 636.6,
+"gap": 0.22
+},
+{
+"id": "251_N",
+"sp": "N",
+"t": "Nobody ever wrote it down.",
+"s": 638.9,
+"gap": 0.22
+},
+{
+"id": "252_N",
+"sp": "N",
+"t": "You've never heard it before.",
+"s": 640.6,
+"gap": 0.22
+},
+{
+"id": "253_N",
+"sp": "N",
+"t": "Again you say, she laughs, she sings it again.",
+"s": 642.4,
+"gap": 0.22
+},
+{
+"id": "254_N",
+"sp": "N",
+"t": "You close your eyes and try to remember every note",
+"s": 645.6,
+"gap": 0.22
+},
+{
+"id": "255_N",
+"sp": "N",
+"t": "and suddenly you think of the voice message.",
+"s": 648.9,
+"gap": 0.22
+},
+{
+"id": "256_N",
+"sp": "N",
+"t": "41 seconds of her laughing, gone.",
+"s": 651.6,
+"gap": 0.22
+},
+{
+"id": "257_N",
+"sp": "N",
+"t": "You used to think it was the most precious thing you owned,",
+"s": 654.8,
+"gap": 0.22
+},
+{
+"id": "258_N",
+"sp": "N",
+"t": "but then you remember something.",
+"s": 657.7,
+"gap": 0.22
+},
+{
+"id": "259_N",
+"sp": "N",
+"t": "For years you'd never asked her to sing. Why would you?",
+"s": 659.6,
+"gap": 0.22
+},
+{
+"id": "260_N",
+"sp": "N",
+"t": "You had the message, you could listen to it any time.",
+"s": 663.1,
+"gap": 0.22
+},
+{
+"id": "261_N",
+"sp": "N",
+"t": "You always figured there'd be time.",
+"s": 666.3,
+"gap": 0.22
+},
+{
+"id": "262_N",
+"sp": "N",
+"t": "She never knew the recording existed.",
+"s": 668.8,
+"gap": 0.22
+},
+{
+"id": "263_N",
+"sp": "N",
+"t": "Now, there's no recording, there's only her",
+"s": 671.1,
+"gap": 0.22
+},
+{
+"id": "264_N",
+"sp": "N",
+"t": "and she sits right here in front of you, alive,",
+"s": 673.4,
+"gap": 0.22
+},
+{
+"id": "265_N",
+"sp": "N",
+"t": "humming a song you've never heard.",
+"s": 676.4,
+"gap": 0.22
+},
+{
+"id": "266_N",
+"sp": "N",
+"t": "You learn it that night and the next night",
+"s": 679.4,
+"gap": 0.22
+},
+{
+"id": "267_N",
+"sp": "N",
+"t": "and the one after that.",
+"s": 681.9,
+"gap": 0.22
+},
+{
+"id": "268_N",
+"sp": "N",
+"t": "You learn her recipes too.",
+"s": 683.8,
+"gap": 0.22
+},
+{
+"id": "269_N",
+"sp": "N",
+"t": "You learn which herbs she uses and how she folds the dough.",
+"s": 685.5,
+"gap": 0.22
+},
+{
+"id": "270_N",
+"sp": "N",
+"t": "You learn the name of every flower in her garden.",
+"s": 688.9,
+"gap": 0.22
+},
+{
+"id": "271_N",
+"sp": "N",
+"t": "You write none of it down.",
+"s": 691.9,
+"gap": 0.22
+},
+{
+"id": "272_N",
+"sp": "N",
+"t": "You just keep it in your head over and over",
+"s": 693.4,
+"gap": 0.22
+},
+{
+"id": "273_N",
+"sp": "N",
+"t": "until it feels like it's yours.",
+"s": 695.8,
+"gap": 0.22
+},
+{
+"id": "274_N",
+"sp": "N",
+"t": "Grandma Rosa passes away that winter at 84 in her kitchen",
+"s": 698.3,
+"gap": 0.22
+},
+{
+"id": "275_N",
+"sp": "N",
+"t": "with the whole family around her.",
+"s": 702.4,
+"gap": 0.22
+},
+{
+"id": "276_N",
+"sp": "N",
+"t": "At her funeral, you sing the song.",
+"s": 704.7,
+"gap": 0.22
+},
+{
+"id": "277_N",
+"sp": "N",
+"t": "You're nervous, your voice cracks,",
+"s": 706.8,
+"gap": 0.22
+},
+{
+"id": "278_N",
+"sp": "N",
+"t": "but you get every note right.",
+"s": 708.9,
+"gap": 0.22
+},
+{
+"id": "279_N",
+"sp": "N",
+"t": "10 years later, you're 26.",
+"s": 711.2,
+"gap": 0.22
+},
+{
+"id": "280_N",
+"sp": "N",
+"t": "You live in a small house",
+"s": 714.0,
+"gap": 0.22
+},
+{
+"id": "281_N",
+"sp": "N",
+"t": "with your wife and your little daughter, Mia.",
+"s": 715.3,
+"gap": 0.22
+},
+{
+"id": "282_N",
+"sp": "N",
+"t": "She's four, it's a quiet night.",
+"s": 717.7,
+"gap": 0.22
+},
+{
+"id": "283_N",
+"sp": "N",
+"t": "Outside the window, a streetlight flickers on",
+"s": 720.2,
+"gap": 0.22
+},
+{
+"id": "284_N",
+"sp": "N",
+"t": "and you're at the kitchen table,",
+"s": 722.8,
+"gap": 0.22
+},
+{
+"id": "285_N",
+"sp": "N",
+"t": "stirring a pot of grandma's soup.",
+"s": 724.6,
+"gap": 0.22
+},
+{
+"id": "286_N",
+"sp": "N",
+"t": "Mia climbs onto the chair beside you.",
+"s": 726.9,
+"gap": 0.22
+},
+{
+"id": "287_N",
+"sp": "N",
+"t": "Daddy, what's that song?",
+"s": 729.8,
+"gap": 0.22
+},
+{
+"id": "288_N",
+"sp": "N",
+"t": "You didn't realize you were humming.",
+"s": 731.4,
+"gap": 0.22
+},
+{
+"id": "289_N",
+"sp": "N",
+"t": "It's a song my grandma taught me.",
+"s": 732.7,
+"gap": 0.22
+},
+{
+"id": "290_N",
+"sp": "N",
+"t": "Her mom taught her and now I'm going to teach you. She grins. Why you think for a second?",
+"s": 735.3,
+"gap": 0.22
+},
+{
+"id": "291_N",
+"sp": "N",
+"t": "Because nobody wrote it down",
+"s": 741.1,
+"gap": 0.22
+},
+{
+"id": "292_N",
+"sp": "N",
+"t": "and she sings it back to you, not perfectly.",
+"s": 742.5,
+"gap": 0.22
+},
+{
+"id": "293_N",
+"sp": "N",
+"t": "She mixes up the words.",
+"s": 745.0,
+"gap": 0.22
+},
+{
+"id": "294_N",
+"sp": "N",
+"t": "She gets the tune slightly wrong, but it's alive. It's in the room. It's in her.",
+"s": 746.3,
+"gap": 0.22
+},
+{
+"id": "295_N",
+"sp": "N",
+"t": "The internet disappeared forever",
+"s": 751.6,
+"gap": 0.22
+},
+{
+"id": "296_N",
+"sp": "N",
+"t": "and a lot of what it held disappeared with it.",
+"s": 753.4,
+"gap": 0.22
+},
+{
+"id": "297_N",
+"sp": "N",
+"t": "Millions of photos, whole encyclopedias,",
+"s": 756.5,
+"gap": 0.22
+},
+{
+"id": "298_N",
+"sp": "N",
+"t": "every video of every birthday.",
+"s": 759.4,
+"gap": 0.22
+},
+{
+"id": "299_N",
+"sp": "N",
+"t": "And yet the thing you were most afraid to lose,",
+"s": 762.0,
+"gap": 0.22
+},
+{
+"id": "300_N",
+"sp": "N",
+"t": "the voice of your grandmother never actually left.",
+"s": 764.6,
+"gap": 0.22
+},
+{
+"id": "301_N",
+"sp": "N",
+"t": "It only changed where it lived.",
+"s": 768.1,
+"gap": 0.22
+},
+{
+"id": "302_N",
+"sp": "N",
+"t": "So would you want the internet back",
+"s": 770.4,
+"gap": 0.22
+},
+{
+"id": "303_N",
+"sp": "N",
+"t": "or would you keep the silence? Tell us in the comments.",
+"s": 772.8,
+"gap": 0.22
+},
+{
+"id": "304_N",
+"sp": "N",
+"t": "And if you'd have asked your grandma to sing,",
+"s": 775.9,
+"gap": 0.22
+},
+{
+"id": "305_N",
+"sp": "N",
+"t": "hit like and subscribe for more what ifs.",
+"s": 778.2,
+"gap": 0.22
+}
+]

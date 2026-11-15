@@ -4,3 +4,6 @@ studio/videos/*/frames/
 studio/videos/*/blend/
 studio/videos/*/preview/
 out/sneeze_story_final.mp4
+whatif/node_modules/
+whatif/out/
+whatif/public/sfx/bed.wav

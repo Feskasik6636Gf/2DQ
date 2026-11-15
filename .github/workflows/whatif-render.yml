@@ -1,0 +1,110 @@
+name: whatif-render
+on:
+  push:
+    branches: [ccr-ccf61559-srxnpr]
+    paths: [whatif/render_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: whatif-render
+  cancel-in-progress: true
+env:
+  CHUNK: 500
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.c.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: c
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, math
+          t = json.load(open('whatif/src/story/timeline.json'))['total']
+          n = math.ceil(t / 500)
+          print("chunks=" + json.dumps(list(range(n))))
+          PY
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: whatif/package-lock.json
+      - name: system libs for Chromium
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libnss3 libdbus-1-3 libatk1.0-0t64 libasound2t64 libxrandr2 libxkbcommon0 libxfixes3 libxcomposite1 libxdamage1 libgbm1 libcups2t64 libatk-bridge2.0-0t64 libpango-1.0-0 libcairo2 fonts-liberation >/dev/null
+      - name: install packages
+        working-directory: whatif
+        run: npm ci --no-audit --no-fund
+      - name: render chunk
+        working-directory: whatif
+        run: |
+          set -e
+          N=$(printf "%02d" ${{ matrix.chunk }})
+          TOTAL=$(python3 -c "import json;print(json.load(open('src/story/timeline.json'))['total'])")
+          S=$(( ${{ matrix.chunk }} * CHUNK ))
+          E=$(( S + CHUNK - 1 ))
+          if [ "$E" -ge "$TOTAL" ]; then E=$(( TOTAL - 1 )); fi
+          mkdir -p out/chunks_Long
+          echo "chunk $N frames $S-$E of $TOTAL"
+          for attempt in 1 2 3; do
+            if npx remotion render Long "out/chunks_Long/c$N.mp4" --frames=$S-$E --muted --gl=angle --concurrency=4 --crf=18 --log=error --timeout=180000; then break; fi
+            echo "attempt $attempt failed"; [ "$attempt" = 3 ] && exit 1; sleep 5
+          done
+          ls -la out/chunks_Long
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.chunk }}
+          path: whatif/out/chunks_Long/c*.mp4
+          retention-days: 3
+          if-no-files-found: error
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: whatif/package-lock.json
+      - name: install packages
+        working-directory: whatif
+        run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: whatif/out/chunks_Long
+          merge-multiple: true
+      - name: sound + join
+        working-directory: whatif
+        run: |
+          set -e
+          ls out/chunks_Long | wc -l
+          node tools/make-sound.mjs
+          node tools/assemble.mjs Long
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: final-video
+          path: whatif/out/Long.mp4
+          retention-days: 14
+      - name: publish as a release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="internet-gone-${{ github.run_number }}"
+          gh release create "$TAG" whatif/out/Long.mp4 --title "Internet disappears - final video (run ${{ github.run_number }})" --notes "Rendered on GitHub Actions: frames in parallel, sound mixed from the original voiceover." --target "${{ github.sha }}"
