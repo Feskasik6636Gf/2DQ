@@ -9,8 +9,6 @@ permissions:
 concurrency:
   group: render-whatif
   cancel-in-progress: true
-env:
-  CHUNK: 720
 jobs:
   plan:
     runs-on: ubuntu-latest
@@ -21,15 +19,19 @@ jobs:
       - id: c
         run: |
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
-          import json, math
+          import json
           total = json.load(open('video/src/story/timeline.json'))['total']
-          n = math.ceil(total / 720)
-          print('chunks=' + json.dumps(list(range(n))))
+          chunk = 240
+          out, s, i = [], 0, 0
+          while s < total:
+              out.append({"i": i, "from": s, "to": min(total - 1, s + chunk - 1)})
+              s += chunk; i += 1
+          print("chunks=" + json.dumps(out))
           PY
   render:
     needs: plan
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     strategy:
       fail-fast: false
       matrix:
@@ -39,33 +41,39 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: system libs for headless Chrome
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq libnss3 libdbus-1-3 libatk1.0-0 libasound2t64 libxrandr2 libxkbcommon0 libxfixes3 libxcomposite1 libxdamage1 libgbm1 libcups2 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 >/dev/null
-      - name: install
-        working-directory: video
-        run: npm ci --no-audit --no-fund
-      - name: render chunk ${{ matrix.chunk }}
+          cache: npm
+          cache-dependency-path: video/package-lock.json
+      - name: browser libs
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libnss3 libdbus-1-3 libatk1.0-0t64 libatk-bridge2.0-0t64 libgbm1 libasound2t64 libxrandr2 libxkbcommon0 libxfixes3 libxcomposite1 libxdamage1 libpango-1.0-0 libcairo2 libcups2t64 > /dev/null
+      - name: npm ci
         working-directory: video
         run: |
-          START=$(( ${{ matrix.chunk }} * CHUNK ))
-          TOTAL=$(python3 -c "import json;print(json.load(open('src/story/timeline.json'))['total'])")
-          END=$(( START + CHUNK - 1 ))
-          if [ $END -ge $TOTAL ]; then END=$(( TOTAL - 1 )); fi
+          npm ci --no-audit --no-fund --loglevel=error
+          npx remotion browser ensure
+      - name: render chunk ${{ matrix.chunk.i }} (frames ${{ matrix.chunk.from }}-${{ matrix.chunk.to }})
+        working-directory: video
+        run: |
           mkdir -p out
+          ok=0
           for try in 1 2 3; do
-            npx remotion render Long out/c$(printf '%02d' ${{ matrix.chunk }}).mp4 --frames=$START-$END --muted --gl=angle --concurrency=4 --crf=20 --log=error --timeout=180000 && break
-            echo "retry $try"; rm -f out/c*.mp4
+            conc=$((4 - try))
+            [ $conc -lt 1 ] && conc=1
+            if npx remotion render Long out/c$(printf '%03d' ${{ matrix.chunk.i }}).mp4 --frames=${{ matrix.chunk.from }}-${{ matrix.chunk.to }} --muted --gl=angle --concurrency=$conc --crf=20 --log=error --timeout=900000; then ok=1; break; fi
+            echo "retry $try"
           done
+          [ "$ok" = 1 ]
           ls -la out
       - uses: actions/upload-artifact@v4
         with:
-          name: chunk-${{ matrix.chunk }}
+          name: chunk-${{ matrix.chunk.i }}
           path: video/out/c*.mp4
           retention-days: 3
+          if-no-files-found: error
           compression-level: 0
   assemble:
     needs: render
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
