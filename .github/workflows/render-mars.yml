@@ -16,7 +16,7 @@ concurrency:
   group: render-mars
   cancel-in-progress: true
 env:
-  CHUNK: 600
+  CHUNK: 200
 jobs:
   plan:
     runs-on: ubuntu-latest
@@ -72,8 +72,8 @@ jobs:
           mkdir -p out
           ok=0
           for try in 1 2 3; do
-            conc=$((5 - try))
-            [ $conc -gt 4 ] && conc=4
+            conc=$((4 - try))
+            [ $conc -lt 1 ] && conc=1
             if npx remotion render Long out/chunk.mp4 --frames=${{ matrix.chunk.from }}-${{ matrix.chunk.to }} --muted --gl=angle --concurrency=$conc --crf=18 --log=error --timeout=240000; then ok=1; break; fi
             echo "retry $try"
           done
