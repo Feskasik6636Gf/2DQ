@@ -1,0 +1,103 @@
+name: render-whatif-video
+on:
+  push:
+    branches: [ccr-b072611f-0payso]
+    paths: [video/render_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: render-whatif
+  cancel-in-progress: true
+env:
+  CHUNK: 720
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.c.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: c
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, math
+          total = json.load(open('video/src/story/timeline.json'))['total']
+          n = math.ceil(total / 720)
+          print('chunks=' + json.dumps(list(range(n))))
+          PY
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: system libs for headless Chrome
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libnss3 libdbus-1-3 libatk1.0-0 libasound2t64 libxrandr2 libxkbcommon0 libxfixes3 libxcomposite1 libxdamage1 libgbm1 libcups2 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 >/dev/null
+      - name: install
+        working-directory: video
+        run: npm ci --no-audit --no-fund
+      - name: render chunk ${{ matrix.chunk }}
+        working-directory: video
+        run: |
+          START=$(( ${{ matrix.chunk }} * CHUNK ))
+          TOTAL=$(python3 -c "import json;print(json.load(open('src/story/timeline.json'))['total'])")
+          END=$(( START + CHUNK - 1 ))
+          if [ $END -ge $TOTAL ]; then END=$(( TOTAL - 1 )); fi
+          mkdir -p out
+          for try in 1 2 3; do
+            npx remotion render Long out/c$(printf '%02d' ${{ matrix.chunk }}).mp4 --frames=$START-$END --muted --gl=angle --concurrency=4 --crf=20 --log=error --timeout=180000 && break
+            echo "retry $try"; rm -f out/c*.mp4
+          done
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.chunk }}
+          path: video/out/c*.mp4
+          retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: install
+        working-directory: video
+        run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: video/out/chunks
+          merge-multiple: true
+      - name: join + sound
+        working-directory: video
+        run: |
+          chmod +x node_modules/@remotion/compositor-linux-x64-gnu/* || true
+          cd out/chunks && ls c*.mp4 | sort | sed "s/.*/file '&'/" > list.txt && cat list.txt | wc -l && cd ../..
+          FF=$(ls node_modules/@remotion/compositor-linux-x64-gnu/ffmpeg)
+          $FF -hide_banner -v error -y -f concat -safe 0 -i out/chunks/list.txt -c copy out/silent.mp4
+          node tools/mix-audio.mjs src/story/timeline.json public/sfx/bed.m4a 1 out/mix.wav
+          node tools/loudness.mjs out/mix.wav out/silent.mp4 out/Long.mp4 -16
+          ls -la out/Long.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Long-final
+          path: video/out/Long.mp4
+          retention-days: 14
+          compression-level: 0
+      - name: publish release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG=halcyon-star-${{ github.run_number }}
+          gh release create "$TAG" video/out/Long.mp4 --title "Halcyon Star render #${{ github.run_number }}" --notes "Rendered by GitHub Actions" --target "$GITHUB_SHA"
