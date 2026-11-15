@@ -1,0 +1,54 @@
+name: assemble-whatif-video
+# Собирает итоговый ролик из уже отрендеренных кусков (artifacts) + звук. Запуск: пуш video/assemble_request.txt (первая строка = id запуска render-whatif)
+on:
+  push:
+    branches: [ccr-b072611f-0payso]
+    paths: [video/assemble_request.txt]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - id: r
+        run: echo "run=$(head -1 video/assemble_request.txt | tr -d '[:space:]')" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: video/package-lock.json
+      - name: npm ci
+        working-directory: video
+        run: npm ci --no-audit --no-fund --loglevel=error
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: video/out/chunks
+          merge-multiple: true
+          run-id: ${{ steps.r.outputs.run }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: join + sound
+        working-directory: video
+        run: |
+          set -e
+          chmod +x node_modules/@remotion/compositor-linux-x64-gnu/* || true
+          (cd out/chunks && ls c*.mp4 | sort | sed "s/.*/file '&'/" > list.txt && wc -l list.txt)
+          FF=$(ls node_modules/@remotion/compositor-linux-x64-gnu/ffmpeg)
+          $FF -hide_banner -v error -y -f concat -safe 0 -i out/chunks/list.txt -c copy out/silent.mp4
+          node tools/mix-audio.mjs src/story/timeline.json public/sfx/bed.m4a 1 out/mix.wav
+          node tools/loudness.mjs out/mix.wav out/silent.mp4 out/Long.mp4 -16
+          ls -la out/Long.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Long-final
+          path: video/out/Long.mp4
+          retention-days: 14
+          compression-level: 0
+      - name: publish release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "halcyon-star-${{ github.run_number }}" video/out/Long.mp4 --title "Halcyon Star (render ${{ steps.r.outputs.run }})" --notes "Rendered and assembled by GitHub Actions, 1920x1080, 30 fps, -16 LUFS"
