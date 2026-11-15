@@ -385,7 +385,7 @@ export const P3: ShotDef[] = [
 		bgDepth: 1.3,
 		cam: [[900, 560, 1.5], [900, 520, 1.8]],
 		actors: [{who: 'dad', x: 900, fc: 1, ex: [['angry', 0, 999]], crouch: [[0, 24], [64, 90], [130, 160]], pose: (p, c) => ({...p, armF: [150, 20], armB: [150, 20]})}],
-		fx: (c) => <Barbell x={900} y={540 + 150 * (1 - Math.max(env(c.f, 24, 50, 10, 10), env(c.f, 94, 122, 10, 10), env(c.f, 160, 190, 10, 10)) * 0)} />,
+		fx: (c) => <Barbell x={930} y={470 + 340 * Math.max(env(c.f, -10, 24, 8, 10), env(c.f, 56, 90, 8, 10), env(c.f, 124, 160, 8, 10))} />,
 		ov: (c) => <Stat f={c.f} t0={c.at('138') + 10} t1={c.end('139')} big="DAD" label="used to hate exercise" x={90} y={110} w={560} c="#ffb15a" />,
 	}),
 	sc({

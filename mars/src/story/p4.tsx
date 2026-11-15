@@ -9,7 +9,7 @@ import {Room, Surface, SolarField} from './places';
 import {Alert, Beam, Big, Fog, Globe, ITEM, Plant, Stat, Tears, Thermo, Timer} from './gfx';
 
 const HEADY = 900 - 157 - 164;
-const LIE = (p: any, k: number) => ({lean: p.lean + (88 - p.lean) * k, head: p.head * (1 - k), armB: [p.armB[0] + (150 - p.armB[0]) * k, 10], armF: [p.armF[0] + (140 - p.armF[0]) * k, 10], legB: [p.legB[0] + (-85 - p.legB[0]) * k, 0], legF: [p.legF[0] + (-80 - p.legF[0]) * k, 5]}) as any;
+const LIE = (p: any, k: number) => ({lean: p.lean + (88 - p.lean) * k, head: p.head * (1 - k), armB: [p.armB[0] + (100 - p.armB[0]) * k, 10], armF: [p.armF[0] + (92 - p.armF[0]) * k, 10], legB: [p.legB[0] + (-85 - p.legB[0]) * k, 0], legF: [p.legF[0] + (-80 - p.legF[0]) * k, 5]}) as any;
 const glow = (x: number, y: number, r = 260) => <circle cx={x} cy={y} r={r} fill="#8aff9a" opacity={0.14} />;
 
 export const P4: ShotDef[] = [
@@ -173,14 +173,15 @@ export const P4: ShotDef[] = [
 		at: '180',
 		bg: <Room kind="dining" dim={0.62} />,
 		bgDepth: 1.3,
-		cam: [[500, 700, 1.35], [1400, 700, 1.35]],
-		actors: (['hero', 'mom', 'dad', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'kid1', 'eng1'] as string[]).map((w, i) => ({who: w, x: 200 + i * 170, fc: (i % 2 ? 1 : -1) as 1 | -1, s: 0.9, pose: (p: any) => LIE(p, 1), bobf: () => -150 + Math.sin(i) * 0, ex: [['sleepy', 0, 999]] as any})),
+		cam: [[500, 760, 1.2], [1500, 760, 1.2]],
+		actors: (['hero', 'mom', 'dad', 'x1', 'anna'] as string[]).map((w, i) => ({who: w, x: 330 + i * 460, fc: 1 as const, s: 0.9, pose: (p: any) => LIE(p, 1), bobf: () => -150, ex: [['sleepy', 0, 999]] as any})),
 		fx: (c) => (
 			<>
-				{Array.from({length: 11}).map((_, i) => (
+				{Array.from({length: 5}).map((_, i) => (
 					<g key={i}>
-						<rect x={110 + i * 170} y={780} width={200} height={70} rx={30} fill={['#c0392b', '#2f6fd8', '#8b6bd6', '#ffb15a'][i % 4]} opacity={0.95} />
-						<Fog x={300 + i * 170} y={760} f={c.f + i * 9} />
+						<rect x={330 + i * 460 - 120} y={855} width={250} height={62} rx={28} fill={['#c0392b', '#2f6fd8', '#8b6bd6', '#ffb15a'][i % 4]} opacity={0.97} />
+						<rect x={330 + i * 460 - 100} y={858} width={210} height={10} rx={5} fill="#fff" opacity={0.18} />
+						<Fog x={330 + i * 460 + 190} y={850} f={c.f + i * 9} />
 					</g>
 				))}
 			</>

@@ -430,12 +430,13 @@ export const P2: ShotDef[] = [
 				x: 0,
 				w: [[-100, 860, 0, 30]],
 				ex: [['wide', 30, '079e'], ['sleepy', '080+20', 999]],
+				bobf: (c) => -150 * env(c.f, c.at('080') + 36, 9999, 18, 4),
 				pose: (p, c) => {
 					const t = c.at('080') + 36;
 					const k = env(c.f, t, 9999, 18, 4);
 					const wob = env(c.f, c.at('079') + 40, t, 10, 4);
 					const q = {...p, lean: p.lean + Math.sin(c.f / 4) * 10 * wob, head: p.head + Math.sin(c.f / 5) * 14 * wob, armF: [p.armF[0] + 30 * wob, p.armF[1]]} as typeof p;
-					return {lean: q.lean + (88 - q.lean) * k, head: q.head * (1 - k), armB: [q.armB[0] + (150 - q.armB[0]) * k, 10], armF: [q.armF[0] + (140 - q.armF[0]) * k, 10], legB: [q.legB[0] + (-85 - q.legB[0]) * k, 0], legF: [q.legF[0] + (-80 - q.legF[0]) * k, 5]};
+					return {lean: q.lean + (88 - q.lean) * k, head: q.head * (1 - k), armB: [q.armB[0] + (100 - q.armB[0]) * k, 10], armF: [q.armF[0] + (92 - q.armF[0]) * k, 10], legB: [q.legB[0] + (-85 - q.legB[0]) * k, 0], legF: [q.legF[0] + (-80 - q.legF[0]) * k, 5]};
 				},
 			},
 		],
