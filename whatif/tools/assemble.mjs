@@ -7,7 +7,7 @@ import {ROOT, ffbin, say} from './lib.mjs';
 
 const id = process.argv[2] ?? 'Long';
 const dir = path.join(ROOT, 'out', `chunks_${id}`);
-const files = fs.readdirSync(dir).filter((f) => /^c\d+\.mp4$/.test(f)).sort();
+const files = fs.readdirSync(dir).filter((f) => /^c\d+\.mp4$/.test(f)).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1)));
 if (!files.length) throw new Error('no chunks in ' + dir);
 say(`joining ${files.length} chunks`);
 const ff = ffbin();
@@ -15,7 +15,10 @@ const list = path.join(dir, 'list.txt');
 fs.writeFileSync(list, files.map((f) => `file '${f}'`).join('\n'));
 const silent = path.join(dir, 'video.mp4');
 let r = spawnSync(ff, ['-hide_banner', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', silent], {stdio: 'inherit'});
-if (r.status !== 0) process.exit(1);
+if (r.status !== 0) {
+	console.error('ffmpeg join failed', r.status, r.error);
+	process.exit(1);
+}
 const tl = 'src/story/timeline.json';
 const mix = path.join(dir, 'mix.wav');
 r = spawnSync(process.execPath, [path.join(ROOT, 'tools', 'mix-audio.mjs'), tl, 'public/sfx/bed.wav', '1', mix], {stdio: 'inherit', cwd: ROOT});

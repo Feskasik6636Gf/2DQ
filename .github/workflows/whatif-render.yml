@@ -93,6 +93,7 @@ jobs:
         working-directory: whatif
         run: |
           set -e
+          chmod +x node_modules/@remotion/compositor-*/* || true
           ls out/chunks_Long | wc -l
           node tools/make-sound.mjs
           node tools/assemble.mjs Long
