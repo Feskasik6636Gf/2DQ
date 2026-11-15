@@ -1,5 +1,5 @@
 import React from 'react';
-import {Composition, continueRender, delayRender} from 'remotion';
+import {Composition} from 'remotion';
 import {CAVEAT, RUBIK} from './fontdata';
 import {Long, LONG_FRAMES} from './Long';
 import {Short, SHORT_FRAMES} from './Short';
@@ -10,16 +10,6 @@ import {PauseTime} from './reference/PauseTime';
 const fontCss = document.createElement('style');
 fontCss.textContent = `@font-face{font-family:'Rubik';src:url(${RUBIK}) format('truetype');font-weight:300 900;font-display:block}@font-face{font-family:'Caveat';src:url(${CAVEAT}) format('truetype');font-weight:400 700;font-display:block}`;
 document.head.appendChild(fontCss);
-const fontsReady = delayRender('fonts', {timeoutInMilliseconds: 60000});
-let released = false;
-function release() {
-	if (released) return;
-	released = true;
-	continueRender(fontsReady);
-}
-Promise.all([document.fonts.load("800 40px 'Rubik'"), document.fonts.load("400 40px 'Caveat'")]).then(release, release);
-setTimeout(release, 8000);
-
 // headings are heavy unless a text asks for another weight (the style's chunky lettering)
 const css = document.createElement('style');
 css.textContent = `text[font-family*="Rubik"]:not([font-weight]){font-weight:800}`;

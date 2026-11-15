@@ -4,6 +4,7 @@ import {AngleCtx, L, LINES, ShotCtx, TOTAL} from './kit/core';
 import {SHOT_TIMES, WHIPS, cutsFor} from './kit/coverage';
 import {STORY} from './story/config';
 import {Caption} from './kit/graphics';
+import {useFontGate} from './fontgate';
 
 /* One shot on the long timeline: gives it the shot context (frames, line lookups) and
    the current coverage angle. */
@@ -49,6 +50,7 @@ export const VoiceTrack: React.FC = () => (
 );
 
 export const Long: React.FC<{sound?: boolean}> = ({sound = true}) => {
+	useFontGate();
 	const f = useCurrentFrame();
 	const w = whipAt(f);
 	const last = LINES[LINES.length - 1];
