@@ -10,7 +10,7 @@ concurrency:
   group: whatif-render
   cancel-in-progress: true
 env:
-  CHUNK: 500
+  CHUNK: 200
 jobs:
   plan:
     runs-on: ubuntu-latest
@@ -23,7 +23,7 @@ jobs:
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import json, math
           t = json.load(open('whatif/src/story/timeline.json'))['total']
-          n = math.ceil(t / 500)
+          n = math.ceil(t / 200)
           print("chunks=" + json.dumps(list(range(n))))
           PY
   render:
@@ -57,8 +57,10 @@ jobs:
           if [ "$E" -ge "$TOTAL" ]; then E=$(( TOTAL - 1 )); fi
           mkdir -p out/chunks_Long
           echo "chunk $N frames $S-$E of $TOTAL"
+          nproc; free -m | head -2
           for attempt in 1 2 3; do
-            if npx remotion render Long "out/chunks_Long/c$N.mp4" --frames=$S-$E --muted --gl=angle --concurrency=4 --crf=18 --log=error --timeout=180000; then break; fi
+            CONC=2; [ "$attempt" = 3 ] && CONC=1
+            if npx remotion render Long "out/chunks_Long/c$N.mp4" --frames=$S-$E --muted --gl=angle --concurrency=$CONC --crf=18 --log=error --timeout=120000; then break; fi
             echo "attempt $attempt failed"; [ "$attempt" = 3 ] && exit 1; sleep 5
           done
           ls -la out/chunks_Long
