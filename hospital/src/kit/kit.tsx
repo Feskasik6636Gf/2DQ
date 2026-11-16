@@ -72,7 +72,7 @@ export const Stage: React.FC<{cam: Cam; bg?: string; children: React.ReactNode; 
 		</Camera>
 		{light ? <KeyLight l={light} /> : null}
 		<Vignette strength={vig} color="8,8,24" />
-		<Grain opacity={grain} />
+		{grain > 0.005 ? <Grain opacity={grain} /> : null}
 	</AbsoluteFill>
 	);
 };

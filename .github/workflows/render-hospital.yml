@@ -13,7 +13,7 @@ concurrency:
   group: render-hospital
   cancel-in-progress: true
 env:
-  CHUNK: 300
+  CHUNK: 150
 defaults:
   run:
     working-directory: hospital
@@ -64,7 +64,7 @@ jobs:
           OUT=out/c$(printf '%02d' ${{ matrix.chunk }}).mp4
           for try in 1 2 3; do
             C=2; [ "$try" -gt 1 ] && C=1
-            npx remotion render Long $OUT --frames=$S-$E --muted --gl=swangle --concurrency=$C --crf=18 --log=error --timeout=400000 && break
+            npx remotion render Long $OUT --frames=$S-$E --muted --gl=angle --concurrency=$C --crf=18 --log=error --timeout=600000 && break
             echo "retry $try with fewer tabs"
           done
           ls -la out

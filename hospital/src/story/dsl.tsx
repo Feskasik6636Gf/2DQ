@@ -234,7 +234,7 @@ const SceneC: React.FC<{spec: SceneSpec}> = ({spec}) => {
 	for (const q of spec.flashes ?? []) fl = Math.max(fl, flash(f, typeof q === 'string' ? at(q) : q, 8));
 	return (
 		<AbsoluteFill>
-			<Stage cam={cam} bg={spec.bg ?? '#0a0e22'} light={spec.light ?? {night: true, o: 0.3}} dust={spec.dust} vig={spec.vig} grain={spec.grain}>
+			<Stage cam={cam} bg={spec.bg ?? '#0a0e22'} light={spec.light ?? {night: true, o: 0.3}} dust={spec.dust} vig={spec.vig} grain={spec.grain ?? 0}>
 				{spec.back(ctx)}
 				<Layer depth={1}>
 					<Svg>
