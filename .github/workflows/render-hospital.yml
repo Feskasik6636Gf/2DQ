@@ -13,7 +13,7 @@ concurrency:
   group: render-hospital
   cancel-in-progress: true
 env:
-  CHUNK: 750
+  CHUNK: 300
 defaults:
   run:
     working-directory: hospital
@@ -61,16 +61,19 @@ jobs:
           T=${{ needs.plan.outputs.total }}
           if [ "$E" -ge "$T" ]; then E=$(( T - 1 )); fi
           mkdir -p out
+          OUT=out/c$(printf '%02d' ${{ matrix.chunk }}).mp4
           for try in 1 2 3; do
-            C=$(( 5 - try )); [ "$C" -lt 1 ] && C=1
-            npx remotion render Long out/c$(printf '%02d' ${{ matrix.chunk }}).mp4 --frames=$S-$E --muted --gl=swangle --concurrency=$C --crf=18 --log=error --timeout=240000 && break
+            C=2; [ "$try" -gt 1 ] && C=1
+            npx remotion render Long $OUT --frames=$S-$E --muted --gl=swangle --concurrency=$C --crf=18 --log=error --timeout=400000 && break
             echo "retry $try with fewer tabs"
           done
           ls -la out
+          test -s $OUT
       - uses: actions/upload-artifact@v4
         with:
           name: chunk-${{ matrix.chunk }}
           path: hospital/out/c*.mp4
+          if-no-files-found: error
           retention-days: 3
           compression-level: 0
   assemble:
