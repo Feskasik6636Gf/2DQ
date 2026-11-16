@@ -1,0 +1,1382 @@
+[
+{
+"id": "001_HERO",
+"sp": "HERO",
+"t": "St. Brendan's Hospital has 41 night nurses on payroll.",
+"gap": 0.2
+},
+{
+"id": "002_HERO",
+"sp": "HERO",
+"t": "Every night at midnight, the badge scanner at the main entrance records 42. I was the auditor sent to find the extra one.",
+"gap": 0.2
+},
+{
+"id": "003_HERO",
+"sp": "HERO",
+"t": "By 3 in the morning I had found her.",
+"gap": 0.2
+},
+{
+"id": "004_HERO",
+"sp": "HERO",
+"t": "And she knew my name.",
+"gap": 0.2
+},
+{
+"id": "005_HERO",
+"sp": "HERO",
+"t": "But I should start at the beginning.",
+"gap": 0.45
+},
+{
+"id": "006_HERO",
+"sp": "HERO",
+"t": "My name is Marcus Hale and I audit hospitals: billing errors, staffing records, missing medication.",
+"gap": 0.2
+},
+{
+"id": "007_HERO",
+"sp": "HERO",
+"t": "It is quiet work, mostly spreadsheets and bad coffee.",
+"gap": 0.2
+},
+{
+"id": "008_HERO",
+"sp": "HERO",
+"t": "St. Brendan's had flagged something strange.",
+"gap": 0.2
+},
+{
+"id": "009_HERO",
+"sp": "HERO",
+"t": "Payroll said 41 night nurses.",
+"gap": 0.2
+},
+{
+"id": "010_HERO",
+"sp": "HERO",
+"t": "The security system said 42 badges entered every night at exactly midnight.",
+"gap": 0.2
+},
+{
+"id": "011_HERO",
+"sp": "HERO",
+"t": "Nobody could explain it. Nobody wanted to.",
+"gap": 0.45
+},
+{
+"id": "012_HERO",
+"sp": "HERO",
+"t": "The hospital administrator met me at the front desk at 11 p.m. She was a tired woman with her coat already on as if she planned to leave the moment I arrived.",
+"gap": 0.2
+},
+{
+"id": "013_HERO",
+"sp": "HERO",
+"t": "She handed me a visitor badge and a ring of keys.",
+"gap": 0.2
+},
+{
+"id": "014_ADMIN",
+"sp": "ADMIN",
+"t": "Walk the floors, she said.",
+"gap": 0.2
+},
+{
+"id": "015_ADMIN",
+"sp": "ADMIN",
+"t": "Count the staff. Check every badge against the roster.",
+"gap": 0.2
+},
+{
+"id": "016_HERO",
+"sp": "HERO",
+"t": "I asked her where she was going. Home, she said.",
+"gap": 0.2
+},
+{
+"id": "017_ADMIN",
+"sp": "ADMIN",
+"t": "I don't work nights here anymore.",
+"gap": 0.2
+},
+{
+"id": "018_HERO",
+"sp": "HERO",
+"t": "Then she paused at the door and added one more thing without turning around.",
+"gap": 0.2
+},
+{
+"id": "019_ADMIN",
+"sp": "ADMIN",
+"t": "Whatever happens at midnight, Mr. Hale, don't ask her name.",
+"gap": 0.2
+},
+{
+"id": "020_HERO",
+"sp": "HERO",
+"t": "I laughed. She didn't.",
+"gap": 0.45
+},
+{
+"id": "021_HERO",
+"sp": "HERO",
+"t": "The night staff gathered at the nurses station on the third floor.",
+"gap": 0.2
+},
+{
+"id": "022_HERO",
+"sp": "HERO",
+"t": "41 people in blue scrubs holding paper cups.",
+"gap": 0.2
+},
+{
+"id": "023_HERO",
+"sp": "HERO",
+"t": "I stood in front of them with my clipboard and felt like a substitute teacher on the first day.",
+"gap": 0.2
+},
+{
+"id": "024_HERO",
+"sp": "HERO",
+"t": "The head nurse, a broad man named Dennis with a gray beard introduced me quickly.",
+"gap": 0.2
+},
+{
+"id": "025_HERO",
+"sp": "HERO",
+"t": "Nobody smiled. Nobody asked questions.",
+"gap": 0.2
+},
+{
+"id": "026_HERO",
+"sp": "HERO",
+"t": "A few of them were looking at the clock above the desk.",
+"gap": 0.2
+},
+{
+"id": "027_HERO",
+"sp": "HERO",
+"t": "It was 11:48 p.m. I started with the roster. 41 names.",
+"gap": 0.2
+},
+{
+"id": "028_HERO",
+"sp": "HERO",
+"t": "I read them aloud and each nurse raised a hand.",
+"gap": 0.2
+},
+{
+"id": "029_HERO",
+"sp": "HERO",
+"t": "It took 10 minutes. Everything matched.",
+"gap": 0.2
+},
+{
+"id": "030_HERO",
+"sp": "HERO",
+"t": "Every face had a name. Every name had a badge.",
+"gap": 0.2
+},
+{
+"id": "031_HERO",
+"sp": "HERO",
+"t": "Then I noticed the note taped to the wall beside the telephone.",
+"gap": 0.45
+},
+{
+"id": "032_HERO",
+"sp": "HERO",
+"t": "Yellow paper. Black marker.",
+"gap": 0.2
+},
+{
+"id": "033_HERO",
+"sp": "HERO",
+"t": "A handwriting so shaky it looked like it had been written in the dark.",
+"gap": 0.2
+},
+{
+"id": "034_HERO",
+"sp": "HERO",
+"t": "Never ask her name after midnight. Never ask what she is charting.",
+"gap": 0.2
+},
+{
+"id": "035_HERO",
+"sp": "HERO",
+"t": "Count us every hour. I turn to Dennis.",
+"gap": 0.45
+},
+{
+"id": "036_HERO",
+"sp": "HERO",
+"t": "What is this? He took off his glasses and wiped them slowly.",
+"gap": 0.2
+},
+{
+"id": "037_DENNIS",
+"sp": "DENNIS",
+"t": "House rules, he said.",
+"gap": 0.2
+},
+{
+"id": "038_HERO",
+"sp": "HERO",
+"t": "Whose rules?",
+"gap": 0.2
+},
+{
+"id": "039_DENNIS",
+"sp": "DENNIS",
+"t": "The ones that keep us employed.",
+"gap": 0.2
+},
+{
+"id": "040_HERO",
+"sp": "HERO",
+"t": "The clock above the desk clicked.",
+"gap": 0.2
+},
+{
+"id": "041_HERO",
+"sp": "HERO",
+"t": "11:59 p.m. The nurses stopped talking.",
+"gap": 0.2
+},
+{
+"id": "042_HERO",
+"sp": "HERO",
+"t": "One of them, a young woman named Priya, quietly set down her coffee.",
+"gap": 0.2
+},
+{
+"id": "043_HERO",
+"sp": "HERO",
+"t": "Dennis moved to the door and stood very straight like a soldier waiting for inspection.",
+"gap": 0.2
+},
+{
+"id": "044_HERO",
+"sp": "HERO",
+"t": "12 o'clock.",
+"gap": 0.2
+},
+{
+"id": "045_HERO",
+"sp": "HERO",
+"t": "At the far end of the corridor, the elevator opened with a soft chime.",
+"gap": 0.45
+},
+{
+"id": "046_HERO",
+"sp": "HERO",
+"t": "Nobody stepped out.",
+"gap": 0.2
+},
+{
+"id": "047_HERO",
+"sp": "HERO",
+"t": "The doors stayed open for five seconds.",
+"gap": 0.2
+},
+{
+"id": "048_HERO",
+"sp": "HERO",
+"t": "Then they closed.",
+"gap": 0.2
+},
+{
+"id": "049_HERO",
+"sp": "HERO",
+"t": "And behind me, on the monitor of the badge scanner, a new line appeared.",
+"gap": 0.2
+},
+{
+"id": "050_HERO",
+"sp": "HERO",
+"t": "Staff count 42. I turned around slowly.",
+"gap": 0.2
+},
+{
+"id": "051_HERO",
+"sp": "HERO",
+"t": "The nurses were standing exactly as before.",
+"gap": 0.2
+},
+{
+"id": "052_HERO",
+"sp": "HERO",
+"t": "41 of them, motionless.",
+"gap": 0.2
+},
+{
+"id": "053_HERO",
+"sp": "HERO",
+"t": "Eyes fixed on the floor.",
+"gap": 0.2
+},
+{
+"id": "054_HERO",
+"sp": "HERO",
+"t": "I counted them aloud to be sure.",
+"gap": 0.2
+},
+{
+"id": "055_DENNIS",
+"sp": "DENNIS",
+"t": "There, Dennis whispered.",
+"gap": 0.2
+},
+{
+"id": "056_DENNIS",
+"sp": "DENNIS",
+"t": "You see? I see 41. And the scanner sees 42. I looked at the monitor again.",
+"gap": 0.2
+},
+{
+"id": "057_HERO",
+"sp": "HERO",
+"t": "The entry had a stamp.",
+"gap": 0.2
+},
+{
+"id": "058_HERO",
+"sp": "HERO",
+"t": "Timestamp: 12:00:00.",
+"gap": 0.2
+},
+{
+"id": "059_HERO",
+"sp": "HERO",
+"t": "No badge number.",
+"gap": 0.2
+},
+{
+"id": "060_HERO",
+"sp": "HERO",
+"t": "No photograph.",
+"gap": 0.2
+},
+{
+"id": "061_HERO",
+"sp": "HERO",
+"t": "Only a small gray silhouette, the kind the system shows when a picture is missing.",
+"gap": 0.2
+},
+{
+"id": "062_HERO",
+"sp": "HERO",
+"t": "Who is she? I asked.",
+"gap": 0.2
+},
+{
+"id": "063_HERO",
+"sp": "HERO",
+"t": "Priya made a tiny sound, almost a whimper.",
+"gap": 0.2
+},
+{
+"id": "064_HERO",
+"sp": "HERO",
+"t": "Dennis put a finger to his lips.",
+"gap": 0.2
+},
+{
+"id": "065_DENNIS",
+"sp": "DENNIS",
+"t": "You can't ask that, he said, not out loud.",
+"gap": 0.2
+},
+{
+"id": "066_HERO",
+"sp": "HERO",
+"t": "Behind him, at the end of the hallway, a light turned on in a room that had been dark a minute earlier.",
+"gap": 0.45
+},
+{
+"id": "067_HERO",
+"sp": "HERO",
+"t": "Room 312. I took my flashlight and walked toward it.",
+"gap": 0.2
+},
+{
+"id": "068_HERO",
+"sp": "HERO",
+"t": "Nobody followed me.",
+"gap": 0.2
+},
+{
+"id": "069_HERO",
+"sp": "HERO",
+"t": "The corridor smelled like disinfectant and something sweeter, like old flowers.",
+"gap": 0.2
+},
+{
+"id": "070_HERO",
+"sp": "HERO",
+"t": "The floor tiles squeaked under my shoes.",
+"gap": 0.2
+},
+{
+"id": "071_HERO",
+"sp": "HERO",
+"t": "Halfway there, I heard a voice.",
+"gap": 0.2
+},
+{
+"id": "072_HERO",
+"sp": "HERO",
+"t": "A woman humming softly.",
+"gap": 0.2
+},
+{
+"id": "073_HERO",
+"sp": "HERO",
+"t": "A lullaby, slow and out of tune.",
+"gap": 0.2
+},
+{
+"id": "074_HERO",
+"sp": "HERO",
+"t": "I stopped outside the door.",
+"gap": 0.2
+},
+{
+"id": "075_HERO",
+"sp": "HERO",
+"t": "It was open about a hand's width.",
+"gap": 0.2
+},
+{
+"id": "076_HERO",
+"sp": "HERO",
+"t": "I pushed it with two fingers.",
+"gap": 0.2
+},
+{
+"id": "077_HERO",
+"sp": "HERO",
+"t": "A nurse stood at the foot of a bed holding a clipboard, her back to me.",
+"gap": 0.2
+},
+{
+"id": "078_HERO",
+"sp": "HERO",
+"t": "She wore a white uniform, old-fashioned, with a small cap pinned to her hair.",
+"gap": 0.2
+},
+{
+"id": "079_HERO",
+"sp": "HERO",
+"t": "The kind I had only seen in photographs.",
+"gap": 0.2
+},
+{
+"id": "080_HERO",
+"sp": "HERO",
+"t": "The bed was empty, but she was writing on the chart anyway, nodding as if somebody were answering her questions.",
+"gap": 0.45
+},
+{
+"id": "081_HERO",
+"sp": "HERO",
+"t": "Excuse me, I said.",
+"gap": 0.2
+},
+{
+"id": "082_HERO",
+"sp": "HERO",
+"t": "The humming stopped.",
+"gap": 0.2
+},
+{
+"id": "083_HERO",
+"sp": "HERO",
+"t": "She didn't turn around.",
+"gap": 0.2
+},
+{
+"id": "084_HERO",
+"sp": "HERO",
+"t": "She tilted her head slightly, as if listening to something far away.",
+"gap": 0.2
+},
+{
+"id": "085_GHOST",
+"sp": "GHOST",
+"t": "Then she said very gently, you're early tonight, Marcus.",
+"gap": 0.2
+},
+{
+"id": "086_HERO",
+"sp": "HERO",
+"t": "I had not given her my name.",
+"gap": 0.2
+},
+{
+"id": "087_HERO",
+"sp": "HERO",
+"t": "I stepped back so fast I hit the doorframe.",
+"gap": 0.2
+},
+{
+"id": "088_HERO",
+"sp": "HERO",
+"t": "The nurse didn't move.",
+"gap": 0.2
+},
+{
+"id": "089_HERO",
+"sp": "HERO",
+"t": "She just kept writing.",
+"gap": 0.2
+},
+{
+"id": "090_HERO",
+"sp": "HERO",
+"t": "The pen scratching against paper.",
+"gap": 0.2
+},
+{
+"id": "091_HERO",
+"sp": "HERO",
+"t": "The sound too loud in the silence.",
+"gap": 0.2
+},
+{
+"id": "092_HERO",
+"sp": "HERO",
+"t": "I remembered the rule.",
+"gap": 0.2
+},
+{
+"id": "093_HERO",
+"sp": "HERO",
+"t": "Never ask her name.",
+"gap": 0.2
+},
+{
+"id": "094_HERO",
+"sp": "HERO",
+"t": "So I asked something else.",
+"gap": 0.2
+},
+{
+"id": "095_HERO",
+"sp": "HERO",
+"t": "What are you charting?",
+"gap": 0.2
+},
+{
+"id": "096_HERO",
+"sp": "HERO",
+"t": "The pen stopped.",
+"gap": 0.2
+},
+{
+"id": "097_HERO",
+"sp": "HERO",
+"t": "The room grew cold instantly.",
+"gap": 0.2
+},
+{
+"id": "098_HERO",
+"sp": "HERO",
+"t": "The way a room does when someone opens a freezer.",
+"gap": 0.2
+},
+{
+"id": "099_HERO",
+"sp": "HERO",
+"t": "She slowly lowered the clipboard to her side.",
+"gap": 0.2
+},
+{
+"id": "100_GHOST",
+"sp": "GHOST",
+"t": "Oh, she whispered.",
+"gap": 0.2
+},
+{
+"id": "101_GHOST",
+"sp": "GHOST",
+"t": "You shouldn't have asked that.",
+"gap": 0.2
+},
+{
+"id": "102_HERO",
+"sp": "HERO",
+"t": "Then the light in the room went out.",
+"gap": 0.2
+},
+{
+"id": "103_HERO",
+"sp": "HERO",
+"t": "I ran.",
+"gap": 0.45
+},
+{
+"id": "104_HERO",
+"sp": "HERO",
+"t": "I ran down the corridor until I reached the nurse's station, where Dennis was already waiting with a stone-faced stare.",
+"gap": 0.2
+},
+{
+"id": "105_DENNIS",
+"sp": "DENNIS",
+"t": "You asked her, he said.",
+"gap": 0.2
+},
+{
+"id": "106_HERO",
+"sp": "HERO",
+"t": "I asked what she was charting.",
+"gap": 0.2
+},
+{
+"id": "107_DENNIS",
+"sp": "DENNIS",
+"t": "He closed his eyes. That's almost as bad.",
+"gap": 0.2
+},
+{
+"id": "108_HERO",
+"sp": "HERO",
+"t": "Priya was crying silently now.",
+"gap": 0.2
+},
+{
+"id": "109_HERO",
+"sp": "HERO",
+"t": "The other nurses had gathered around the desk.",
+"gap": 0.2
+},
+{
+"id": "110_HERO",
+"sp": "HERO",
+"t": "Arms crossed, shoulders tense.",
+"gap": 0.2
+},
+{
+"id": "111_HERO",
+"sp": "HERO",
+"t": "Someone had turned the clock face down.",
+"gap": 0.2
+},
+{
+"id": "112_DENNIS",
+"sp": "DENNIS",
+"t": "Listen to me, Dennis said.",
+"gap": 0.2
+},
+{
+"id": "113_DENNIS",
+"sp": "DENNIS",
+"t": "She walks the rounds every night.",
+"gap": 0.2
+},
+{
+"id": "114_DENNIS",
+"sp": "DENNIS",
+"t": "She never hurts the patients.",
+"gap": 0.2
+},
+{
+"id": "115_DENNIS",
+"sp": "DENNIS",
+"t": "She never touches us. She only charts.",
+"gap": 0.2
+},
+{
+"id": "116_HERO",
+"sp": "HERO",
+"t": "Charts what?",
+"gap": 0.2
+},
+{
+"id": "117_DENNIS",
+"sp": "DENNIS",
+"t": "The ones who are about to die.",
+"gap": 0.2
+},
+{
+"id": "118_HERO",
+"sp": "HERO",
+"t": "I looked at him.",
+"gap": 0.2
+},
+{
+"id": "119_DENNIS",
+"sp": "DENNIS",
+"t": "Go check, he said quietly.",
+"gap": 0.2
+},
+{
+"id": "120_HERO",
+"sp": "HERO",
+"t": "Room 312. The chart she wrote. I didn't want to.",
+"gap": 0.2
+},
+{
+"id": "121_HERO",
+"sp": "HERO",
+"t": "But I'm an auditor. I trust documents.",
+"gap": 0.2
+},
+{
+"id": "122_HERO",
+"sp": "HERO",
+"t": "So I went back, shaking, and found the clipboard lying on the empty bed.",
+"gap": 0.2
+},
+{
+"id": "123_HERO",
+"sp": "HERO",
+"t": "The paper was yellowed.",
+"gap": 0.2
+},
+{
+"id": "124_HERO",
+"sp": "HERO",
+"t": "Brittle at the edges.",
+"gap": 0.2
+},
+{
+"id": "125_HERO",
+"sp": "HERO",
+"t": "The handwriting was neat and slanted.",
+"gap": 0.2
+},
+{
+"id": "126_HERO",
+"sp": "HERO",
+"t": "A list of names, each with a date and a time.",
+"gap": 0.2
+},
+{
+"id": "127_HERO",
+"sp": "HERO",
+"t": "At the top, Mrs. Eleanor Wynne.",
+"gap": 0.2
+},
+{
+"id": "128_HERO",
+"sp": "HERO",
+"t": "Room 308. 3:12 a.m.",
+"gap": 0.2
+},
+{
+"id": "129_HERO",
+"sp": "HERO",
+"t": "Below it, Mr. Alvarez.",
+"gap": 0.2
+},
+{
+"id": "130_HERO",
+"sp": "HERO",
+"t": "Room 314. 4:40 a.m.",
+"gap": 0.2
+},
+{
+"id": "131_HERO",
+"sp": "HERO",
+"t": "And at the very bottom, the last line, written in fresh ink that's still shown wet under the flashlight.",
+"gap": 0.45
+},
+{
+"id": "132_HERO",
+"sp": "HERO",
+"t": "Marcus Hale.",
+"gap": 0.2
+},
+{
+"id": "133_HERO",
+"sp": "HERO",
+"t": "Stairwell B.",
+"gap": 0.2
+},
+{
+"id": "134_HERO",
+"sp": "HERO",
+"t": "12 o'clock a.m.",
+"gap": 0.2
+},
+{
+"id": "135_HERO",
+"sp": "HERO",
+"t": "I read it three times. It was already past one.",
+"gap": 0.2
+},
+{
+"id": "136_HERO",
+"sp": "HERO",
+"t": "I ran to the patient in room 308. Mrs. Wynne was asleep.",
+"gap": 0.2
+},
+{
+"id": "137_HERO",
+"sp": "HERO",
+"t": "Her breathing shallow, but steady.",
+"gap": 0.2
+},
+{
+"id": "138_HERO",
+"sp": "HERO",
+"t": "I stood beside her for an hour, watching the monitor.",
+"gap": 0.2
+},
+{
+"id": "139_HERO",
+"sp": "HERO",
+"t": "At 312, her heart stopped.",
+"gap": 0.2
+},
+{
+"id": "140_HERO",
+"sp": "HERO",
+"t": "Dennis and Priya rushed in.",
+"gap": 0.2
+},
+{
+"id": "141_HERO",
+"sp": "HERO",
+"t": "They worked on her for 20 minutes, but she was already gone.",
+"gap": 0.2
+},
+{
+"id": "142_HERO",
+"sp": "HERO",
+"t": "When it was over, Dennis looked at me with something that was almost pity.",
+"gap": 0.2
+},
+{
+"id": "143_DENNIS",
+"sp": "DENNIS",
+"t": "She's never wrong, he said.",
+"gap": 0.2
+},
+{
+"id": "144_DENNIS",
+"sp": "DENNIS",
+"t": "That's why we count every hour.",
+"gap": 0.2
+},
+{
+"id": "145_DENNIS",
+"sp": "DENNIS",
+"t": "If the number you're seeing is 42, it means she's chosen someone.",
+"gap": 0.2
+},
+{
+"id": "146_PRIYA",
+"sp": "PRIYA",
+"t": "Chosen how? She doesn't kill them, Priya said softly.",
+"gap": 0.2
+},
+{
+"id": "147_PRIYA",
+"sp": "PRIYA",
+"t": "She just writes their name, and then the hospital takes care of the rest.",
+"gap": 0.2
+},
+{
+"id": "148_HERO",
+"sp": "HERO",
+"t": "I thought of the last line on the chart.",
+"gap": 0.2
+},
+{
+"id": "149_HERO",
+"sp": "HERO",
+"t": "Marcus Hale. Stairwell B.",
+"gap": 0.2
+},
+{
+"id": "150_HERO",
+"sp": "HERO",
+"t": "It said midnight, I said.",
+"gap": 0.2
+},
+{
+"id": "151_HERO",
+"sp": "HERO",
+"t": "But it's three in the morning.",
+"gap": 0.2
+},
+{
+"id": "152_HERO",
+"sp": "HERO",
+"t": "I'm still alive.",
+"gap": 0.2
+},
+{
+"id": "153_DENNIS",
+"sp": "DENNIS",
+"t": "Dennis frowned. That's strange.",
+"gap": 0.2
+},
+{
+"id": "154_DENNIS",
+"sp": "DENNIS",
+"t": "Why? Because she's never been late.",
+"gap": 0.2
+},
+{
+"id": "155_HERO",
+"sp": "HERO",
+"t": "I decided to check the staff roster again to compare it with the badge records.",
+"gap": 0.45
+},
+{
+"id": "156_HERO",
+"sp": "HERO",
+"t": "I went back to the administrator's office, opened the filing cabinet and found the personnel folders.",
+"gap": 0.2
+},
+{
+"id": "157_HERO",
+"sp": "HERO",
+"t": "Every nurse had one.",
+"gap": 0.2
+},
+{
+"id": "158_HERO",
+"sp": "HERO",
+"t": "41 folders in alphabetical order.",
+"gap": 0.2
+},
+{
+"id": "159_HERO",
+"sp": "HERO",
+"t": "At the end of the drawer, there was a 42nd folder, thin and gray without a label.",
+"gap": 0.2
+},
+{
+"id": "160_HERO",
+"sp": "HERO",
+"t": "I opened it. Inside was a single sheet of paper, an employee file, a photograph stapled to the corner.",
+"gap": 0.45
+},
+{
+"id": "161_HERO",
+"sp": "HERO",
+"t": "It was my face.",
+"gap": 0.2
+},
+{
+"id": "162_HERO",
+"sp": "HERO",
+"t": "The name read Marcus Hale, R.N. Night Shift.",
+"gap": 0.2
+},
+{
+"id": "163_HERO",
+"sp": "HERO",
+"t": "Third floor, date of hire is 11 years ago.",
+"gap": 0.2
+},
+{
+"id": "164_HERO",
+"sp": "HERO",
+"t": "Date of termination, 3 years ago.",
+"gap": 0.2
+},
+{
+"id": "165_HERO",
+"sp": "HERO",
+"t": "And under that, in a different handwriting deceased on duty, cardiac arrest.",
+"gap": 0.2
+},
+{
+"id": "166_HERO",
+"sp": "HERO",
+"t": "Stairwell B, 12 o'clock a.m.",
+"gap": 0.2
+},
+{
+"id": "167_HERO",
+"sp": "HERO",
+"t": "My hands went numb.",
+"gap": 0.2
+},
+{
+"id": "168_HERO",
+"sp": "HERO",
+"t": "The paper slipped between my fingers and landed on the floor.",
+"gap": 0.2
+},
+{
+"id": "169_HERO",
+"sp": "HERO",
+"t": "I didn't remember being a nurse.",
+"gap": 0.2
+},
+{
+"id": "170_HERO",
+"sp": "HERO",
+"t": "I remembered an apartment, a car, an office with fluorescent lights.",
+"gap": 0.2
+},
+{
+"id": "171_HERO",
+"sp": "HERO",
+"t": "I remembered audits and invoices and coffee.",
+"gap": 0.2
+},
+{
+"id": "172_HERO",
+"sp": "HERO",
+"t": "But I couldn't remember my mother's face or my last birthday.",
+"gap": 0.2
+},
+{
+"id": "173_HERO",
+"sp": "HERO",
+"t": "Or any day before the administrator handed me the visitor badge at 11 p.m.",
+"gap": 0.45
+},
+{
+"id": "174_HERO",
+"sp": "HERO",
+"t": "I turned around.",
+"gap": 0.2
+},
+{
+"id": "175_HERO",
+"sp": "HERO",
+"t": "The old-fashioned nurse stood in the doorway.",
+"gap": 0.2
+},
+{
+"id": "176_HERO",
+"sp": "HERO",
+"t": "The white cap tilted.",
+"gap": 0.2
+},
+{
+"id": "177_HERO",
+"sp": "HERO",
+"t": "Her face finally lifted into the light.",
+"gap": 0.2
+},
+{
+"id": "178_HERO",
+"sp": "HERO",
+"t": "She looked exactly like Priya, 30 years older.",
+"gap": 0.2
+},
+{
+"id": "179_GHOST",
+"sp": "GHOST",
+"t": "You always come back, she said kindly.",
+"gap": 0.2
+},
+{
+"id": "180_GHOST",
+"sp": "GHOST",
+"t": "Every night you arrive as someone new.",
+"gap": 0.2
+},
+{
+"id": "181_GHOST",
+"sp": "GHOST",
+"t": "An auditor. A visitor.",
+"gap": 0.2
+},
+{
+"id": "182_GHOST",
+"sp": "GHOST",
+"t": "A repairman. And every night you try to count us.",
+"gap": 0.2
+},
+{
+"id": "183_HERO",
+"sp": "HERO",
+"t": "Why? My voice cracked.",
+"gap": 0.2
+},
+{
+"id": "184_GHOST",
+"sp": "GHOST",
+"t": "Why do I come back? Because you never finished your rounds.",
+"gap": 0.2
+},
+{
+"id": "185_HERO",
+"sp": "HERO",
+"t": "I looked at my badge. The visitor's tag was gone.",
+"gap": 0.2
+},
+{
+"id": "186_HERO",
+"sp": "HERO",
+"t": "In its place hung a plastic card with a small photograph and the name Marcus Hale, R.N.",
+"gap": 0.2
+},
+{
+"id": "187_HERO",
+"sp": "HERO",
+"t": "The extra nurse on the scanner wasn't her.",
+"gap": 0.2
+},
+{
+"id": "188_HERO",
+"sp": "HERO",
+"t": "It was me.",
+"gap": 0.2
+},
+{
+"id": "189_HERO",
+"sp": "HERO",
+"t": "The ghost who walked the corridors at midnight, 42 on the count, was the nurse who had died in stairwell B three years ago and never left.",
+"gap": 0.45
+},
+{
+"id": "190_HERO",
+"sp": "HERO",
+"t": "Then who are you?",
+"gap": 0.2
+},
+{
+"id": "191_HERO",
+"sp": "HERO",
+"t": "I whispered. She smiled, and for the first time I saw the exhaustion in her eyes. The same exhaustion I had seen on the administrator's face.",
+"gap": 0.2
+},
+{
+"id": "192_GHOST",
+"sp": "GHOST",
+"t": "I'm the one who stayed to help you remember, she said.",
+"gap": 0.2
+},
+{
+"id": "193_GHOST",
+"sp": "GHOST",
+"t": "Every night I write your name.",
+"gap": 0.2
+},
+{
+"id": "194_GHOST",
+"sp": "GHOST",
+"t": "Every night you survive another round.",
+"gap": 0.2
+},
+{
+"id": "195_GHOST",
+"sp": "GHOST",
+"t": "And every night you forget again.",
+"gap": 0.2
+},
+{
+"id": "196_HERO",
+"sp": "HERO",
+"t": "And if I stop forgetting?",
+"gap": 0.2
+},
+{
+"id": "197_GHOST",
+"sp": "GHOST",
+"t": "Then someone has to take your place.",
+"gap": 0.2
+},
+{
+"id": "198_HERO",
+"sp": "HERO",
+"t": "The clock in the hall struck four. Priya and Dennis stood behind her now, quiet, waiting.",
+"gap": 0.2
+},
+{
+"id": "199_HERO",
+"sp": "HERO",
+"t": "41 nurses in blue scrubs lined along the corridor, watching me with eyes full of tired kindness.",
+"gap": 0.2
+},
+{
+"id": "200_DENNIS",
+"sp": "DENNIS",
+"t": "We never told you, Dennis said.",
+"gap": 0.2
+},
+{
+"id": "201_DENNIS",
+"sp": "DENNIS",
+"t": "Because the last time we did you ran into the stairwell and didn't come back for a year.",
+"gap": 0.2
+},
+{
+"id": "202_HERO",
+"sp": "HERO",
+"t": "I looked down the hall. At the end, a door marked Stairwell B stood slightly open,",
+"gap": 0.2
+},
+{
+"id": "203_HERO",
+"sp": "HERO",
+"t": "a faint white light spilling out of it. What happens if I go in?",
+"gap": 0.2
+},
+{
+"id": "204_PRIYA",
+"sp": "PRIYA",
+"t": "You finally rest, Priya said.",
+"gap": 0.2
+},
+{
+"id": "205_PRIYA",
+"sp": "PRIYA",
+"t": "But then the count drops to 41 and the scanner stops recording the extra badge.",
+"gap": 0.2
+},
+{
+"id": "206_PRIYA",
+"sp": "PRIYA",
+"t": "The hospital stops needing night nurses.",
+"gap": 0.2
+},
+{
+"id": "207_HERO",
+"sp": "HERO",
+"t": "And the patients?",
+"gap": 0.2
+},
+{
+"id": "208_GHOST",
+"sp": "GHOST",
+"t": "They'd have no one to chart them, the old nurse said gently.",
+"gap": 0.2
+},
+{
+"id": "209_GHOST",
+"sp": "GHOST",
+"t": "No one to warn them. No one to sit beside them when the monitors fail.",
+"gap": 0.2
+},
+{
+"id": "210_HERO",
+"sp": "HERO",
+"t": "I understood then.",
+"gap": 0.2
+},
+{
+"id": "211_HERO",
+"sp": "HERO",
+"t": "The extra nurse was not a curse.",
+"gap": 0.2
+},
+{
+"id": "212_HERO",
+"sp": "HERO",
+"t": "She was a watchman, a ghost who kept the rounds so nobody else had to die alone. And I was the one who couldn't let go.",
+"gap": 0.45
+},
+{
+"id": "213_HERO",
+"sp": "HERO",
+"t": "At 5 a.m. the front doors opened and the day shift arrived. The administrator walked in carrying her coffee.",
+"gap": 0.2
+},
+{
+"id": "214_HERO",
+"sp": "HERO",
+"t": "Young and rested, wearing her coat over a clean uniform.",
+"gap": 0.2
+},
+{
+"id": "215_ADMIN",
+"sp": "ADMIN",
+"t": "Mr. Hale, she said brightly.",
+"gap": 0.2
+},
+{
+"id": "216_ADMIN",
+"sp": "ADMIN",
+"t": "Did you find the extra nurse?",
+"gap": 0.2
+},
+{
+"id": "217_HERO",
+"sp": "HERO",
+"t": "I looked at the clipboard in my hand.",
+"gap": 0.2
+},
+{
+"id": "218_HERO",
+"sp": "HERO",
+"t": "The audit form was blank. The visitor badge was gone, and my reflection in the glass door showed a man in blue scrubs,",
+"gap": 0.2
+},
+{
+"id": "219_HERO",
+"sp": "HERO",
+"t": "pale, exhausted, with a name tag that read R.N.",
+"gap": 0.2
+},
+{
+"id": "220_HERO",
+"sp": "HERO",
+"t": "Yes, I said quietly.",
+"gap": 0.2
+},
+{
+"id": "221_HERO",
+"sp": "HERO",
+"t": "I found her. She smiled, relieved. Good. Then we can close the case. She turned and left the building. Behind me the elevator chimed.",
+"gap": 0.45
+},
+{
+"id": "222_HERO",
+"sp": "HERO",
+"t": "At 11 that night, a new auditor stepped through the front door, carrying a leather bag.",
+"gap": 0.2
+},
+{
+"id": "223_HERO",
+"sp": "HERO",
+"t": "Young, nervous, wearing a visitor badge too large for his coat.",
+"gap": 0.2
+},
+{
+"id": "224_HERO",
+"sp": "HERO",
+"t": "I walked to the nurse's station and picked up a black marker.",
+"gap": 0.2
+},
+{
+"id": "225_HERO",
+"sp": "HERO",
+"t": "I tore a sheet of yellow paper from the pad and in shaky handwriting, wrote the rule.",
+"gap": 0.2
+},
+{
+"id": "226_HERO",
+"sp": "HERO",
+"t": "Never ask her name after midnight.",
+"gap": 0.2
+},
+{
+"id": "227_HERO",
+"sp": "HERO",
+"t": "Never ask what she is charting. Count us every hour.",
+"gap": 0.45
+},
+{
+"id": "228_HERO",
+"sp": "HERO",
+"t": "I taped it to the wall beside the telephone and waited. At 11.59 the new auditor looked at the clock above the desk.",
+"gap": 0.2
+},
+{
+"id": "229_NEWB",
+"sp": "NEWB",
+"t": "Is something supposed to happen?",
+"gap": 0.2
+},
+{
+"id": "230_HERO",
+"sp": "HERO",
+"t": "I smiled and for the first time I felt no fear. Don't ask her name, I said gently. She'll tell you when she's ready.",
+"gap": 0.2
+}
+]
