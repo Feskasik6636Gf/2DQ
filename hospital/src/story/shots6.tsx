@@ -12,7 +12,8 @@ import {hero} from './shots1';
 import {staff} from './shots3';
 import {ClockHud, PatientBed} from './shots5';
 
-const scrubs = {color: '#3b7fd1', outfit: 'tee' as const, shoe: '#e9eef2'};
+const scrubs = {color: '#3b88d4', outfit: 'scrubs' as const, legColor: '#2f6fb0', shoe: '#e9eef2', age: 0.6};
+const OLD = {color: '#7b8089', outfit: 'auditor' as const, legColor: '#2b2d36', shoe: '#1c1a1a'};
 const heroS = (x: number, beats: Beat[] = [], o: Partial<ActorSpec> = {}): ActorSpec => hero(x, beats, {...o, props: {...scrubs, ...(o.props ?? {})}});
 const dennisAt = (x: number, beats: Beat[] = [], o: Partial<ActorSpec> = {}): ActorSpec => ({id: 'dennis', who: 'dennis', x, face: -1, beats, ...o});
 const priyaAt = (x: number, beats: Beat[] = [], o: Partial<ActorSpec> = {}): ActorSpec => ({id: 'priya', who: 'priya', x, face: -1, beats, ...o});
@@ -282,7 +283,7 @@ export const SHOTS6: ShotDef[] = [
 		],
 		back: AR,
 		front: ARF(1),
-		actors: [heroS(520, [{at: '169', off: 0, len: 70, g: 'think'}, {at: '169', off: 0, len: 70, expr: 'worried'}], {face: 1, props: {color: '#f2b21c', outfit: 'suit'}})],
+		actors: [heroS(520, [{at: '169', off: 0, len: 70, g: 'think'}, {at: '169', off: 0, len: 70, expr: 'worried'}], {face: 1, props: OLD})],
 		world: ({f, at}) => (
 			<g transform={`translate(760,330) scale(${Math.min(1, (f - at('169') + 4) / 8)})`}>
 				<circle r={100} fill="#fff" stroke="#1a2250" strokeWidth={6} />
@@ -475,7 +476,7 @@ export const SHOTS6: ShotDef[] = [
 		],
 		back: AR,
 		front: ARF(1),
-		actors: [heroS(760, [{at: '179', off: 0, len: 60, expr: 'wide'}, {at: '179', off: 0, len: 60, sway: 1.1}], {face: 1, props: {color: '#f2b21c', outfit: 'suit'}}), ghostAt(1250, [{at: '179', off: 0, len: 60, mouth: 'smile'}, {at: '179', off: 0, len: 60, turn: 0.45}], {s: 1.02})],
+		actors: [heroS(760, [{at: '179', off: 0, len: 60, expr: 'wide'}, {at: '179', off: 0, len: 60, sway: 1.1}], {face: 1, props: OLD}), ghostAt(1250, [{at: '179', off: 0, len: 60, mouth: 'smile'}, {at: '179', off: 0, len: 60, turn: 0.45}], {s: 1.02})],
 		hud: ({f, at}) => <Accent text="“YOU ALWAYS COME BACK”" t={f - at('179') - 4} dur={50} y={880} c="#bfe9ff" />,
 	}),
 	// 180 — every night you arrive as someone new
@@ -487,7 +488,7 @@ export const SHOTS6: ShotDef[] = [
 		],
 		back: AR,
 		front: ARF(1),
-		actors: [ghostAt(1250, [{at: '180', off: 0, len: 60, mouth: 'smile'}, {at: '180', off: 0, len: 50, g: 'presentF'}], {s: 1.02}), heroS(800, [], {face: 1, props: {color: '#f2b21c', outfit: 'suit'}})],
+		actors: [ghostAt(1250, [{at: '180', off: 0, len: 60, mouth: 'smile'}, {at: '180', off: 0, len: 50, g: 'presentF'}], {s: 1.02}), heroS(800, [], {face: 1, props: OLD})],
 		hud: ({f, at}) => <Caption f={f} from={at('180') + 6} to={at('180') + 50} top={170} lines={['EVERY NIGHT —', 'SOMEONE NEW']} size={74} c="#bfe9ff" />,
 	}),
 	// 181 — an auditor, a visitor
@@ -500,7 +501,7 @@ export const SHOTS6: ShotDef[] = [
 		back: AR,
 		front: ARF(1),
 		actors: [
-			{id: 'v1', who: 'hero', x: 760, face: 1, hidden: true, props: {color: '#f2b21c', outfit: 'suit'}, beats: [{at: '181', off: 4, len: 1, hide: false}, {at: '181', off: 4, len: 40, hop: 18}, {at: '181', off: 4, len: 60, mouth: 'smile'}]},
+			{id: 'v1', who: 'hero', x: 760, face: 1, hidden: true, props: OLD, beats: [{at: '181', off: 4, len: 1, hide: false}, {at: '181', off: 4, len: 40, hop: 18}, {at: '181', off: 4, len: 60, mouth: 'smile'}]},
 			{id: 'v2', who: 'hero', x: 1130, face: 1, hidden: true, item: 'badge', props: {color: '#9a8cd6', outfit: 'tee', hair: 'cap'}, beats: [{at: '181', off: 36, len: 1, hide: false}, {at: '181', off: 36, len: 40, hop: 18}, {at: '181', off: 36, len: 60, mouth: 'smile'}]},
 		],
 		world: ({f, at}) => (
@@ -520,7 +521,7 @@ export const SHOTS6: ShotDef[] = [
 		back: AR,
 		front: ARF(1),
 		actors: [
-			{id: 'v1', who: 'hero', x: 640, face: 1, props: {color: '#f2b21c', outfit: 'suit'}, beats: []},
+			{id: 'v1', who: 'hero', x: 640, face: 1, props: OLD, beats: []},
 			{id: 'v2', who: 'hero', x: 920, face: 1, item: 'badge', props: {color: '#9a8cd6', outfit: 'tee', hair: 'cap'}, beats: []},
 			{id: 'v3', who: 'hero', x: 1200, face: 1, hidden: true, item: 'marker', props: {color: '#d98a2b', outfit: 'apron', hair: 'cap', hairColor: '#4a3a22'}, beats: [{at: '182', off: 4, len: 1, hide: false}, {at: '182', off: 4, len: 40, hop: 18}]},
 		],
@@ -546,7 +547,7 @@ export const SHOTS6: ShotDef[] = [
 		],
 		back: AR,
 		front: ARF(1),
-		actors: [heroS(760, [{at: '183', off: 0, len: 80, expr: 'worried'}, {at: '183', off: 0, len: 80, sway: 2.2}], {face: 1, props: {color: '#f2b21c', outfit: 'suit'}}), ghostAt(1250, [], {s: 1.02})],
+		actors: [heroS(760, [{at: '183', off: 0, len: 80, expr: 'worried'}, {at: '183', off: 0, len: 80, sway: 2.2}], {face: 1, props: OLD}), ghostAt(1250, [], {s: 1.02})],
 		hud: ({f, at}) => <Caption f={f} from={at('183') + 2} to={at('183') + 44} top={170} lines={['WHY?']} size={120} />,
 	}),
 	// 184 — because you never finished your rounds
@@ -558,7 +559,7 @@ export const SHOTS6: ShotDef[] = [
 		],
 		back: AR,
 		front: ARF(1),
-		actors: [heroS(760, [{at: '184', off: 0, len: 90, expr: 'worried'}], {face: 1, props: {color: '#f2b21c', outfit: 'suit'}}), ghostAt(1250, [{at: '184', off: 40, len: 80, g: 'point'}, {at: '184', off: 40, len: 80, turn: 0.4}], {s: 1.02, item: 'clip'})],
+		actors: [heroS(760, [{at: '184', off: 0, len: 90, expr: 'worried'}], {face: 1, props: OLD}), ghostAt(1250, [{at: '184', off: 40, len: 80, g: 'point'}, {at: '184', off: 40, len: 80, turn: 0.4}], {s: 1.02, item: 'clip'})],
 		hud: ({f, at}) => <Accent text="YOU NEVER FINISHED YOUR ROUNDS" t={f - at('184') - 50} dur={80} y={880} c="#bfe9ff" />,
 	}),
 	// 185 — I looked at my badge; the visitor tag was gone
@@ -570,7 +571,7 @@ export const SHOTS6: ShotDef[] = [
 		],
 		back: AR,
 		front: ARF(1),
-		actors: [hero(760, [{at: '185', off: 0, len: 60, look: [0, 1], head: 14}, {at: '185', off: 0, len: 60, expr: 'wide'}], {face: 1, props: {color: '#f2b21c', outfit: 'suit'}})],
+		actors: [hero(760, [{at: '185', off: 0, len: 60, look: [0, 1], head: 14}, {at: '185', off: 0, len: 60, expr: 'wide'}], {face: 1, props: OLD})],
 		world: ({f, at}) => {
 			const u = Math.min(1, Math.max(0, (f - at('185') - 30) / 40));
 			return (
@@ -597,7 +598,10 @@ export const SHOTS6: ShotDef[] = [
 		actors: [heroS(760, [{at: '186', off: 0, len: 150, look: [0, 1], head: 12}, {at: '186', off: 0, len: 150, expr: 'wide'}], {face: 1})],
 		world: ({f, at}) => {
 			const k = Math.min(1, Math.max(0, (f - at('186') - 10) / 12));
+			const u = Math.min(1, Math.max(0, (f - at('186') + 4) / 40));
 			return (
+				<g>
+				{u < 1 ? Array.from({length: 26}).map((_, i) => <circle key={i} cx={720 + Math.sin(i * 7.3) * 90 + Math.sin(i + u * 6) * 20 * u} cy={700 - Math.cos(i * 3.1) * 130 - u * (80 + (i % 5) * 40)} r={7 + (i % 4) * 3} fill="#7b8089" opacity={0.9 * (1 - u)} />) : null}
 				<g transform={`translate(1060,560) rotate(-4) scale(${k})`}>
 					<rect x={-190} y={-110} width={380} height={220} rx={16} fill="#f4f8fb" stroke="#3b7fd1" strokeWidth={8} />
 					<rect x={-170} y={-90} width={110} height={130} fill="#cfd8e0" />
@@ -611,6 +615,7 @@ export const SHOTS6: ShotDef[] = [
 						HALE, R.N.
 					</text>
 					<rect x={-170} y={60} width={340} height={14} fill="#3b7fd1" />
+				</g>
 				</g>
 			);
 		},
@@ -1147,7 +1152,7 @@ export const SHOTS6: ShotDef[] = [
 		back: ({f}) => <Lobby f={f} night={false} day={1} />,
 		front: ({f}) => <LobbyFront f={f} />,
 		actors: [
-			hero(1000, [{at: '218', off: 0, len: 100, look: [0.9, 0]}, {at: '218', off: 0, len: 100, expr: 'worried'}], {face: 1, item: 'clip', props: {color: '#f2b21c', outfit: 'suit'}}),
+			hero(1000, [{at: '218', off: 0, len: 100, look: [0.9, 0]}, {at: '218', off: 0, len: 100, expr: 'worried'}], {face: 1, item: 'clip', props: OLD}),
 			heroS(1530, [{at: '218', off: 20, len: 110, expr: 'worried'}], {face: -1, z: 3}),
 		],
 		world: ({f, at}) => (
@@ -1166,7 +1171,7 @@ export const SHOTS6: ShotDef[] = [
 		],
 		back: ({f}) => <Lobby f={f} night={false} day={1} />,
 		front: ({f}) => <LobbyFront f={f} />,
-		actors: [heroS(1530, [{at: '219', off: 0, len: 90, expr: 'sleepy'}], {face: -1, props: {chestText: 'R.N.'}})],
+		actors: [heroS(1530, [{at: '219', off: 0, len: 90, expr: 'sleepy'}], {face: -1, props: {}})],
 		world: ({f, at}) => <Callout f={f} t0={at('219') + 20} t1={at('219') + 100} from={[1520, 700]} to={[1300, 860]} text="NAME TAG: R.N." c="#3b7fd1" />,
 	}),
 	// 220 — yes, I said quietly

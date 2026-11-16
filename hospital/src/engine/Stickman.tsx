@@ -3,7 +3,7 @@ import {darken, lighten} from './color';
 
 export type Expr = 'normal' | 'angry' | 'sad' | 'sleepy' | 'wide' | 'worried';
 export type Hair = 'none' | 'spiky' | 'bun' | 'cap' | 'ponytail' | 'grey' | 'bob' | 'short';
-export type Outfit = 'hoodie' | 'suit' | 'gown' | 'coat' | 'apron' | 'tee';
+export type Outfit = 'hoodie' | 'suit' | 'gown' | 'coat' | 'apron' | 'tee' | 'auditor' | 'scrubs';
 export type Acc = 'headphones' | 'mustache' | 'glasses';
 export type Mouth = 'line' | 'frown' | 'open' | 'smile' | 'flat' | 'smirk' | 'none';
 export type HandShape = 'fist' | 'point' | 'snap';
@@ -317,6 +317,42 @@ export const Stickman: React.FC<Props> = (p) => {
 							<line x1={9} y1={torsoTop + 40} x2={9} y2={6} stroke={darken(color, 0.18)} strokeWidth={2.5} />
 							<rect x={14} y={-70} width={14} height={16} rx={2} fill="none" stroke={darken(color, 0.2)} strokeWidth={2} />
 							<rect x={-6} y={torsoTop + 22} width={12} height={4} rx={2} fill="#3fae8f" />
+						</>
+					) : null}
+					{outfit === 'auditor' ? (
+						<>
+							<path d={`M${-6},${torsoTop + 2} L${22},${torsoTop + 2} L${9},${torsoTop + 52} Z`} fill="#f4f2ec" />
+							<path d={`M${6},${torsoTop + 8} L${12},${torsoTop + 8} L${14},${torsoTop + 52} L${9},${torsoTop + 64} L${4},${torsoTop + 52} Z`} fill="#22222e" />
+							<path d={`M${-8},${torsoTop + 2} L${9},${torsoTop + 56} L${-10},${torsoTop + 40} Z`} fill={darken(color, 0.22)} />
+							<path d={`M${24},${torsoTop + 2} L${9},${torsoTop + 56} L${26},${torsoTop + 40} Z`} fill={darken(color, 0.22)} />
+							<line x1={9} y1={torsoTop + 56} x2={9} y2={6} stroke={darken(color, 0.25)} strokeWidth={2.5} />
+							<g transform={`translate(-24,${torsoTop + 44})`}>
+								<rect width={20} height={26} rx={3} fill="#f2c21c" stroke="#a8820a" strokeWidth={2} />
+								<rect x={4} y={5} width={12} height={9} fill="#fff6c8" />
+								<line x1={4} y1={19} x2={16} y2={19} stroke="#a8820a" strokeWidth={2} />
+							</g>
+							<rect x={14} y={-50} width={13} height={24} rx={3} fill="#2a2f3a" />
+							<rect x={13} y={-54} width={15} height={6} rx={2} fill="#c9d4e6" />
+							<g transform="translate(-30,-12)">
+								<circle r={6} fill="none" stroke="#cfd3d8" strokeWidth={3} />
+								<rect x={-9} y={4} width={5} height={14} rx={2} fill="#d9b23a" />
+								<rect x={-2} y={6} width={5} height={16} rx={2} fill="#c9a22c" />
+							</g>
+						</>
+					) : null}
+					{outfit === 'scrubs' ? (
+						<>
+							<path d={`M${-8},${torsoTop + 2} L${22},${torsoTop + 2} L${7},${torsoTop + 34} Z`} fill={darken(color, 0.4)} />
+							<rect x={10} y={-52} width={18} height={18} rx={3} fill="none" stroke={darken(color, 0.3)} strokeWidth={2.5} />
+							<line x1={2} y1={torsoTop + 4} x2={4} y2={torsoTop + 44} stroke="#ffffff" strokeWidth={2.5} />
+							<g transform={`translate(4,${torsoTop + 58}) rotate(-3)`}>
+								<rect x={-22} y={-15} width={44} height={30} rx={4} fill="#fbfdff" stroke="#9fb4c6" strokeWidth={2} />
+								<rect x={-18} y={-11} width={13} height={14} fill="#bcd0e0" />
+								<circle cx={-11.5} cy={-5} r={4} fill="#111" />
+								<text x={6} y={-3} textAnchor="middle" fontSize={7} fontFamily="'Rubik', sans-serif" fontWeight={800} fill="#1a2a4a">Marcus</text>
+								<text x={6} y={4} textAnchor="middle" fontSize={7} fontFamily="'Rubik', sans-serif" fontWeight={800} fill="#1a2a4a">Hale</text>
+								<text x={6} y={12} textAnchor="middle" fontSize={8} fontFamily="'Rubik', sans-serif" fontWeight={900} fill="#c33">RN</text>
+							</g>
 						</>
 					) : null}
 					{outfit === 'apron' ? (

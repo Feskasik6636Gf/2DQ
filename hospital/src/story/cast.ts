@@ -4,7 +4,7 @@ import type {Base} from '../kit/actions';
 export type CastMember = Base & {sp?: string};
 
 export const CAST: Record<string, CastMember> = {
-	hero: {color: '#f2b21c', outfit: 'suit', hair: 'short', hairColor: '#3a2a1a', rim: '#fff0cc', rimW: 2.4, shoe: '#2a2020'},
+	hero: {color: '#7b8089', outfit: 'auditor', hair: 'short', hairColor: '#241a14', age: 0.55, legColor: '#2b2d36', rim: '#e6e8ee', rimW: 2.4, shoe: '#1c1a1a'},
 	scrubs: {color: '#3b7fd1', outfit: 'tee', hair: 'short', hairColor: '#2a2a3a', rim: '#d8ebff', rimW: 2.4, shoe: '#e9eef2', sp: 'HERO'},
 	admin: {color: '#8e3a4f', outfit: 'coat', hair: 'bun', hairColor: '#b9b9c4', rim: '#ffe6d6', rimW: 2.4, shoe: '#2b1d24', sp: 'ADMIN'},
 	dennis: {color: '#2f6fc0', outfit: 'tee', hair: 'grey', acc: ['glasses', 'mustache'], rim: '#d8ebff', rimW: 2.4, shoe: '#e9eef2', sp: 'DENNIS'},
