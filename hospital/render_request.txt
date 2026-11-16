@@ -1,1 +1,1 @@
-render 5 light
+render 6 hifi voice
