@@ -377,7 +377,7 @@ export const buildShot = (sp: SceneSpec): React.FC => {
 		const bgCam = cam;
 		void bgCam;
 		return (
-			<Stage cam={cam} bg="#101225" light={{x: 22, y: 8, o: sp.set === 'field' ? 0.12 : 0.36, night: sp.night}} still grain={0.08}>
+			<Stage cam={cam} bg="#101225" light={{x: 22, y: 8, o: sp.set === 'field' ? 0.12 : 0.36, night: sp.night}} still grain={0}>
 				<Layer depth={1.5}>
 					<SetBg sp={sp} f={gf} />
 				</Layer>

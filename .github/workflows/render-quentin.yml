@@ -53,7 +53,7 @@ jobs:
         run: |
           mkdir -p out/chunks_Long
           for try in 1 2 3; do
-            npx remotion render Long out/chunks_Long/c${{ matrix.chunk.n }}.mp4 --frames=${{ matrix.chunk.a }}-${{ matrix.chunk.b }} --muted --gl=angle --concurrency=$((5-try>2?5-try:2)) --crf=18 --log=error --timeout=120000 && break
+            npx remotion render Long out/chunks_Long/c${{ matrix.chunk.n }}.mp4 --frames=${{ matrix.chunk.a }}-${{ matrix.chunk.b }} --muted --gl=angle --concurrency=4 --crf=18 --log=error --timeout=120000 --props='{"sound":false}' && break
             echo "retry $try"; rm -f out/chunks_Long/c${{ matrix.chunk.n }}.mp4
           done
           test -f out/chunks_Long/c${{ matrix.chunk.n }}.mp4
