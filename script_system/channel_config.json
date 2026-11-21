@@ -1,0 +1,15 @@
+{
+  "_comment": "Настройки системы сценариев. Меняй здесь, а не в документах.",
+  "language": "en",
+  "default_mode": "L",
+  "default_variant": "power",
+  "target_words": {"S": 1200, "L": 1750, "XL": 3500},
+  "words_per_minute": 150,
+  "cta": {
+    "template": null,
+    "_note": "Если задан template, он используется вместо вариаций из GENERATOR.md §9. Пример: \"So, would you want {POWER}? Tell me in the comments. And if you'd have {ACTION}, too, hit like and subscribe.\" (осторожно: lint блокирует дословные фразы конкурентов)"
+  },
+  "brand_phrases_allowed": [],
+  "avoid_topics": ["armed violence", "self-harm", "graphic injury"],
+  "safe_for_ads": true
+}
