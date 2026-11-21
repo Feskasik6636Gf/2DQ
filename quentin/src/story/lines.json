@@ -1,0 +1,2054 @@
+[
+{
+"id": "001_HERO",
+"sp": "HERO",
+"t": "Honestly, it tastes like a wet sock.",
+"gap": 0.22
+},
+{
+"id": "002_N",
+"sp": "N",
+"t": "The whole table freezes, 14 relatives, one fork stops halfway to a mouth.",
+"gap": 0.28
+},
+{
+"id": "003_N",
+"sp": "N",
+"t": "Grandma Rosa's casserole sits in the middle, steaming, proud.",
+"gap": 0.28
+},
+{
+"id": "004_N",
+"sp": "N",
+"t": "Something flutters down from the ceiling fan.",
+"gap": 0.28
+},
+{
+"id": "005_N",
+"sp": "N",
+"t": "A $100 bill, it lands on the casserole.",
+"gap": 0.28
+},
+{
+"id": "006_KOFI",
+"sp": "KOFI",
+"t": "Your cousin Kofi whispers, did you just get paid for that?",
+"gap": 0.22
+},
+{
+"id": "007_N",
+"sp": "N",
+"t": "Your mom puts her face in her hands.",
+"gap": 0.28
+},
+{
+"id": "008_N",
+"sp": "N",
+"t": "Grandma Rosa blinks twice, picks up the bill and holds it to the light.",
+"gap": 0.28
+},
+{
+"id": "009_ROSA",
+"sp": "ROSA",
+"t": "It's real, she says.",
+"gap": 0.22
+},
+{
+"id": "010_ROSA",
+"sp": "ROSA",
+"t": "I hate that it's real.",
+"gap": 0.22
+},
+{
+"id": "011_N",
+"sp": "N",
+"t": "Since this morning, every time you tell a truth that scares you,",
+"gap": 0.28
+},
+{
+"id": "012_N",
+"sp": "N",
+"t": "a $100 bill drops into your hand.",
+"gap": 0.28
+},
+{
+"id": "013_N",
+"sp": "N",
+"t": "Fresh, crisp, smells like ink.",
+"gap": 0.28
+},
+{
+"id": "014_N",
+"sp": "N",
+"t": "Tell the right truths and you pay for lunch this week.",
+"gap": 0.28
+},
+{
+"id": "015_N",
+"sp": "N",
+"t": "Keep going and you pay for college by spring.",
+"gap": 0.28
+},
+{
+"id": "016_N",
+"sp": "N",
+"t": "Keep going and you buy your mom a house.",
+"gap": 0.28
+},
+{
+"id": "017_N",
+"sp": "N",
+"t": "And one afternoon, the truth you owe someone",
+"gap": 0.28
+},
+{
+"id": "018_N",
+"sp": "N",
+"t": "will cost more than any bill can pay.",
+"gap": 0.28
+},
+{
+"id": "019_N",
+"sp": "N",
+"t": "For now, you're up $100 and down one grandmother.",
+"gap": 0.28
+},
+{
+"id": "020_N",
+"sp": "N",
+"t": "Most people lie once or twice a day.",
+"gap": 0.28
+},
+{
+"id": "021_N",
+"sp": "N",
+"t": "In a famous diary study, that's what people wrote down.",
+"gap": 0.28
+},
+{
+"id": "022_N",
+"sp": "N",
+"t": "About one or two lies every single day.",
+"gap": 0.28
+},
+{
+"id": "023_N",
+"sp": "N",
+"t": "Scientists even have a name for why it works.",
+"gap": 0.28
+},
+{
+"id": "024_N",
+"sp": "N",
+"t": "It's called the truth default.",
+"gap": 0.28
+},
+{
+"id": "025_N",
+"sp": "N",
+"t": "We assume people are honest unless something looks off.",
+"gap": 0.28
+},
+{
+"id": "026_N",
+"sp": "N",
+"t": "You're about to look very off.",
+"gap": 0.28
+},
+{
+"id": "027_N",
+"sp": "N",
+"t": "There are rules and you learn them fast.",
+"gap": 0.28
+},
+{
+"id": "028_N",
+"sp": "N",
+"t": "It only pays for truths that scare you.",
+"gap": 0.28
+},
+{
+"id": "029_N",
+"sp": "N",
+"t": "Say it's Tuesday and you get nothing.",
+"gap": 0.28
+},
+{
+"id": "030_N",
+"sp": "N",
+"t": "Tell a lie, nothing.",
+"gap": 0.28
+},
+{
+"id": "031_N",
+"sp": "N",
+"t": "Tell a half truth, nothing.",
+"gap": 0.28
+},
+{
+"id": "032_N",
+"sp": "N",
+"t": "The money knows and the price never changes.",
+"gap": 0.28
+},
+{
+"id": "033_N",
+"sp": "N",
+"t": "Always $100, never a cent more.",
+"gap": 0.28
+},
+{
+"id": "034_N",
+"sp": "N",
+"t": "Monday, history class.",
+"gap": 0.28
+},
+{
+"id": "035_N",
+"sp": "N",
+"t": "The teacher asks who did the reading.",
+"gap": 0.28
+},
+{
+"id": "036_N",
+"sp": "N",
+"t": "28 hands go up.",
+"gap": 0.28
+},
+{
+"id": "037_N",
+"sp": "N",
+"t": "You keep yours down.",
+"gap": 0.28
+},
+{
+"id": "038_HERO",
+"sp": "HERO",
+"t": "I didn't, silence.",
+"gap": 0.22
+},
+{
+"id": "039_N",
+"sp": "N",
+"t": "A bill lands on your desk and slides onto the floor.",
+"gap": 0.28
+},
+{
+"id": "040_N",
+"sp": "N",
+"t": "She pretends not to see it.",
+"gap": 0.28
+},
+{
+"id": "041_N",
+"sp": "N",
+"t": "She gives you a detention.",
+"gap": 0.28
+},
+{
+"id": "042_N",
+"sp": "N",
+"t": "It's the best $100 you ever made.",
+"gap": 0.28
+},
+{
+"id": "043_N",
+"sp": "N",
+"t": "Your friend Dana walks up after class",
+"gap": 0.28
+},
+{
+"id": "044_DANA",
+"sp": "DANA",
+"t": "touching her new bangs. Do I look good?",
+"gap": 0.22
+},
+{
+"id": "045_N",
+"sp": "N",
+"t": "Your stomach drops. You say it anyway.",
+"gap": 0.28
+},
+{
+"id": "046_HERO",
+"sp": "HERO",
+"t": "They make you look like a startled lamp.",
+"gap": 0.22
+},
+{
+"id": "047_N",
+"sp": "N",
+"t": "She stares.",
+"gap": 0.28
+},
+{
+"id": "048_N",
+"sp": "N",
+"t": "Then she bursts out laughing. I hate them.",
+"gap": 0.28
+},
+{
+"id": "049_DANA",
+"sp": "DANA",
+"t": "I thought it was just me.",
+"gap": 0.22
+},
+{
+"id": "050_N",
+"sp": "N",
+"t": "$100 on the sidewalk.",
+"gap": 0.28
+},
+{
+"id": "051_N",
+"sp": "N",
+"t": "She helps you pick it up.",
+"gap": 0.28
+},
+{
+"id": "052_N",
+"sp": "N",
+"t": "Researchers have actually tested this.",
+"gap": 0.28
+},
+{
+"id": "053_N",
+"sp": "N",
+"t": "People told to have honest,",
+"gap": 0.28
+},
+{
+"id": "054_N",
+"sp": "N",
+"t": "deeper conversations expected them to be awkward.",
+"gap": 0.28
+},
+{
+"id": "055_N",
+"sp": "N",
+"t": "They were far less us awkward than expected.",
+"gap": 0.28
+},
+{
+"id": "056_N",
+"sp": "N",
+"t": "People enjoyed them more than they predicted.",
+"gap": 0.28
+},
+{
+"id": "057_N",
+"sp": "N",
+"t": "Honesty is scarier in your head",
+"gap": 0.28
+},
+{
+"id": "058_N",
+"sp": "N",
+"t": "than it is in real life.",
+"gap": 0.28
+},
+{
+"id": "059_N",
+"sp": "N",
+"t": "At practice, Coach Brandt makes the team run in the sun.",
+"gap": 0.28
+},
+{
+"id": "060_N",
+"sp": "N",
+"t": "Everybody calls him Coach No Excuses.",
+"gap": 0.28
+},
+{
+"id": "061_N",
+"sp": "N",
+"t": "His favorite rule is on a banner above the gym door.",
+"gap": 0.28
+},
+{
+"id": "062_N",
+"sp": "N",
+"t": "Water is a reward.",
+"gap": 0.28
+},
+{
+"id": "063_N",
+"sp": "N",
+"t": "He asks you how you like practice.",
+"gap": 0.28
+},
+{
+"id": "064_HERO",
+"sp": "HERO",
+"t": "Honestly, I hate it.",
+"gap": 0.22
+},
+{
+"id": "065_N",
+"sp": "N",
+"t": "A bill falls out of your sleeve.",
+"gap": 0.28
+},
+{
+"id": "066_N",
+"sp": "N",
+"t": "He makes you run extra laps.",
+"gap": 0.28
+},
+{
+"id": "067_N",
+"sp": "N",
+"t": "You earn $100 and a blister.",
+"gap": 0.28
+},
+{
+"id": "068_N",
+"sp": "N",
+"t": "The linebacker next to you, Colm, never complains.",
+"gap": 0.28
+},
+{
+"id": "069_N",
+"sp": "N",
+"t": "He's six foot three and cracked a finger last month.",
+"gap": 0.28
+},
+{
+"id": "070_N",
+"sp": "N",
+"t": "Coach asked if he was hurt.",
+"gap": 0.28
+},
+{
+"id": "071_N",
+"sp": "N",
+"t": "Colm said, I'm good.",
+"gap": 0.28
+},
+{
+"id": "072_N",
+"sp": "N",
+"t": "He says it for everything.",
+"gap": 0.28
+},
+{
+"id": "073_N",
+"sp": "N",
+"t": "A sprained ankle, a cut lip, a fever.",
+"gap": 0.28
+},
+{
+"id": "074_N",
+"sp": "N",
+"t": "Everyone knows it's his catchphrase.",
+"gap": 0.28
+},
+{
+"id": "075_N",
+"sp": "N",
+"t": "Nobody thinks about what it means.",
+"gap": 0.28
+},
+{
+"id": "076_N",
+"sp": "N",
+"t": "Sunday, you apologize to Grandma Rosa.",
+"gap": 0.28
+},
+{
+"id": "077_N",
+"sp": "N",
+"t": "The casserole is terrible,",
+"gap": 0.28
+},
+{
+"id": "078_HERO",
+"sp": "HERO",
+"t": "but your lasagna is the best thing I've ever eaten. Another bill.",
+"gap": 0.22
+},
+{
+"id": "079_N",
+"sp": "N",
+"t": "She laughs so hard she needs to sit down. She's a retired nurse.",
+"gap": 0.28
+},
+{
+"id": "080_N",
+"sp": "N",
+"t": "She spent 30 years in the desert",
+"gap": 0.28
+},
+{
+"id": "081_N",
+"sp": "N",
+"t": "and she still tells those stories at every dinner in July.",
+"gap": 0.28
+},
+{
+"id": "082_ROSA",
+"sp": "ROSA",
+"t": "The only thing that matters is cold, she says. Cool them first.",
+"gap": 0.22
+},
+{
+"id": "083_N",
+"sp": "N",
+"t": "Ambulance second, ice in the tub, you nod.",
+"gap": 0.28
+},
+{
+"id": "084_N",
+"sp": "N",
+"t": "You don't know why you remember it.",
+"gap": 0.28
+},
+{
+"id": "085_N",
+"sp": "N",
+"t": "By day five, you have $2,400.",
+"gap": 0.28
+},
+{
+"id": "086_N",
+"sp": "N",
+"t": "Your mom finds it in your sock drawer.",
+"gap": 0.28
+},
+{
+"id": "087_MOM",
+"sp": "MOM",
+"t": "Where did this come from?",
+"gap": 0.22
+},
+{
+"id": "088_N",
+"sp": "N",
+"t": "You tell her the truth. I tell the truth. She laughs.",
+"gap": 0.28
+},
+{
+"id": "089_N",
+"sp": "N",
+"t": "Then she realizes you're serious.",
+"gap": 0.28
+},
+{
+"id": "090_N",
+"sp": "N",
+"t": "Then you tell her you stole a cookie in third grade",
+"gap": 0.28
+},
+{
+"id": "091_N",
+"sp": "N",
+"t": "and another bill drops.",
+"gap": 0.28
+},
+{
+"id": "092_N",
+"sp": "N",
+"t": "She leaves the room.",
+"gap": 0.28
+},
+{
+"id": "093_N",
+"sp": "N",
+"t": "You buy pizza for the whole class.",
+"gap": 0.28
+},
+{
+"id": "094_N",
+"sp": "N",
+"t": "You pay Dana back for bangs-related emotional damage.",
+"gap": 0.28
+},
+{
+"id": "095_N",
+"sp": "N",
+"t": "You buy your mom a new coat, she cries.",
+"gap": 0.28
+},
+{
+"id": "096_N",
+"sp": "N",
+"t": "You've told 11 truths this week",
+"gap": 0.28
+},
+{
+"id": "097_N",
+"sp": "N",
+"t": "and you've never felt this light.",
+"gap": 0.28
+},
+{
+"id": "098_N",
+"sp": "N",
+"t": "It stops being a game at the school assembly.",
+"gap": 0.28
+},
+{
+"id": "099_N",
+"sp": "N",
+"t": "900 students.",
+"gap": 0.28
+},
+{
+"id": "100_N",
+"sp": "N",
+"t": "The principal asks if anyone has questions.",
+"gap": 0.28
+},
+{
+"id": "101_N",
+"sp": "N",
+"t": "Everyone stares at their shoes. You stand up. Your knees are shaking.",
+"gap": 0.28
+},
+{
+"id": "102_N",
+"sp": "N",
+"t": "The fish sticks in the cafeteria.",
+"gap": 0.28
+},
+{
+"id": "103_HERO",
+"sp": "HERO",
+"t": "They expired on Monday. I read the box.",
+"gap": 0.22
+},
+{
+"id": "104_N",
+"sp": "N",
+"t": "Gasps. Principal.",
+"gap": 0.28
+},
+{
+"id": "105_N",
+"sp": "N",
+"t": "Ibrahim goes pale.",
+"gap": 0.28
+},
+{
+"id": "106_N",
+"sp": "N",
+"t": "By lunch, the fish sticks are gone.",
+"gap": 0.28
+},
+{
+"id": "107_N",
+"sp": "N",
+"t": "By Friday, the cafeteria has a new supplier.",
+"gap": 0.28
+},
+{
+"id": "108_N",
+"sp": "N",
+"t": "$100 in your hand. A pause behind.",
+"gap": 0.28
+},
+{
+"id": "109_N",
+"sp": "N",
+"t": "A local reporter finds you outside school.",
+"gap": 0.28
+},
+{
+"id": "110_REP",
+"sp": "REP",
+"t": "Are you scared right now?",
+"gap": 0.22
+},
+{
+"id": "111_HERO",
+"sp": "HERO",
+"t": "Yes, $100.",
+"gap": 0.22
+},
+{
+"id": "112_N",
+"sp": "N",
+"t": "The segment airs that night.",
+"gap": 0.28
+},
+{
+"id": "113_N",
+"sp": "N",
+"t": "They call you the truth kid.",
+"gap": 0.28
+},
+{
+"id": "114_N",
+"sp": "N",
+"t": "You get 14,000 followers before breakfast.",
+"gap": 0.28
+},
+{
+"id": "115_N",
+"sp": "N",
+"t": "Then the city council.",
+"gap": 0.28
+},
+{
+"id": "116_N",
+"sp": "N",
+"t": "A bridge on the east side",
+"gap": 0.28
+},
+{
+"id": "117_N",
+"sp": "N",
+"t": "was signed off by an inspector",
+"gap": 0.28
+},
+{
+"id": "118_N",
+"sp": "N",
+"t": "who never actually visited it.",
+"gap": 0.28
+},
+{
+"id": "119_N",
+"sp": "N",
+"t": "You know because your uncle works there",
+"gap": 0.28
+},
+{
+"id": "120_N",
+"sp": "N",
+"t": "and he said it once at dinner with a laugh.",
+"gap": 0.28
+},
+{
+"id": "121_N",
+"sp": "N",
+"t": "You stand up in a room of 60 adults",
+"gap": 0.28
+},
+{
+"id": "122_N",
+"sp": "N",
+"t": "and say it out loud, your voice cracks.",
+"gap": 0.28
+},
+{
+"id": "123_N",
+"sp": "N",
+"t": "The bridges closed that week.",
+"gap": 0.28
+},
+{
+"id": "124_N",
+"sp": "N",
+"t": "Inspectors find crane cracks under the deck.",
+"gap": 0.28
+},
+{
+"id": "125_N",
+"sp": "N",
+"t": "It's repaired by spring.",
+"gap": 0.28
+},
+{
+"id": "126_N",
+"sp": "N",
+"t": "A man in the back stands up",
+"gap": 0.28
+},
+{
+"id": "127_N",
+"sp": "N",
+"t": "and shakes your hand without saying anything.",
+"gap": 0.28
+},
+{
+"id": "128_N",
+"sp": "N",
+"t": "You make a hundred bucks.",
+"gap": 0.28
+},
+{
+"id": "129_N",
+"sp": "N",
+"t": "The truth might have saved someone's life. Same price.",
+"gap": 0.28
+},
+{
+"id": "130_N",
+"sp": "N",
+"t": "Now strangers line up outside your house.",
+"gap": 0.28
+},
+{
+"id": "131_STR",
+"sp": "STR",
+"t": "What do you honestly think of him, Wade?",
+"gap": 0.22
+},
+{
+"id": "132_N",
+"sp": "N",
+"t": "You tell a woman her business plan won't work.",
+"gap": 0.28
+},
+{
+"id": "133_N",
+"sp": "N",
+"t": "You tell a man his poem is boring.",
+"gap": 0.28
+},
+{
+"id": "134_N",
+"sp": "N",
+"t": "Some cry, some thank you.",
+"gap": 0.28
+},
+{
+"id": "135_N",
+"sp": "N",
+"t": "Some pay you to keep going.",
+"gap": 0.28
+},
+{
+"id": "136_N",
+"sp": "N",
+"t": "A famous YouTuber flies in to ask",
+"gap": 0.28
+},
+{
+"id": "137_N",
+"sp": "N",
+"t": "if his new video is any good.",
+"gap": 0.28
+},
+{
+"id": "138_N",
+"sp": "N",
+"t": "You say no, you get $100.",
+"gap": 0.28
+},
+{
+"id": "139_N",
+"sp": "N",
+"t": "He says it's the nicest thing",
+"gap": 0.28
+},
+{
+"id": "140_N",
+"sp": "N",
+"t": "anyone has done for him all year.",
+"gap": 0.28
+},
+{
+"id": "141_N",
+"sp": "N",
+"t": "A lawyer friend of your dad",
+"gap": 0.28
+},
+{
+"id": "142_N",
+"sp": "N",
+"t": "tells you something that stops you cold.",
+"gap": 0.28
+},
+{
+"id": "143_N",
+"sp": "N",
+"t": "In the US, people who report huge corporate fraud",
+"gap": 0.28
+},
+{
+"id": "144_N",
+"sp": "N",
+"t": "to the SEC can collect between 10%",
+"gap": 0.28
+},
+{
+"id": "145_N",
+"sp": "N",
+"t": "and 30% of the fines.",
+"gap": 0.28
+},
+{
+"id": "146_N",
+"sp": "N",
+"t": "When the fines top a million dollars,",
+"gap": 0.28
+},
+{
+"id": "147_N",
+"sp": "N",
+"t": "that's a lot of money.",
+"gap": 0.28
+},
+{
+"id": "148_N",
+"sp": "N",
+"t": "You've told the truth that closed a bridge.",
+"gap": 0.28
+},
+{
+"id": "149_N",
+"sp": "N",
+"t": "You were paid like you told someone their tie was ugly.",
+"gap": 0.28
+},
+{
+"id": "150_N",
+"sp": "N",
+"t": "The price is flat.",
+"gap": 0.28
+},
+{
+"id": "151_N",
+"sp": "N",
+"t": "Courage and cruelty cost exactly the same.",
+"gap": 0.28
+},
+{
+"id": "152_N",
+"sp": "N",
+"t": "So you start doing the math.",
+"gap": 0.28
+},
+{
+"id": "153_N",
+"sp": "N",
+"t": "If every scary truth is $100,",
+"gap": 0.28
+},
+{
+"id": "154_N",
+"sp": "N",
+"t": "why bother with the hard ones?",
+"gap": 0.28
+},
+{
+"id": "155_N",
+"sp": "N",
+"t": "There's a girl at school who sings off key.",
+"gap": 0.28
+},
+{
+"id": "156_N",
+"sp": "N",
+"t": "A teacher who wears a toupee.",
+"gap": 0.28
+},
+{
+"id": "157_N",
+"sp": "N",
+"t": "A neighbor whose lawn looks like a crime scene.",
+"gap": 0.28
+},
+{
+"id": "158_N",
+"sp": "N",
+"t": "Telling people these things is scary enough.",
+"gap": 0.28
+},
+{
+"id": "159_N",
+"sp": "N",
+"t": "Day 20, you're making $3,000 a day.",
+"gap": 0.28
+},
+{
+"id": "160_N",
+"sp": "N",
+"t": "You've said 30 truths before lunch.",
+"gap": 0.28
+},
+{
+"id": "161_N",
+"sp": "N",
+"t": "You've also made a seventh-grader cry.",
+"gap": 0.28
+},
+{
+"id": "162_N",
+"sp": "N",
+"t": "You gave her $100 for the trouble.",
+"gap": 0.28
+},
+{
+"id": "163_N",
+"sp": "N",
+"t": "Psychologists call this moral licensing.",
+"gap": 0.28
+},
+{
+"id": "164_N",
+"sp": "N",
+"t": "After you've done something good,",
+"gap": 0.28
+},
+{
+"id": "165_N",
+"sp": "N",
+"t": "your brain feels like you've earned a little cruelty.",
+"gap": 0.28
+},
+{
+"id": "166_N",
+"sp": "N",
+"t": "You told the truth about the bridge.",
+"gap": 0.28
+},
+{
+"id": "167_N",
+"sp": "N",
+"t": "So you can tell a stranger his tie is hideous.",
+"gap": 0.28
+},
+{
+"id": "168_N",
+"sp": "N",
+"t": "You've paid in advance.",
+"gap": 0.28
+},
+{
+"id": "169_N",
+"sp": "N",
+"t": "The bill shows up quietly.",
+"gap": 0.28
+},
+{
+"id": "170_N",
+"sp": "N",
+"t": "First, people stop asking your opinion,",
+"gap": 0.28
+},
+{
+"id": "171_N",
+"sp": "N",
+"t": "not because they're angry,",
+"gap": 0.28
+},
+{
+"id": "172_N",
+"sp": "N",
+"t": "because they can't tell what you're doing.",
+"gap": 0.28
+},
+{
+"id": "173_N",
+"sp": "N",
+"t": "Dana catches you on the walk home.",
+"gap": 0.28
+},
+{
+"id": "174_DANA",
+"sp": "DANA",
+"t": "You said my new jacket looked like a garbage bag.",
+"gap": 0.22
+},
+{
+"id": "175_DANA",
+"sp": "DANA",
+"t": "Was that real or were you farming?",
+"gap": 0.22
+},
+{
+"id": "176_N",
+"sp": "N",
+"t": "You open your mouth.",
+"gap": 0.28
+},
+{
+"id": "177_N",
+"sp": "N",
+"t": "You can't answer, you don't know.",
+"gap": 0.28
+},
+{
+"id": "178_N",
+"sp": "N",
+"t": "Second, you start hunting.",
+"gap": 0.28
+},
+{
+"id": "179_N",
+"sp": "N",
+"t": "Every conversation becomes a search",
+"gap": 0.28
+},
+{
+"id": "180_N",
+"sp": "N",
+"t": "for the ugliest true thing.",
+"gap": 0.28
+},
+{
+"id": "181_N",
+"sp": "N",
+"t": "You miss the good ones.",
+"gap": 0.28
+},
+{
+"id": "182_N",
+"sp": "N",
+"t": "Your friend finishes a marathon",
+"gap": 0.28
+},
+{
+"id": "183_N",
+"sp": "N",
+"t": "and you notice his shoes are untied.",
+"gap": 0.28
+},
+{
+"id": "184_N",
+"sp": "N",
+"t": "His mom hugs you at the door",
+"gap": 0.28
+},
+{
+"id": "185_N",
+"sp": "N",
+"t": "and you notice her hair is thinning.",
+"gap": 0.28
+},
+{
+"id": "186_N",
+"sp": "N",
+"t": "Kind truths pay nothing, so you stop saying them.",
+"gap": 0.28
+},
+{
+"id": "187_N",
+"sp": "N",
+"t": "Third, you can't enjoy it.",
+"gap": 0.28
+},
+{
+"id": "188_N",
+"sp": "N",
+"t": "A truth you're paid for is a job.",
+"gap": 0.28
+},
+{
+"id": "189_N",
+"sp": "N",
+"t": "You sit in your room with a stack of cash",
+"gap": 0.28
+},
+{
+"id": "190_N",
+"sp": "N",
+"t": "and nobody to spend it with.",
+"gap": 0.28
+},
+{
+"id": "191_N",
+"sp": "N",
+"t": "Grandma Rosa calls on Sunday",
+"gap": 0.28
+},
+{
+"id": "192_N",
+"sp": "N",
+"t": "to ask if you're coming to dinner. You say you'll try. That's a lie.",
+"gap": 0.28
+},
+{
+"id": "193_N",
+"sp": "N",
+"t": "No, Bill, you don't mind.",
+"gap": 0.28
+},
+{
+"id": "194_N",
+"sp": "N",
+"t": "At least a lie is free.",
+"gap": 0.28
+},
+{
+"id": "195_N",
+"sp": "N",
+"t": "You've become a person who says what he thinks",
+"gap": 0.28
+},
+{
+"id": "196_N",
+"sp": "N",
+"t": "and means nothing by it.",
+"gap": 0.28
+},
+{
+"id": "197_N",
+"sp": "N",
+"t": "August, two a day football practice.",
+"gap": 0.28
+},
+{
+"id": "198_N",
+"sp": "N",
+"t": "You joined as the kicker",
+"gap": 0.28
+},
+{
+"id": "199_N",
+"sp": "N",
+"t": "because the team needed one",
+"gap": 0.28
+},
+{
+"id": "200_N",
+"sp": "N",
+"t": "and you needed something that wasn't about words.",
+"gap": 0.28
+},
+{
+"id": "201_N",
+"sp": "N",
+"t": "Coach Brandt has the whole squad on the field at 3 p.m.",
+"gap": 0.28
+},
+{
+"id": "202_N",
+"sp": "N",
+"t": "It's 98 degrees.",
+"gap": 0.28
+},
+{
+"id": "203_N",
+"sp": "N",
+"t": "The sky is white.",
+"gap": 0.28
+},
+{
+"id": "204_N",
+"sp": "N",
+"t": "The grass is crunchy.",
+"gap": 0.28
+},
+{
+"id": "205_N",
+"sp": "N",
+"t": "Colm is on the far end of the sideline.",
+"gap": 0.28
+},
+{
+"id": "206_N",
+"sp": "N",
+"t": "His helmet is off.",
+"gap": 0.28
+},
+{
+"id": "207_N",
+"sp": "N",
+"t": "He's walking in a slow circle.",
+"gap": 0.28
+},
+{
+"id": "208_N",
+"sp": "N",
+"t": "Coach blows the whistle for another round of sprints.",
+"gap": 0.28
+},
+{
+"id": "209_N",
+"sp": "N",
+"t": "Colm lines up anyway.",
+"gap": 0.28
+},
+{
+"id": "210_N",
+"sp": "N",
+"t": "You watch him run twice and stumble.",
+"gap": 0.28
+},
+{
+"id": "211_N",
+"sp": "N",
+"t": "His face is red.",
+"gap": 0.28
+},
+{
+"id": "212_N",
+"sp": "N",
+"t": "Then gray, he stops sweating.",
+"gap": 0.28
+},
+{
+"id": "213_N",
+"sp": "N",
+"t": "You can see the line of dry skin on his neck.",
+"gap": 0.28
+},
+{
+"id": "214_N",
+"sp": "N",
+"t": "Somebody asks Colm, you okay? I'm good.",
+"gap": 0.28
+},
+{
+"id": "215_N",
+"sp": "N",
+"t": "His words are slurred.",
+"gap": 0.28
+},
+{
+"id": "216_N",
+"sp": "N",
+"t": "He's looking at the wrong teammate.",
+"gap": 0.28
+},
+{
+"id": "217_N",
+"sp": "N",
+"t": "He asks what day it is.",
+"gap": 0.28
+},
+{
+"id": "218_N",
+"sp": "N",
+"t": "Then he asks why you're at his house.",
+"gap": 0.28
+},
+{
+"id": "219_N",
+"sp": "N",
+"t": "You know what this is.",
+"gap": 0.28
+},
+{
+"id": "220_N",
+"sp": "N",
+"t": "Grandma Rosa made sure of it. Heat stroke.",
+"gap": 0.28
+},
+{
+"id": "221_N",
+"sp": "N",
+"t": "Once a body hits about 40 degrees Celsius, 104 Fahrenheit.",
+"gap": 0.28
+},
+{
+"id": "222_N",
+"sp": "N",
+"t": "With confusion and collapse,",
+"gap": 0.28
+},
+{
+"id": "223_N",
+"sp": "N",
+"t": "it's a life-threatening emergency.",
+"gap": 0.28
+},
+{
+"id": "224_N",
+"sp": "N",
+"t": "It's one of the leading causes",
+"gap": 0.28
+},
+{
+"id": "225_N",
+"sp": "N",
+"t": "of death in high school athletes.",
+"gap": 0.28
+},
+{
+"id": "226_N",
+"sp": "N",
+"t": "But there's good news.",
+"gap": 0.28
+},
+{
+"id": "227_N",
+"sp": "N",
+"t": "If you cool someone fast,",
+"gap": 0.28
+},
+{
+"id": "228_N",
+"sp": "N",
+"t": "within about 30 minutes,",
+"gap": 0.28
+},
+{
+"id": "229_N",
+"sp": "N",
+"t": "nearly everyone survives.",
+"gap": 0.28
+},
+{
+"id": "230_N",
+"sp": "N",
+"t": "The rule is simple.",
+"gap": 0.28
+},
+{
+"id": "231_N",
+"sp": "N",
+"t": "Cool first, transport second.",
+"gap": 0.28
+},
+{
+"id": "232_N",
+"sp": "N",
+"t": "The ambulance is 15 minutes away.",
+"gap": 0.28
+},
+{
+"id": "233_N",
+"sp": "N",
+"t": "The trainer left at noon.",
+"gap": 0.28
+},
+{
+"id": "234_N",
+"sp": "N",
+"t": "Coach Brandt is yelling about effort.",
+"gap": 0.28
+},
+{
+"id": "235_N",
+"sp": "N",
+"t": "Every teammate says the same thing. He's good.",
+"gap": 0.28
+},
+{
+"id": "236_N",
+"sp": "N",
+"t": "He always says that.",
+"gap": 0.28
+},
+{
+"id": "237_N",
+"sp": "N",
+"t": "You have two choices.",
+"gap": 0.28
+},
+{
+"id": "238_N",
+"sp": "N",
+"t": "You can say nothing.",
+"gap": 0.28
+},
+{
+"id": "239_N",
+"sp": "N",
+"t": "Say he's fine, coach.",
+"gap": 0.28
+},
+{
+"id": "240_N",
+"sp": "N",
+"t": "Keep your spot on the team.",
+"gap": 0.28
+},
+{
+"id": "241_N",
+"sp": "N",
+"t": "Keep your scholarship chance. Keep the peace.",
+"gap": 0.28
+},
+{
+"id": "242_N",
+"sp": "N",
+"t": "Nobody would ever blame you.",
+"gap": 0.28
+},
+{
+"id": "243_N",
+"sp": "N",
+"t": "Or you can say the one sentence",
+"gap": 0.28
+},
+{
+"id": "244_N",
+"sp": "N",
+"t": "Coach Brandt has promised to punish.",
+"gap": 0.28
+},
+{
+"id": "245_N",
+"sp": "N",
+"t": "He told the team on day one,",
+"gap": 0.28
+},
+{
+"id": "246_N",
+"sp": "N",
+"t": "anyone who stops my practice is off my team. Permanent.",
+"gap": 0.28
+},
+{
+"id": "247_N",
+"sp": "N",
+"t": "You take one step, then another.",
+"gap": 0.28
+},
+{
+"id": "248_HERO",
+"sp": "HERO",
+"t": "Coach, Colm is not okay.",
+"gap": 0.22
+},
+{
+"id": "249_HERO",
+"sp": "HERO",
+"t": "Back in line, he's confused. He stopped sweating. This is heat stroke. He said he's good.",
+"gap": 0.22
+},
+{
+"id": "250_HERO",
+"sp": "HERO",
+"t": "He says that when his fingers broken,",
+"gap": 0.22
+},
+{
+"id": "251_HERO",
+"sp": "HERO",
+"t": "the whole field is watching.",
+"gap": 0.22
+},
+{
+"id": "252_N",
+"sp": "N",
+"t": "Coach points at the sideline.",
+"gap": 0.28
+},
+{
+"id": "253_N",
+"sp": "N",
+"t": "One more word and you're done.",
+"gap": 0.28
+},
+{
+"id": "254_N",
+"sp": "N",
+"t": "You look at him and you realize",
+"gap": 0.28
+},
+{
+"id": "255_N",
+"sp": "N",
+"t": "you aren't thinking about money at all.",
+"gap": 0.28
+},
+{
+"id": "256_N",
+"sp": "N",
+"t": "He needs the ice tub now.",
+"gap": 0.28
+},
+{
+"id": "257_N",
+"sp": "N",
+"t": "Grandma Rose's voice plays in your head.",
+"gap": 0.28
+},
+{
+"id": "258_ROSA",
+"sp": "ROSA",
+"t": "Cool them first, ambulance second.",
+"gap": 0.22
+},
+{
+"id": "259_N",
+"sp": "N",
+"t": "A hundred dollar bill flutters down onto the grass.",
+"gap": 0.28
+},
+{
+"id": "260_N",
+"sp": "N",
+"t": "Nobody sees it. You don't look. You run.",
+"gap": 0.28
+},
+{
+"id": "261_N",
+"sp": "N",
+"t": "The athletic trainer's room is unlocked.",
+"gap": 0.28
+},
+{
+"id": "262_N",
+"sp": "N",
+"t": "There's a big blue tub of ice by the door.",
+"gap": 0.28
+},
+{
+"id": "263_N",
+"sp": "N",
+"t": "Two linemen help you drag it across the field.",
+"gap": 0.28
+},
+{
+"id": "264_N",
+"sp": "N",
+"t": "You pull Colm's pads off. His jersey. His cleats.",
+"gap": 0.28
+},
+{
+"id": "265_N",
+"sp": "N",
+"t": "His skin is burning.",
+"gap": 0.28
+},
+{
+"id": "266_N",
+"sp": "N",
+"t": "Three teammates lower him in.",
+"gap": 0.28
+},
+{
+"id": "267_N",
+"sp": "N",
+"t": "Ice, water, shoulders.",
+"gap": 0.28
+},
+{
+"id": "268_N",
+"sp": "N",
+"t": "Somebody finally dials 911.",
+"gap": 0.28
+},
+{
+"id": "269_N",
+"sp": "N",
+"t": "Somebody else starts timing it.",
+"gap": 0.28
+},
+{
+"id": "270_N",
+"sp": "N",
+"t": "Colm gasps.",
+"gap": 0.28
+},
+{
+"id": "271_N",
+"sp": "N",
+"t": "His eyes snap open.",
+"gap": 0.28
+},
+{
+"id": "272_HERO",
+"sp": "HERO",
+"t": "Stay with me, Colm. Say it again.",
+"gap": 0.22
+},
+{
+"id": "273_COLM",
+"sp": "COLM",
+"t": "Colm Reyes. Four minutes.",
+"gap": 0.22
+},
+{
+"id": "274_N",
+"sp": "N",
+"t": "Coach Brandt takes one step toward you then stops.",
+"gap": 0.28
+},
+{
+"id": "275_N",
+"sp": "N",
+"t": "Seven minutes.",
+"gap": 0.28
+},
+{
+"id": "276_N",
+"sp": "N",
+"t": "A freshman holds the stopwatch with both hands",
+"gap": 0.28
+},
+{
+"id": "277_N",
+"sp": "N",
+"t": "and calls out every 30 seconds. Ten.",
+"gap": 0.28
+},
+{
+"id": "278_N",
+"sp": "N",
+"t": "The ambulance pulls onto the field.",
+"gap": 0.28
+},
+{
+"id": "279_N",
+"sp": "N",
+"t": "Paramedics check a thermometer",
+"gap": 0.28
+},
+{
+"id": "280_N",
+"sp": "N",
+"t": "and look at each other.",
+"gap": 0.28
+},
+{
+"id": "281_N",
+"sp": "N",
+"t": "One of them says quietly.",
+"gap": 0.28
+},
+{
+"id": "282_MEDIC",
+"sp": "MEDIC",
+"t": "Ten more minutes and we'd be having",
+"gap": 0.22
+},
+{
+"id": "283_MEDIC",
+"sp": "MEDIC",
+"t": "a different conversation.",
+"gap": 0.22
+},
+{
+"id": "284_N",
+"sp": "N",
+"t": "Colm turns his head.",
+"gap": 0.28
+},
+{
+"id": "285_N",
+"sp": "N",
+"t": "His lips are blue.",
+"gap": 0.28
+},
+{
+"id": "286_N",
+"sp": "N",
+"t": "His voice is barely a whisper. I'm not good. You laugh. You start to cry. You hold his hand.",
+"gap": 0.28
+},
+{
+"id": "287_N",
+"sp": "N",
+"t": "Coach Brandt stands by the fence",
+"gap": 0.28
+},
+{
+"id": "288_N",
+"sp": "N",
+"t": "with his whistle hanging off his neck.",
+"gap": 0.28
+},
+{
+"id": "289_N",
+"sp": "N",
+"t": "He hasn't said anything.",
+"gap": 0.28
+},
+{
+"id": "290_N",
+"sp": "N",
+"t": "Finally, he walks over.",
+"gap": 0.28
+},
+{
+"id": "291_N",
+"sp": "N",
+"t": "He takes the banner down himself that night.",
+"gap": 0.28
+},
+{
+"id": "292_COACH",
+"sp": "COACH",
+"t": "Water is not a reward.",
+"gap": 0.22
+},
+{
+"id": "293_N",
+"sp": "N",
+"t": "He does bench you.",
+"gap": 0.28
+},
+{
+"id": "294_N",
+"sp": "N",
+"t": "The school board meets.",
+"gap": 0.28
+},
+{
+"id": "295_N",
+"sp": "N",
+"t": "They add a heat policy to every sport.",
+"gap": 0.28
+},
+{
+"id": "296_N",
+"sp": "N",
+"t": "A water break every 15 minutes.",
+"gap": 0.28
+},
+{
+"id": "297_N",
+"sp": "N",
+"t": "A trainer on the field.",
+"gap": 0.28
+},
+{
+"id": "298_N",
+"sp": "N",
+"t": "A tub on the sideline.",
+"gap": 0.28
+},
+{
+"id": "299_N",
+"sp": "N",
+"t": "Colm's mom hugs you in the parking lot",
+"gap": 0.28
+},
+{
+"id": "300_N",
+"sp": "N",
+"t": "and doesn't let go.",
+"gap": 0.28
+},
+{
+"id": "301_N",
+"sp": "N",
+"t": "That Sunday, Dana waits on your porch. She doesn't smile. Real or farming?",
+"gap": 0.28
+},
+{
+"id": "302_N",
+"sp": "N",
+"t": "You think about the field.",
+"gap": 0.28
+},
+{
+"id": "303_HERO",
+"sp": "HERO",
+"t": "I didn't even look for the bill.",
+"gap": 0.22
+},
+{
+"id": "304_N",
+"sp": "N",
+"t": "She studies your face for a long time.",
+"gap": 0.28
+},
+{
+"id": "305_N",
+"sp": "N",
+"t": "Then she nods. Okay.",
+"gap": 0.28
+},
+{
+"id": "306_N",
+"sp": "N",
+"t": "Colm spends three days in the hospital.",
+"gap": 0.28
+},
+{
+"id": "307_N",
+"sp": "N",
+"t": "On the second one, you visit.",
+"gap": 0.28
+},
+{
+"id": "308_N",
+"sp": "N",
+"t": "He's holding a cup of ice chips like a trophy.",
+"gap": 0.28
+},
+{
+"id": "309_COLM",
+"sp": "COLM",
+"t": "Ask me how I am. How are you?",
+"gap": 0.22
+},
+{
+"id": "310_COLM",
+"sp": "COLM",
+"t": "Scared, a little sad.",
+"gap": 0.22
+},
+{
+"id": "311_COLM",
+"sp": "COLM",
+"t": "Starving, he grins.",
+"gap": 0.22
+},
+{
+"id": "312_N",
+"sp": "N",
+"t": "Never said that out loud before. No bill falls.",
+"gap": 0.28
+},
+{
+"id": "313_N",
+"sp": "N",
+"t": "Maybe the power only pays you.",
+"gap": 0.28
+},
+{
+"id": "314_N",
+"sp": "N",
+"t": "Maybe some truths are free.",
+"gap": 0.28
+},
+{
+"id": "315_N",
+"sp": "N",
+"t": "The $100 is still on the grass on Monday. Nobody took it. You leave it there.",
+"gap": 0.28
+},
+{
+"id": "316_N",
+"sp": "N",
+"t": "Grandma Rosa calls.",
+"gap": 0.28
+},
+{
+"id": "317_N",
+"sp": "N",
+"t": "Are you coming to dinner? Yes. No bill.",
+"gap": 0.28
+},
+{
+"id": "318_N",
+"sp": "N",
+"t": "It's the best nothing you've ever earned.",
+"gap": 0.28
+},
+{
+"id": "319_N",
+"sp": "N",
+"t": "That afternoon, a woman in a rain-stained coat",
+"gap": 0.28
+},
+{
+"id": "320_N",
+"sp": "N",
+"t": "is waiting outside your school.",
+"gap": 0.28
+},
+{
+"id": "321_N",
+"sp": "N",
+"t": "She's the hospital administrator.",
+"gap": 0.28
+},
+{
+"id": "322_N",
+"sp": "N",
+"t": "She slides a folder across the bench.",
+"gap": 0.28
+},
+{
+"id": "323_N",
+"sp": "N",
+"t": "Inside, 23 names.",
+"gap": 0.28
+},
+{
+"id": "324_N",
+"sp": "N",
+"t": "Next to each one.",
+"gap": 0.28
+},
+{
+"id": "325_N",
+"sp": "N",
+"t": "A school, a date, and a number from a thermometer.",
+"gap": 0.28
+},
+{
+"id": "326_N",
+"sp": "N",
+"t": "The highest is 41.7.",
+"gap": 0.28
+},
+{
+"id": "327_N",
+"sp": "N",
+"t": "23 coaches in this county. 23 summers.",
+"gap": 0.28
+},
+{
+"id": "328_N",
+"sp": "N",
+"t": "Every one of them says they follow the rules.",
+"gap": 0.28
+},
+{
+"id": "329_N",
+"sp": "N",
+"t": "She taps the folder.",
+"gap": 0.28
+},
+{
+"id": "330_ADMIN",
+"sp": "ADMIN",
+"t": "Tell them the truth.",
+"gap": 0.22
+},
+{
+"id": "331_ADMIN",
+"sp": "ADMIN",
+"t": "Out loud, in person. Every one of them.",
+"gap": 0.22
+},
+{
+"id": "332_N",
+"sp": "N",
+"t": "$100 a truth. You laugh. She doesn't.",
+"gap": 0.28
+},
+{
+"id": "333_N",
+"sp": "N",
+"t": "The scary part isn't the coaches.",
+"gap": 0.28
+},
+{
+"id": "334_N",
+"sp": "N",
+"t": "It's that your first thought was the money.",
+"gap": 0.28
+},
+{
+"id": "335_N",
+"sp": "N",
+"t": "You count it in your head.",
+"gap": 0.28
+},
+{
+"id": "336_N",
+"sp": "N",
+"t": "$2,300.",
+"gap": 0.28
+},
+{
+"id": "337_N",
+"sp": "N",
+"t": "Before you even said yes. Want the job?",
+"gap": 0.28
+},
+{
+"id": "338_N",
+"sp": "N",
+"t": "Would you take money for every truth you told,",
+"gap": 0.28
+},
+{
+"id": "339_N",
+"sp": "N",
+"t": "knowing it might turn honesty into work?",
+"gap": 0.28
+},
+{
+"id": "340_N",
+"sp": "N",
+"t": "Tell me in the comments.",
+"gap": 0.28
+},
+{
+"id": "341_N",
+"sp": "N",
+"t": "And would you have stopped that practice",
+"gap": 0.28
+},
+{
+"id": "342_N",
+"sp": "N",
+"t": "if it cost you the team?",
+"gap": 0.28
+}
+]

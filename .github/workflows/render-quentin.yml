@@ -1,0 +1,99 @@
+name: render-quentin
+on:
+  push:
+    branches: [ccr-f9524063-8rcf8a]
+    paths: [quentin/render_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: render-quentin
+  cancel-in-progress: true
+env:
+  CHUNK: 450
+defaults:
+  run:
+    working-directory: quentin
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.c.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: c
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json,os
+          total=json.load(open('src/story/timeline.json'))['total']
+          ch=int(os.environ['CHUNK'])
+          items=[{"n":"%02d"%i,"a":s,"b":min(total-1,s+ch-1)} for i,s in enumerate(range(0,total,ch))]
+          print("chunks="+json.dumps(items))
+          PY
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: quentin/package-lock.json
+      - name: system libs
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64 libpango-1.0-0 libcairo2 >/dev/null
+      - run: npm ci --no-audit --no-fund
+      - name: render chunk ${{ matrix.chunk.n }} (${{ matrix.chunk.a }}-${{ matrix.chunk.b }})
+        run: |
+          mkdir -p out/chunks_Long
+          for try in 1 2 3; do
+            npx remotion render Long out/chunks_Long/c${{ matrix.chunk.n }}.mp4 --frames=${{ matrix.chunk.a }}-${{ matrix.chunk.b }} --muted --gl=angle --concurrency=$((5-try>2?5-try:2)) --crf=18 --log=error --timeout=120000 && break
+            echo "retry $try"; rm -f out/chunks_Long/c${{ matrix.chunk.n }}.mp4
+          done
+          test -f out/chunks_Long/c${{ matrix.chunk.n }}.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.chunk.n }}
+          path: quentin/out/chunks_Long/c${{ matrix.chunk.n }}.mp4
+          retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: quentin/package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: quentin/out/chunks_Long
+          merge-multiple: true
+      - name: sound + join + loudness
+        run: |
+          ls out/chunks_Long | wc -l
+          node tools/make-sound.mjs
+          node tools/render.mjs Long --chunk $CHUNK
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Long-final
+          path: quentin/out/Long.mp4
+          retention-days: 7
+          compression-level: 0
+      - name: publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "quentin-${{ github.run_number }}" out/Long.mp4 --title "Quentin: A \$100 bill for every scary truth (run ${{ github.run_number }})" --notes "Final 1080p render" --target "${{ github.sha }}"
