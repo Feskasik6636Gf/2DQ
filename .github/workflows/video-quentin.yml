@@ -1,0 +1,23 @@
+name: video-quentin
+on:
+  push:
+    branches: [ccr-a090bf66-bzb9ig]
+    paths: [quentin/final/trigger.txt]
+permissions:
+  contents: read
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: join parts
+        run: |
+          cat quentin/final/part_* > Quentin_whatif_full.mp4
+          ls -la Quentin_whatif_full.mp4
+          echo "deb90d8278a34cbf175f3c2dfb1a2f6c21d3ffbeab681928009df6592d07603e  Quentin_whatif_full.mp4" | sha256sum -c
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Quentin_whatif_full
+          path: Quentin_whatif_full.mp4
+          retention-days: 14
+          compression-level: 0
