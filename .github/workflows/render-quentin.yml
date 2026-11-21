@@ -10,7 +10,7 @@ concurrency:
   group: render-quentin
   cancel-in-progress: true
 env:
-  CHUNK: 450
+  CHUNK: 900
 defaults:
   run:
     working-directory: quentin

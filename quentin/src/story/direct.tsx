@@ -288,7 +288,7 @@ export const buildShot = (sp: SceneSpec): React.FC => {
 			}
 			const z = z0 * push;
 			X = Math.max(960 / z + -300, Math.min(2220 - 960 / z, X)); // keep inside the set
-			return camOn(X, Y, z, {farBlur: z > 1.6 ? 7 : 3.2});
+			return camOn(X, Y, z, {farBlur: 0});
 		};
 		const b0 = R.beats[bi];
 		const u = clamp01((f - b0.t0) / Math.max(1, b0.t1 - b0.t0));
@@ -380,6 +380,9 @@ export const buildShot = (sp: SceneSpec): React.FC => {
 			<Stage cam={cam} bg="#101225" light={{x: 22, y: 8, o: sp.set === 'field' ? 0.12 : 0.36, night: sp.night}} still grain={0}>
 				<Layer depth={1.5}>
 					<SetBg sp={sp} f={gf} />
+					<Svg>
+						<rect x={-700} y={-300} width={3300} height={1900} fill="#0e1228" opacity={0.1} />
+					</Svg>
 				</Layer>
 				<Layer depth={1}>
 					<Svg>
