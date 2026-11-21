@@ -889,7 +889,14 @@
    "gain": 0.05
   }
  ],
- "music": [],
+ "music": [
+  {
+   "from": "001",
+   "to": "end",
+   "style": "piano",
+   "amp": 0.16
+  }
+ ],
  "sfx": [
   {
    "at": "001",
