@@ -16,7 +16,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
 N = 6
 
-MODES = {"S": (1000, 1450), "L": (1500, 1950), "XL": (3000, 3900)}
+MODES = {"S": (1000, 1450), "L": (1500, 1950), "M": (2100, 2500), "XL": (3000, 3900)}
 
 # Signature structure phrases of the competitor channels. Verbatim reuse = FAIL:
 # each of these appeared in 20-30 of 31 long scripts, i.e. it is a template tic,
@@ -129,7 +129,7 @@ def analyse(text, mode, plag):
 
     # --- facts -----------------------------------------------------------
     facts = [i for i, s in enumerate(S) if FACT_RE.search(s)]
-    need = 4 if mode == "S" else 6 if mode == "L" else 12
+    need = 4 if mode == "S" else 6 if mode in ("L", "M") else 12
     if len(facts) < need:
         add("WARN", "facts", f"{len(facts)} fact-like sentences, expect >= {need} for mode {mode}")
     # fact dumps: 4+ fact sentences within 5 sentences
