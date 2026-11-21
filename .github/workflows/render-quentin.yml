@@ -1,0 +1,95 @@
+name: render-quentin
+on:
+  push:
+    branches: [ccr-a090bf66-bzb9ig]
+    paths: [quentin/render_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: render-quentin
+  cancel-in-progress: true
+env:
+  CHUNK: 600
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.c.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: c
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, math, os
+          t = json.load(open('quentin/src/story/timeline.json'))['total']
+          n = math.ceil(t / int(os.environ['CHUNK']))
+          print('chunks=' + json.dumps(list(range(n))))
+          PY
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: system libs for headless chrome
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libnss3 libdbus-1-3 libatk1.0-0t64 libatk-bridge2.0-0t64 libasound2t64 libxrandr2 libxkbcommon0 libxfixes3 libxcomposite1 libxdamage1 libgbm1 libcups2t64 libpango-1.0-0 libcairo2 libgles2 libegl1 >/dev/null
+      - name: install packages
+        working-directory: quentin
+        run: npm ci
+      - name: render chunk
+        working-directory: quentin
+        run: |
+          S=$(( ${{ matrix.chunk }} * CHUNK ))
+          T=$(python3 -c "import json;print(json.load(open('src/story/timeline.json'))['total'])")
+          E=$(( S + CHUNK - 1 )); if [ $E -ge $T ]; then E=$(( T - 1 )); fi
+          N=$(printf "%02d" ${{ matrix.chunk }})
+          mkdir -p out/chunks_Long
+          npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=angle --concurrency=4 --crf=18 --log=error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.chunk }}
+          path: quentin/out/chunks_Long/*.mp4
+          retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: quentin/out/chunks_Long
+          merge-multiple: true
+      - name: join chunks, mix sound
+        working-directory: quentin
+        run: |
+          npm ci
+          node tools/make-sound.mjs
+          ls out/chunks_Long | wc -l
+          node tools/render.mjs Long --chunk $CHUNK
+          ls -la out
+      - name: publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG=quentin-$(date +%Y%m%d-%H%M%S)
+          gh release create "$TAG" quentin/out/Long.mp4 --title "Quentin what-if video" --notes "Rendered on GitHub Actions" --target "$GITHUB_SHA"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: final-video
+          path: quentin/out/Long.mp4
+          retention-days: 7
+          compression-level: 0

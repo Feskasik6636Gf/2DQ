@@ -1,0 +1,1210 @@
+[
+ {
+  "id": "001_N",
+  "sp": "N",
+  "t": "What if you got $1,000 every time you said no?",
+  "gap": 0.4,
+  "t0": 0.0,
+  "t1": 2.93
+ },
+ {
+  "id": "002_N",
+  "sp": "N",
+  "t": "A man in a yellow vest holds out a flyer. Free pizza slice with any large order?",
+  "gap": 0.16,
+  "t0": 2.93,
+  "t1": 8.16
+ },
+ {
+  "id": "003_N",
+  "sp": "N",
+  "t": "No, thanks. Your phone buzzes. Deposit received, $1,000.",
+  "gap": 0.26,
+  "t0": 8.16,
+  "t1": 13.63
+ },
+ {
+  "id": "004_N",
+  "sp": "N",
+  "t": "You stop in the middle of the sidewalk, you look at the screen. Then at the man, he shrugs.",
+  "gap": 0.33,
+  "t0": 13.63,
+  "t1": 18.49
+ },
+ {
+  "id": "005_N",
+  "sp": "N",
+  "t": "Your loss, you look at him. Say that again, free pizza slice?",
+  "gap": 0.31,
+  "t0": 18.49,
+  "t1": 22.45
+ },
+ {
+  "id": "006_N",
+  "sp": "N",
+  "t": "No, buzz, another $1,000. The man backs away slowly, like you might be contagious.",
+  "gap": 0.4,
+  "t0": 22.45,
+  "t1": 28.93
+ },
+ {
+  "id": "007_N",
+  "sp": "N",
+  "t": "Yeah, something is seriously wrong here, but let me explain.",
+  "gap": 0.21,
+  "t0": 28.93,
+  "t1": 33.38
+ },
+ {
+  "id": "008_N",
+  "sp": "N",
+  "t": "Right now, you're 16. You work weekends at a hardware store.",
+  "gap": 0.2,
+  "t0": 33.38,
+  "t1": 36.84
+ },
+ {
+  "id": "009_N",
+  "sp": "N",
+  "t": "You have a best friend named Theo, a mom who works two jobs, and a little sister named Zoe, who still believes you can hear her through the wall.",
+  "gap": 0.36,
+  "t0": 36.84,
+  "t1": 45.13
+ },
+ {
+  "id": "010_N",
+  "sp": "N",
+  "t": "Your savings account holds exactly $212, and you have never in your entire life been good at saying no,",
+  "gap": 0.4,
+  "t0": 45.13,
+  "t1": 53.89
+ },
+ {
+  "id": "011_N",
+  "sp": "N",
+  "t": "which is why the morning that started all this was so strange. At breakfast, Zoe asked if you would trade her your last waffle.",
+  "gap": 0.15,
+  "t0": 53.89,
+  "t1": 60.4
+ },
+ {
+  "id": "012_N",
+  "sp": "N",
+  "t": "You said no, your phone buzzed. You said, wait, what?",
+  "gap": 0.23,
+  "t0": 60.4,
+  "t1": 63.82
+ },
+ {
+  "id": "013_N",
+  "sp": "N",
+  "t": "Zoe said, is that a yes? No, buzz.",
+  "gap": 0.26,
+  "t0": 63.82,
+  "t1": 67.58
+ },
+ {
+  "id": "014_N",
+  "sp": "N",
+  "t": "Zoe looked at you like you had grown a second head, and then she ate the waffle anyway.",
+  "gap": 0.4,
+  "t0": 67.58,
+  "t1": 72.29
+ },
+ {
+  "id": "015_N",
+  "sp": "N",
+  "t": "Three buzzes before eight in the morning. So you do what any reasonable person would do.",
+  "gap": 0.2,
+  "t0": 72.29,
+  "t1": 77.46
+ },
+ {
+  "id": "016_N",
+  "sp": "N",
+  "t": "You test it. Here is how it works. Every time you say no, you get $1,000.",
+  "gap": 0.26,
+  "t0": 77.46,
+  "t1": 82.84
+ },
+ {
+  "id": "017_N",
+  "sp": "N",
+  "t": "But there are rules. The no has to be out loud. The no has to be real.",
+  "gap": 0.13,
+  "t0": 82.84,
+  "t1": 87.1
+ },
+ {
+  "id": "018_N",
+  "sp": "N",
+  "t": "Saying it to an empty room does nothing. You tried that for 10 minutes, and the only thing you earned was a very worried look from your cat.",
+  "gap": 0.21,
+  "t0": 87.1,
+  "t1": 95.3
+ },
+ {
+  "id": "019_N",
+  "sp": "N",
+  "t": "Someone has to genuinely want a yes. They have to be hoping even a little.",
+  "gap": 0.4,
+  "t0": 95.3,
+  "t1": 99.93
+ },
+ {
+  "id": "020_N",
+  "sp": "N",
+  "t": "A robocall doesn't count because no human is hoping for anything.",
+  "gap": 0.4,
+  "t0": 99.93,
+  "t1": 104.13
+ },
+ {
+  "id": "021_N",
+  "sp": "N",
+  "t": "The universe, it turns out, only pays you to disappoint a real person.",
+  "gap": 0.4,
+  "t0": 104.13,
+  "t1": 108.83
+ },
+ {
+  "id": "022_N",
+  "sp": "N",
+  "t": "And then there is the second rule which you find out by accident. At lunch, Theo asks you to hand him the salt.",
+  "gap": 0.1,
+  "t0": 108.83,
+  "t1": 114.71
+ },
+ {
+  "id": "023_N",
+  "sp": "N",
+  "t": "You say sure, buzz, withdrawal, $1,000, gone.",
+  "gap": 0.4,
+  "t0": 114.71,
+  "t1": 119.53
+ },
+ {
+  "id": "024_N",
+  "sp": "N",
+  "t": "Every no pays you. Every yes costs you the same.",
+  "gap": 0.28,
+  "t0": 119.53,
+  "t1": 123.56
+ },
+ {
+  "id": "025_N",
+  "sp": "N",
+  "t": "So what if you could earn $1,000 every time you said no?",
+  "gap": 0.25,
+  "t0": 123.56,
+  "t1": 127.6
+ },
+ {
+  "id": "026_N",
+  "sp": "N",
+  "t": "Let's find out. The first week is the best week of your life. At school, a teacher asks for a volunteer to erase the board.",
+  "gap": 0.17,
+  "t0": 127.6,
+  "t1": 133.98
+ },
+ {
+  "id": "027_N",
+  "sp": "N",
+  "t": "Nobody moves. You raise your hand and say, I'll do it, withdrawal, $1,000 to erase a whiteboard.",
+  "gap": 0.27,
+  "t0": 133.98,
+  "t1": 140.62
+ },
+ {
+  "id": "028_N",
+  "sp": "N",
+  "t": "Never again. So you learn the game. Say no to the lunch lady's extra fries, plus 1,000.",
+  "gap": 0.13,
+  "t0": 140.62,
+  "t1": 147.75
+ },
+ {
+  "id": "029_N",
+  "sp": "N",
+  "t": "Say no to the guy selling magazine subscriptions, plus 1,000.",
+  "gap": 0.4,
+  "t0": 147.75,
+  "t1": 152.05
+ },
+ {
+  "id": "030_N",
+  "sp": "N",
+  "t": "Say no to the petition about the school fountain, plus one.",
+  "gap": 0.4,
+  "t0": 152.05,
+  "t1": 155.93
+ },
+ {
+  "id": "031_N",
+  "sp": "N",
+  "t": "By Friday, you have $41,000 and you haven't done anything except be annoying.",
+  "gap": 0.4,
+  "t0": 155.93,
+  "t1": 161.61
+ },
+ {
+  "id": "032_N",
+  "sp": "N",
+  "t": "Let's do the math. If someone asks you something every minute and you say no every time, that is $60,000 an hour.",
+  "gap": 0.4,
+  "t0": 161.61,
+  "t1": 170.21
+ },
+ {
+  "id": "033_N",
+  "sp": "N",
+  "t": "A typical full-time worker in America earns about $60,000 in a whole year.",
+  "gap": 0.4,
+  "t0": 170.21,
+  "t1": 175.37
+ },
+ {
+  "id": "034_N",
+  "sp": "N",
+  "t": "You are doing it before your lunch break is over. And that is when you get ambitious.",
+  "gap": 0.29,
+  "t0": 175.37,
+  "t1": 180.91
+ },
+ {
+  "id": "035_N",
+  "sp": "N",
+  "t": "There is only one problem. You need people to ask you for things.",
+  "gap": 0.12,
+  "t0": 180.91,
+  "t1": 184.79
+ },
+ {
+  "id": "036_N",
+  "sp": "N",
+  "t": "So you go looking for the most persistent people on earth. Telemarketers, real humans, not robocalls.",
+  "gap": 0.19,
+  "t0": 184.79,
+  "t1": 191.4
+ },
+ {
+  "id": "037_N",
+  "sp": "N",
+  "t": "Americans get billions of robocalls a month and you sit on hold to find the ones where an actual person picks up.",
+  "gap": 0.1,
+  "t0": 191.4,
+  "t1": 197.64
+ },
+ {
+  "id": "038_N",
+  "sp": "N",
+  "t": "You call a car warranty company, a man named Gary Answers.",
+  "gap": 0.4,
+  "t0": 197.64,
+  "t1": 200.95
+ },
+ {
+  "id": "039_N",
+  "sp": "GARY",
+  "t": "Hello, I'm calling about your car's extended warranty. No, buzz, sir, it's a very good deal.",
+  "gap": 0.1,
+  "t0": 200.95,
+  "t1": 207.28
+ },
+ {
+  "id": "040_N",
+  "sp": "GARY",
+  "t": "No, buzz, sir, please, no, buzz, sir, I have a family.",
+  "gap": 0.3,
+  "t0": 207.28,
+  "t1": 210.78
+ },
+ {
+  "id": "041_N",
+  "sp": "N",
+  "t": "No, buzz, Gary has a family, you still get paid. You are not proud of this.",
+  "gap": 0.4,
+  "t0": 210.78,
+  "t1": 214.93
+ },
+ {
+  "id": "042_N",
+  "sp": "N",
+  "t": "You hire a guy to stand next to you at the mall and ask, every 10 seconds, do you want a cookie?",
+  "gap": 0.37,
+  "t0": 214.93,
+  "t1": 220.57
+ },
+ {
+  "id": "043_N",
+  "sp": "N",
+  "t": "He has paid $20 an hour. You are paid $180,000 an hour.",
+  "gap": 0.3,
+  "t0": 220.57,
+  "t1": 226.19
+ },
+ {
+  "id": "044_N",
+  "sp": "N",
+  "t": "After two hours, he asks if you want to switch. No, buzz.",
+  "gap": 0.4,
+  "t0": 226.19,
+  "t1": 230.33
+ },
+ {
+  "id": "045_N",
+  "sp": "N",
+  "t": "By the end of the month, you have $22 million. You pay off mom's loan.",
+  "gap": 0.32,
+  "t0": 230.33,
+  "t1": 235.34
+ },
+ {
+  "id": "046_N",
+  "sp": "N",
+  "t": "She reads the letter from the bank three times and she sits down on the kitchen floor and cries.",
+  "gap": 0.14,
+  "t0": 235.34,
+  "t1": 240.34
+ },
+ {
+  "id": "047_N",
+  "sp": "N",
+  "t": "You buy Theo's family a new roof and Theo's dad pretends the whole time that he isn't crying too.",
+  "gap": 0.4,
+  "t0": 240.34,
+  "t1": 246.49
+ },
+ {
+  "id": "048_N",
+  "sp": "N",
+  "t": "Remember that by the way, his dad, he comes back.",
+  "gap": 0.4,
+  "t0": 246.49,
+  "t1": 250.77
+ },
+ {
+  "id": "049_N",
+  "sp": "N",
+  "t": "Quick reality check, around a third of Americans say they couldn't cover a surprise $1,000 expense.",
+  "gap": 0.18,
+  "t0": 250.77,
+  "t1": 257.29
+ },
+ {
+  "id": "050_N",
+  "sp": "N",
+  "t": "A single no from you pays that bill. And yes, the IRS has already sent you a very polite email.",
+  "gap": 0.13,
+  "t0": 257.29,
+  "t1": 263.79
+ },
+ {
+  "id": "051_N",
+  "sp": "N",
+  "t": "Money from saying no is still income. For a while, it feels like the greatest loophole in history.",
+  "gap": 0.24,
+  "t0": 263.79,
+  "t1": 270.09
+ },
+ {
+  "id": "052_N",
+  "sp": "N",
+  "t": "Then the quiet starts. Here's what you didn't notice when you say no for a living.",
+  "gap": 0.1,
+  "t0": 270.09,
+  "t1": 274.11
+ },
+ {
+  "id": "053_N",
+  "sp": "N",
+  "t": "The people around you stop asking. It starts with small things.",
+  "gap": 0.25,
+  "t0": 274.11,
+  "t1": 277.16
+ },
+ {
+  "id": "054_N",
+  "sp": "N",
+  "t": "Theo invites you to the lake. You say no, buzz.",
+  "gap": 0.15,
+  "t0": 277.16,
+  "t1": 280.75
+ },
+ {
+  "id": "055_N",
+  "sp": "N",
+  "t": "He tries again on Saturday. No, buzz. He tries again on Sunday.",
+  "gap": 0.1,
+  "t0": 280.75,
+  "t1": 284.78
+ },
+ {
+  "id": "056_N",
+  "sp": "N",
+  "t": "No, buzz. On Monday, he doesn't ask.",
+  "gap": 0.4,
+  "t0": 284.78,
+  "t1": 288.2
+ },
+ {
+  "id": "057_N",
+  "sp": "N",
+  "t": "Mom asks if you'll come to dinner on Sunday, like every Sunday for the last 16 years.",
+  "gap": 0.24,
+  "t0": 288.2,
+  "t1": 293.28
+ },
+ {
+  "id": "058_N",
+  "sp": "N",
+  "t": "No, buzz. Her face does something you've never seen.",
+  "gap": 0.28,
+  "t0": 293.28,
+  "t1": 296.7
+ },
+ {
+  "id": "059_N",
+  "sp": "N",
+  "t": "She says okay, not angry, just okay. And then she doesn't ask the next week either.",
+  "gap": 0.4,
+  "t0": 296.7,
+  "t1": 302.04
+ },
+ {
+  "id": "060_N",
+  "sp": "N",
+  "t": "Psychologist Vanessa Bohn spent years studying what happens when people ask for favors.",
+  "gap": 0.21,
+  "t0": 302.04,
+  "t1": 307.37
+ },
+ {
+  "id": "061_N",
+  "sp": "N",
+  "t": "She found that the person asking almost always underestimates how hard it is for the other person to say no.",
+  "gap": 0.4,
+  "t0": 307.37,
+  "t1": 314.2
+ },
+ {
+  "id": "062_N",
+  "sp": "N",
+  "t": "Saying no is heavy. It costs something. You've found a way to make that cost free for yourself.",
+  "gap": 0.34,
+  "t0": 314.2,
+  "t1": 320.16
+ },
+ {
+  "id": "063_N",
+  "sp": "N",
+  "t": "And so the cost goes somewhere else. It lands on everyone who asks.",
+  "gap": 0.4,
+  "t0": 320.16,
+  "t1": 324.57
+ },
+ {
+  "id": "064_N",
+  "sp": "N",
+  "t": "Here's the weird part, the habit takes over.",
+  "gap": 0.4,
+  "t0": 324.57,
+  "t1": 327.81
+ },
+ {
+  "id": "065_N",
+  "sp": "N",
+  "t": "Someone says, wanna ride home? Your mouth says, buzz.",
+  "gap": 0.22,
+  "t0": 327.81,
+  "t1": 331.53
+ },
+ {
+  "id": "066_N",
+  "sp": "N",
+  "t": "Do you wanna sit with us? No, buzz, are you okay? No, you say, and it's the first time you actually mean it.",
+  "gap": 0.4,
+  "t0": 331.53,
+  "t1": 337.48
+ },
+ {
+  "id": "067_N",
+  "sp": "N",
+  "t": "Zoe is seven. Every night for years, she knocks on your door with the same book.",
+  "gap": 0.2,
+  "t0": 337.48,
+  "t1": 342.71
+ },
+ {
+  "id": "068_N",
+  "sp": "N",
+  "t": "And every night, you say the same thing. Sure, come in. For years, that was a free yes.",
+  "gap": 0.1,
+  "t0": 342.71,
+  "t1": 347.43
+ },
+ {
+  "id": "069_N",
+  "sp": "N",
+  "t": "Now it's a $1,000 yes. You've been counting.",
+  "gap": 0.34,
+  "t0": 347.43,
+  "t1": 350.69
+ },
+ {
+  "id": "070_N",
+  "sp": "N",
+  "t": "Last Thursday, she knocked. You said, not tonight, buzz.",
+  "gap": 0.19,
+  "t0": 350.69,
+  "t1": 354.81
+ },
+ {
+  "id": "071_N",
+  "sp": "N",
+  "t": "She said, okay. And she took the book back to her room and you listen to her footsteps get smaller.",
+  "gap": 0.13,
+  "t0": 354.81,
+  "t1": 360.95
+ },
+ {
+  "id": "072_N",
+  "sp": "N",
+  "t": "The next night, she didn't knock at all. You have $28 million.",
+  "gap": 0.34,
+  "t0": 360.95,
+  "t1": 365.57
+ },
+ {
+  "id": "073_N",
+  "sp": "N",
+  "t": "You have never been so alone. A famous study from 1978 followed people who had won the lottery.",
+  "gap": 0.4,
+  "t0": 365.57,
+  "t1": 372.89
+ },
+ {
+  "id": "074_N",
+  "sp": "N",
+  "t": "Not long after, they were no happier than people who hadn't.",
+  "gap": 0.4,
+  "t0": 372.89,
+  "t1": 376.37
+ },
+ {
+  "id": "075_N",
+  "sp": "N",
+  "t": "Money is great at fixing problems. It is terrible at making you feel like somebody loves you.",
+  "gap": 0.33,
+  "t0": 376.37,
+  "t1": 382.45
+ },
+ {
+  "id": "076_N",
+  "sp": "N",
+  "t": "And researchers who study loneliness have found that weak social ties are linked to something like a 26% higher risk",
+  "gap": 0.1,
+  "t0": 382.45,
+  "t1": 390.34
+ },
+ {
+  "id": "077_N",
+  "sp": "N",
+  "t": "of dying early. That's not a feeling. That's a number.",
+  "gap": 0.4,
+  "t0": 390.34,
+  "t1": 393.97
+ },
+ {
+  "id": "078_N",
+  "sp": "N",
+  "t": "You wonder if Warren Buffett is on to something.",
+  "gap": 0.36,
+  "t0": 393.97,
+  "t1": 397.4
+ },
+ {
+  "id": "079_N",
+  "sp": "N",
+  "t": "He is often quoted saying that really successful people say no to almost everything, maybe so.",
+  "gap": 0.4,
+  "t0": 397.4,
+  "t1": 403.18
+ },
+ {
+  "id": "080_N",
+  "sp": "N",
+  "t": "But he's also never had to say no to his little sister.",
+  "gap": 0.4,
+  "t0": 403.18,
+  "t1": 406.45
+ },
+ {
+  "id": "081_N",
+  "sp": "N",
+  "t": "Then the offer comes. A man in a gray suit asks to meet you.",
+  "gap": 0.13,
+  "t0": 406.45,
+  "t1": 410.85
+ },
+ {
+  "id": "082_N",
+  "sp": "N",
+  "t": "Chairman of a company with a name you've seen billboard in town, he pushes a tablet across the table.",
+  "gap": 0.25,
+  "t0": 410.85,
+  "t1": 415.75
+ },
+ {
+  "id": "083_N",
+  "sp": "N",
+  "t": "On the screen is a number, $1 billion.",
+  "gap": 0.34,
+  "t0": 415.75,
+  "t1": 418.92
+ },
+ {
+  "id": "084_N",
+  "sp": "ALDRIDGE",
+  "t": "We call it the perfect refusal, he says. 24 hours, live stream.",
+  "gap": 0.21,
+  "t0": 418.92,
+  "t1": 424.21
+ },
+ {
+  "id": "085_N",
+  "sp": "ALDRIDGE",
+  "t": "Every single person who asks you for anything, you say no.",
+  "gap": 0.1,
+  "t0": 424.21,
+  "t1": 428.05
+ },
+ {
+  "id": "086_N",
+  "sp": "ALDRIDGE",
+  "t": "Say yes once and the deal is off. 40 million people have already signed up to watch.",
+  "gap": 0.4,
+  "t0": 428.05,
+  "t1": 434.25
+ },
+ {
+  "id": "087_N",
+  "sp": "N",
+  "t": "$1 billion. For 24 hours of doing what you have been doing for months, you say yes.",
+  "gap": 0.1,
+  "t0": 434.25,
+  "t1": 439.96
+ },
+ {
+  "id": "088_N",
+  "sp": "N",
+  "t": "Buzz, withdrawal, $1,000 gone.",
+  "gap": 0.4,
+  "t0": 439.96,
+  "t1": 443.09
+ },
+ {
+  "id": "089_N",
+  "sp": "N",
+  "t": "Aldridge raises an eyebrow, that was a yes. I meant, I'll do it.",
+  "gap": 0.33,
+  "t0": 443.09,
+  "t1": 447.61
+ },
+ {
+  "id": "090_N",
+  "sp": "N",
+  "t": "Say it again in a way that counts, you say I accept. The tablet goes green, the clock starts.",
+  "gap": 0.4,
+  "t0": 447.61,
+  "t1": 453.16
+ },
+ {
+  "id": "091_N",
+  "sp": "N",
+  "t": "The stream begins at noon. By one you have a million viewers, by four, 10 million.",
+  "gap": 0.1,
+  "t0": 453.16,
+  "t1": 458.49
+ },
+ {
+  "id": "092_N",
+  "sp": "N",
+  "t": "By nine there are 38 million people watching a 16 year old say no.",
+  "gap": 0.1,
+  "t0": 458.49,
+  "t1": 462.14
+ },
+ {
+  "id": "093_N",
+  "sp": "N",
+  "t": "The chat scrolls so fast you can't read it. A woman asks if you wanna hold her baby.",
+  "gap": 0.33,
+  "t0": 462.14,
+  "t1": 467.21
+ },
+ {
+  "id": "094_N",
+  "sp": "N",
+  "t": "No, a man asks for directions. A kid in a yellow fur kid from the very first day holds out a slice of pizza.",
+  "gap": 0.1,
+  "t0": 467.21,
+  "t1": 474.87
+ },
+ {
+  "id": "095_N",
+  "sp": "N",
+  "t": "Free, no, the chat goes wild.",
+  "gap": 0.4,
+  "t0": 474.87,
+  "t1": 478.04
+ },
+ {
+  "id": "096_N",
+  "sp": "N",
+  "t": "After every single no, the balance climbs.",
+  "gap": 0.39,
+  "t0": 478.04,
+  "t1": 481.53
+ },
+ {
+  "id": "097_N",
+  "sp": "N",
+  "t": "Plus 1,000, plus 1,000. By hour 20, the number is $61 million and with the billion waiting at the end,",
+  "gap": 0.19,
+  "t0": 481.53,
+  "t1": 489.72
+ },
+ {
+  "id": "098_N",
+  "sp": "N",
+  "t": "you could buy every roof in this town. At hour 20, your phone rings, it's Theo.",
+  "gap": 0.33,
+  "t0": 489.72,
+  "t1": 495.52
+ },
+ {
+  "id": "099_N",
+  "sp": "N",
+  "t": "You haven't heard his voice in two weeks. You answer because the rules say you can pick up.",
+  "gap": 0.1,
+  "t0": 495.52,
+  "t1": 500.31
+ },
+ {
+  "id": "100_N",
+  "sp": "N",
+  "t": "He had a heart attack at the shop. He's at St. Mary's and the doctor says he might not make it through the night.",
+  "gap": 0.4,
+  "t0": 500.31,
+  "t1": 506.45
+ },
+ {
+  "id": "101_N",
+  "sp": "N",
+  "t": "He's awake though, he keeps asking for you. He says you're the only one who ever made him laugh at the hardware store.",
+  "gap": 0.22,
+  "t0": 506.45,
+  "t1": 513.2
+ },
+ {
+  "id": "102_N",
+  "sp": "N",
+  "t": "Theo's voice cracks. Please, Pen, will you come?",
+  "gap": 0.4,
+  "t0": 513.2,
+  "t1": 517.73
+ },
+ {
+  "id": "103_N",
+  "sp": "THEO",
+  "t": "It's 40 minutes away. I'll understand if you can't.",
+  "gap": 0.4,
+  "t0": 517.73,
+  "t1": 522.2
+ },
+ {
+  "id": "104_N",
+  "sp": "N",
+  "t": "Behind you, Aldridge's producer is holding up four fingers. Four hours left.",
+  "gap": 0.4,
+  "t0": 522.2,
+  "t1": 527.04
+ },
+ {
+  "id": "105_N",
+  "sp": "N",
+  "t": "Four hours until $1 billion. You look at the tablet, you look at the clock, you look at the camera and 38 million people look back.",
+  "gap": 0.4,
+  "t0": 527.04,
+  "t1": 535.85
+ },
+ {
+  "id": "106_N",
+  "sp": "N",
+  "t": "You know exactly what happens if you say yes. The deal is dead, a billion dollars gone for one word.",
+  "gap": 0.31,
+  "t0": 535.85,
+  "t1": 542.71
+ },
+ {
+  "id": "107_N",
+  "sp": "N",
+  "t": "The word you used to say without thinking a hundred times a day back when it was free.",
+  "gap": 0.4,
+  "t0": 542.71,
+  "t1": 547.61
+ },
+ {
+  "id": "108_N",
+  "sp": "N",
+  "t": "Then you remember Mr. Reyes, the roof, the way he pretended he wasn't crying.",
+  "gap": 0.4,
+  "t0": 547.61,
+  "t1": 552.29
+ },
+ {
+  "id": "109_N",
+  "sp": "N",
+  "t": "And you remember what mom said years ago, money comes and goes, people don't.",
+  "gap": 0.28,
+  "t0": 552.29,
+  "t1": 556.39
+ },
+ {
+  "id": "110_N",
+  "sp": "N",
+  "t": "Theo, you say yes. Buzz, the screen goes red, deal terminated.",
+  "gap": 0.35,
+  "t0": 556.39,
+  "t1": 562.29
+ },
+ {
+  "id": "111_N",
+  "sp": "N",
+  "t": "In the chat, 40 million people type it once. Nobody is sure what to say.",
+  "gap": 0.4,
+  "t0": 562.29,
+  "t1": 566.85
+ },
+ {
+  "id": "112_N",
+  "sp": "N",
+  "t": "Aldridge stands up and for a second you think he'll shout. He just looks at the number on the tablet.",
+  "gap": 0.18,
+  "t0": 566.85,
+  "t1": 572.31
+ },
+ {
+  "id": "113_N",
+  "sp": "N",
+  "t": "Then it you. You grab your jacket and run.",
+  "gap": 0.31,
+  "t0": 572.31,
+  "t1": 575.72
+ },
+ {
+  "id": "114_N",
+  "sp": "N",
+  "t": "The stream follows you. Of course it does. A hundred cars on the road, a thousand drones overhead.",
+  "gap": 0.26,
+  "t0": 575.72,
+  "t1": 581.56
+ },
+ {
+  "id": "115_N",
+  "sp": "N",
+  "t": "The camera crew in the van beside you films you sprinting through the hospital doors with your shoelaces untied.",
+  "gap": 0.17,
+  "t0": 581.56,
+  "t1": 588.12
+ },
+ {
+  "id": "116_N",
+  "sp": "N",
+  "t": "40 minutes of road, you make it in 26.",
+  "gap": 0.4,
+  "t0": 588.12,
+  "t1": 591.49
+ },
+ {
+  "id": "117_N",
+  "sp": "N",
+  "t": "In room 414, Mr. Reyes is propped up in bed with a thousand wires on his chest.",
+  "gap": 0.31,
+  "t0": 591.49,
+  "t1": 597.0
+ },
+ {
+  "id": "118_N",
+  "sp": "N",
+  "t": "He sees you and smiles like you're late for a shift. There he is, the kid who lost a billion dollars.",
+  "gap": 0.1,
+  "t0": 597.0,
+  "t1": 602.76
+ },
+ {
+  "id": "119_N",
+  "sp": "N",
+  "t": "He's seen it, everyone has. Sit, tell me a bad joke.",
+  "gap": 0.38,
+  "t0": 602.76,
+  "t1": 605.85
+ },
+ {
+  "id": "120_N",
+  "sp": "N",
+  "t": "You sit, you tell him a very bad joke about a screwdriver.",
+  "gap": 0.1,
+  "t0": 605.85,
+  "t1": 609.57
+ },
+ {
+  "id": "121_N",
+  "sp": "N",
+  "t": "He laughs so hard the monitor beeps faster and the nurse comes in to scold both of you.",
+  "gap": 0.4,
+  "t0": 609.57,
+  "t1": 615.13
+ },
+ {
+  "id": "122_N",
+  "sp": "N",
+  "t": "Theo is standing in the corner holding his own face in his hands.",
+  "gap": 0.4,
+  "t0": 615.13,
+  "t1": 619.29
+ },
+ {
+  "id": "123_N",
+  "sp": "N",
+  "t": "By morning, he's stable. By the end of the week, he's home.",
+  "gap": 0.19,
+  "t0": 619.29,
+  "t1": 623.22
+ },
+ {
+  "id": "124_N",
+  "sp": "N",
+  "t": "And the news has a new name for you. Not the kid who says no.",
+  "gap": 0.21,
+  "t0": 623.22,
+  "t1": 627.04
+ },
+ {
+  "id": "125_N",
+  "sp": "N",
+  "t": "They call you the boy who said yes. The headline reads, Teen walks away from a billion dollars to sit with a sick friend's dad.",
+  "gap": 0.4,
+  "t0": 627.04,
+  "t1": 633.92
+ },
+ {
+  "id": "126_N",
+  "sp": "N",
+  "t": "The video of you running through the hospital doors gets 200 million views.",
+  "gap": 0.19,
+  "t0": 633.92,
+  "t1": 638.42
+ },
+ {
+  "id": "127_N",
+  "sp": "N",
+  "t": "Aldridge doesn't pay the billion. He does announce a new wing at St. Mary's with Mr. Reyes' name on it.",
+  "gap": 0.4,
+  "t0": 638.42,
+  "t1": 646.09
+ },
+ {
+  "id": "128_N",
+  "sp": "N",
+  "t": "You still have 60 million dollars. You have no idea what to do with it.",
+  "gap": 0.31,
+  "t0": 646.09,
+  "t1": 650.26
+ },
+ {
+  "id": "129_N",
+  "sp": "MOM",
+  "t": "But on Sunday, mom calls. Dinner tonight? I know you're busy.",
+  "gap": 0.32,
+  "t0": 650.26,
+  "t1": 654.7
+ },
+ {
+  "id": "130_N",
+  "sp": "N",
+  "t": "You look at the phone, you know the rule. A yes costs $1,000.",
+  "gap": 0.4,
+  "t0": 654.7,
+  "t1": 659.37
+ },
+ {
+  "id": "131_N",
+  "sp": "N",
+  "t": "Yes, you say, buzz, you smile.",
+  "gap": 0.39,
+  "t0": 659.37,
+  "t1": 662.61
+ },
+ {
+  "id": "132_N",
+  "sp": "N",
+  "t": "It is the best $1,000 you ever spent. That night, Zoe knocks on your door with her book's same book.",
+  "gap": 0.4,
+  "t0": 662.61,
+  "t1": 668.65
+ },
+ {
+  "id": "133_N",
+  "sp": "N",
+  "t": "Same spot on the cover that she colored in with a purple marker.",
+  "gap": 0.29,
+  "t0": 668.65,
+  "t1": 672.22
+ },
+ {
+  "id": "134_N",
+  "sp": "ZOE",
+  "t": "Do you wanna read it? Yes, buzz. You read it three times.",
+  "gap": 0.19,
+  "t0": 672.22,
+  "t1": 676.45
+ },
+ {
+  "id": "135_N",
+  "sp": "N",
+  "t": "Somewhere around the second time, she falls asleep against your arm and you don't move for an hour.",
+  "gap": 0.4,
+  "t0": 676.45,
+  "t1": 681.61
+ },
+ {
+  "id": "136_N",
+  "sp": "N",
+  "t": "A week later, you're back on the sidewalk. The man in the yellow vest is there.",
+  "gap": 0.26,
+  "t0": 681.61,
+  "t1": 686.49
+ },
+ {
+  "id": "137_N",
+  "sp": "N",
+  "t": "He sees you, hesitates and holds out a flyer. Free slice?",
+  "gap": 0.16,
+  "t0": 686.49,
+  "t1": 690.45
+ },
+ {
+  "id": "138_N",
+  "sp": "N",
+  "t": "He asks in the voice of a man who has learned his lesson.",
+  "gap": 0.4,
+  "t0": 690.45,
+  "t1": 693.49
+ },
+ {
+  "id": "139_N",
+  "sp": "N",
+  "t": "You take it. Yes, buzz, withdraw $1,000.",
+  "gap": 0.2,
+  "t0": 693.49,
+  "t1": 698.85
+ },
+ {
+  "id": "140_N",
+  "sp": "N",
+  "t": "He stares at you. Seriously, you eat the slice right there on the curb.",
+  "gap": 0.1,
+  "t0": 698.85,
+  "t1": 702.99
+ },
+ {
+  "id": "141_N",
+  "sp": "N",
+  "t": "It is a terrible slice. It's lukewarm, the cheese is sliding off and you have never tasted anything better.",
+  "gap": 0.4,
+  "t0": 702.99,
+  "t1": 708.69
+ },
+ {
+  "id": "142_N",
+  "sp": "N",
+  "t": "Of course in the real world, nobody gets paid $1,000 to say no.",
+  "gap": 0.35,
+  "t0": 708.69,
+  "t1": 713.36
+ },
+ {
+  "id": "143_N",
+  "sp": "N",
+  "t": "But the question is real. Saying no protects your time, your energy and your peace.",
+  "gap": 0.28,
+  "t0": 713.36,
+  "t1": 718.22
+ },
+ {
+  "id": "144_N",
+  "sp": "N",
+  "t": "It's a skill and a good one. The trick is knowing which yeses are worth the price.",
+  "gap": 0.4,
+  "t0": 718.22,
+  "t1": 723.59
+ },
+ {
+  "id": "145_N",
+  "sp": "N",
+  "t": "You walk home with the flyer in your pocket. Your phone buzzes one more time.",
+  "gap": 0.17,
+  "t0": 723.59,
+  "t1": 728.04
+ },
+ {
+  "id": "146_N",
+  "sp": "N",
+  "t": "A notification you've never seen before. A text from an unknown number.",
+  "gap": 0.23,
+  "t0": 728.04,
+  "t1": 732.3
+ },
+ {
+  "id": "147_N",
+  "sp": "N",
+  "t": "Nice work. Round two starts at midnight. Say anything but yes.",
+  "gap": 0.4,
+  "t0": 732.3,
+  "t1": 736.99
+ },
+ {
+  "id": "148_N",
+  "sp": "N",
+  "t": "So here is the question. If you could earn $1,000 every time you said no, how many people would you refuse?",
+  "gap": 0.3,
+  "t0": 736.99,
+  "t1": 745.11
+ },
+ {
+  "id": "149_N",
+  "sp": "N",
+  "t": "And if your best friend called with one yes between you and a billion dollars, would you have picked up the phone?",
+  "gap": 0.4,
+  "t0": 745.11,
+  "t1": 751.59
+ },
+ {
+  "id": "150_N",
+  "sp": "N",
+  "t": "Tell us in the comments what you would do with $1,000 every time you said no.",
+  "gap": 0.4,
+  "t0": 751.59,
+  "t1": 756.51
+ },
+ {
+  "id": "151_N",
+  "sp": "N",
+  "t": "And if you would have run to that hospital too, hit like and subscribe for more What Ifs.",
+  "gap": 0.12,
+  "t0": 756.51,
+  "t1": 762.83
+ }
+]
