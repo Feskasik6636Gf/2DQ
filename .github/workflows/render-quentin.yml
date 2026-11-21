@@ -10,7 +10,7 @@ concurrency:
   group: render-quentin
   cancel-in-progress: true
 env:
-  CHUNK: 600
+  CHUNK: 150
 jobs:
   plan:
     runs-on: ubuntu-latest
@@ -52,7 +52,11 @@ jobs:
           E=$(( S + CHUNK - 1 )); if [ $E -ge $T ]; then E=$(( T - 1 )); fi
           N=$(printf "%02d" ${{ matrix.chunk }})
           mkdir -p out/chunks_Long
-          npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=angle --concurrency=4 --crf=18 --log=error
+          for try in 1 2 3; do
+            npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=angle --concurrency=3 --crf=18 --log=error && break
+            echo "retry $try"; rm -f out/chunks_Long/c$N.mp4; sleep 5
+          done
+          test -f out/chunks_Long/c$N.mp4
       - uses: actions/upload-artifact@v4
         with:
           name: chunk-${{ matrix.chunk }}

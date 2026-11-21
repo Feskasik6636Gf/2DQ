@@ -51,7 +51,7 @@ export const Stage: React.FC<{cam: Cam; bg?: string; children: React.ReactNode; 
 	cam: cam0,
 	bg = '#101225',
 	children,
-	grain = 0.1,
+	grain = 0,
 	vig = 0.45,
 	dust,
 	light = {},
