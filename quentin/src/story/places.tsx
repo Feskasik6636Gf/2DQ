@@ -366,7 +366,7 @@ export const BG: Record<string, (f: number) => React.ReactNode> = {
 	park: (f) => <Forest f={f} />,
 	hardware: (f) => <Hardware f={f} />,
 	callcenter: (f) => <CallCenter f={f} />,
-	mall: (f) => <Mall f={f} />,
+	mall: (f) => <Shop f={f} />,
 	studio: (f) => <Studio f={f} />,
 	hospital: (f) => <Hospital f={f} />,
 	boardroom: (f) => <Boardroom f={f} />,

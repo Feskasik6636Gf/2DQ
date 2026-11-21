@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: read
 concurrency:
   group: render-quentin
   cancel-in-progress: true
@@ -24,7 +25,8 @@ jobs:
           import json, math, os
           t = json.load(open('quentin/src/story/timeline.json'))['total']
           n = math.ceil(t / int(os.environ['CHUNK']))
-          print('chunks=' + json.dumps(list(range(n))))
+          todo = json.load(open('quentin/chunks_todo.json')) if os.path.exists('quentin/chunks_todo.json') else list(range(n))
+          print('chunks=' + json.dumps(todo))
           PY
   render:
     needs: plan
@@ -53,7 +55,7 @@ jobs:
           N=$(printf "%02d" ${{ matrix.chunk }})
           mkdir -p out/chunks_Long
           for try in 1 2 3; do
-            npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=angle --concurrency=3 --crf=18 --log=error && break
+            npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=angle --concurrency=2 --crf=18 --log=error && break
             echo "retry $try"; rm -f out/chunks_Long/c$N.mp4; sleep 5
           done
           test -f out/chunks_Long/c$N.mp4
@@ -65,6 +67,7 @@ jobs:
           compression-level: 0
   assemble:
     needs: render
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -77,9 +80,18 @@ jobs:
           pattern: chunk-*
           path: quentin/out/chunks_Long
           merge-multiple: true
+      - name: reuse chunks from the earlier run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download 44881162222 --repo "$GITHUB_REPOSITORY" --dir old --pattern 'chunk-*' || true
+          mkdir -p quentin/out/chunks_Long
+          find old -name 'c*.mp4' -exec cp -n {} quentin/out/chunks_Long/ \;
+          ls quentin/out/chunks_Long | wc -l
       - name: join chunks, mix sound
         working-directory: quentin
         run: |
+          test $(ls out/chunks_Long/c*.mp4 | wc -l) -eq 154
           npm ci
           node tools/make-sound.mjs
           ls out/chunks_Long | wc -l
