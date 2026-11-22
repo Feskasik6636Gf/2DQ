@@ -83,7 +83,7 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
           mkdir -p out/chunks_Long
-          cp ../dl/c*.mp4 out/chunks_Long/
+          find ../dl -name 'c*.mp4' -exec cp {} out/chunks_Long/ \;
           ls out/chunks_Long | wc -l
           node tools/make-sound.mjs
           node tools/render.mjs Long --chunk 740
