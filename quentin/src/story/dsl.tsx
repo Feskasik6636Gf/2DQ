@@ -292,22 +292,28 @@ export const mk = (spec: Spec): React.FC => {
 			<>
 				<Stage cam={cam} bg={bgKey} light={spec.light ?? (spec.night ? {night: true, o: 0.3} : {x: 22, y: 8, o: 0.34})} dust={spec.dust}>
 					<Layer depth={1.6}>
-						<div style={{position: 'absolute', inset: 0, filter: spec.frozen ? 'grayscale(0.78) brightness(0.94) contrast(1.04)' : undefined}}>
+						<div style={{position: 'absolute', inset: 0}}>
 							<Place f={gf} night={spec.night} a={spec.pa} />
+							{spec.frozen ? <div style={{position: 'absolute', inset: 0, background: 'rgba(130,142,166,0.52)'}} /> : null}
 						</div>
 					</Layer>
 					<Layer depth={1.25}>
 						<Svg>
-							<g style={{filter: spec.frozen ? 'grayscale(0.78) brightness(0.94)' : undefined}}>{props.filter((p) => p.z === 'back').map(drawProp)}</g>
+							<g>{props.filter((p) => p.z === 'back').map(drawProp)}</g>
 						</Svg>
 					</Layer>
 					<Layer depth={1}>
 						<Svg>
-							{spec.under ? <g style={{filter: spec.frozen ? 'grayscale(0.78) brightness(0.94)' : undefined}}>{spec.under(ctx)}</g> : null}
+							{spec.under ? (
+								<g>
+									{spec.under(ctx)}
+									{spec.frozen ? <rect x={-700} y={-300} width={3400} height={1800} fill="rgba(130,142,166,0.5)" /> : null}
+								</g>
+							) : null}
 							{(spec.crowd ?? []).map((c, i) => {
 								const t = c.t0 ? Math.max(0, f - T(c.t0)) : f;
 								return (
-									<g key={'cr' + i} style={{filter: spec.frozen && c.mode === 'stand' ? 'grayscale(0.8)' : undefined}}>
+									<g key={'cr' + i}>
 										<CrowdRow n={c.n} x0={c.x0} x1={c.x1} floor={c.floor ?? FLOOR} s={c.s} mode={c.mode} seed={c.seed} dir={c.dir} t={t} />
 									</g>
 								);
@@ -354,7 +360,7 @@ export const mk = (spec: Spec): React.FC => {
 								);
 								const sc = (a.s ?? 1) * (a.size ? SIZE[a.size] : 1);
 								return (
-									<g key={'a' + k} transform={`translate(0,${-(s.dy + (a.lift ?? 0))}) ${rotDeg ? `rotate(${(s.face * rotDeg).toFixed(1)} ${s.x} ${FLOOR})` : ''}`} style={{filter: frozen && spec.frozen ? 'grayscale(0.8) brightness(0.96)' : undefined}}>
+									<g key={'a' + k} transform={`translate(0,${-(s.dy + (a.lift ?? 0))}) ${rotDeg ? `rotate(${(s.face * rotDeg).toFixed(1)} ${s.x} ${FLOOR})` : ''}`} opacity={frozen && spec.frozen ? 0.62 : 1}>
 										{el}
 									</g>
 								);
