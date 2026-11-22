@@ -1,0 +1,135 @@
+# The Wrong Answer
+
+The teacher gives you a point for saying Sydney.
+
+The capital of Australia is Canberra.
+
+28 kids stare. Mr. Okoye, the strictest geography teacher in the building, looks at you for one long second. His face softens. "You know, that's a very thoughtful answer." It's not. It's wrong. Lena, who bet you a week of lunches that you couldn't talk your way out of a wrong answer, drops her pencil.
+
+Overnight, you became the most beautiful person in the world. Not by opinion. By agreement. Everyone who sees you, in person, on a screen, in a blurry photo, decides the same thing at once. And their brains do the rest.
+
+Use it right, and nobody questions you. Keep going, and the whole world arranges itself around your face. And one night, in a room with 800 people, you'll need them all to look at you for the right reason.
+
+For now, you own one bonus point and one very suspicious friend.
+
+Scientists have a name for what's happening to Mr. Okoye. It's called the halo effect. In a famous 1972 study, people judged attractive faces as smarter, kinder, and more trustworthy, without knowing a single fact about them. Even babies look longer at faces adults find beautiful. The brain takes one good thing and decides everything else is good, too.
+
+You're not smarter. You're not kinder. You're just very easy to believe.
+
+You test it. In history, you hand in an essay with three pages of nonsense. A. In the cafeteria, the lunch lady sees you and waves off the price of the tray. At the bus stop, a stranger gives you his seat, then his umbrella, then his number, for reasons he can't explain.
+
+On Thursday, you hand in a blank test. Under your name, the teacher writes, "Interesting approach! 9/10." 14 teachers in a row grade you the same way. Your average climbs to 98%, and you've answered four questions all week.
+
+In the group project, you do nothing. Your teammates write your whole section. At the end, they thank you. One of them stays up until 2 a.m. editing your slides. You get a note from the teacher. "Excellent leadership."
+
+Lena lost the bet, so she owes you a week of lunches. She hands you the first sandwich like a legal document. "This isn't because you won," she says. "It's because I don't want to see how you'd use this on me."
+
+At the mall, a scout hands you a card before you reach the escalator. A store manager hires you for the holidays after you tell him you have no experience. "You'll learn," he says. He means it. You fold exactly one sweater in three weeks, and he calls you his best employee. Economists have measured a beauty premium in the job market. Good-looking workers tend to earn more, by several percent up to around 10%. You're making it look easy.
+
+In some studies, attractive people get lighter punishments. You find out how that feels when you're late for class for the ninth time. The principal looks up, smiles, and says, "Take your time."
+
+On your bike, without a helmet, a police officer waves you over. He opens his mouth to ask how fast you were going. He forgets the question. He asks if you need a ride. You didn't say a word.
+
+Lena is the only person who isn't impressed. She's known you since you were six. You show her your A. "That essay was garbage," she says. "I read it. It said the Moon is made of 'moon stuff.'" You laugh so hard you cry. It's the best feedback you've gotten all month.
+
+Mr. Okoye's class has one more lesson that sticks. Every fall, he spends ten minutes on fire safety. He's serious about it. "Know two exits," he says. "In a real fire, people leave through the door they came in, even when a closer one is open. Don't be that person." Nobody listens. You look at the signs over the door and count the steps. You don't know why.
+
+It stops being a joke the day your photo goes online. A friend posts it without asking. 40 million likes in two days. A brand pays you $2,000 to hold a sandwich. A magazine calls. A fashion week in another country flies you out. When you walk down the runway, 2,000 photographers raise their cameras at the same time. The flashes sound like rain.
+
+A poll runs in 91 countries. The question is simple. Who is the most beautiful person alive? It's the first poll in history where every single answer is the same.
+
+A gala in the city offers you $50,000 to attend. You ask what you'd have to say. "Nothing," the organizer says. "Just stand there." You stand in a room with 600 people for three hours. They talk about you the whole time. Nobody asks you a single question.
+
+Strangers wait outside your house. Someone has taped a photo of your face to a lamppost. Your mom finds three people on the lawn at 6 a.m., holding flowers. You start wearing a hoodie, then sunglasses, then a mask, just to buy milk.
+
+Then the science fair.
+
+You spent two months on it. A water filter made out of sand, charcoal, and a bucket. You don't know if it's good. Nobody ever tells you. The judge looks at your project for three seconds, then at your face. "Beautiful work," he says. You win first place.
+
+You go home, close the door, and cry. A woman at the bus stop sees your face and says, "What could you possibly have to cry about?"
+
+Then comes the day you knock a trophy off the shelf outside the principal's office. It shatters. The principal runs out, sees the pieces, sees you, and turns to the janitor, Mr. Aziz, who's holding a mop at the far end of the hall. "I expected better from you." She doesn't even look at you. He doesn't say a word. He just starts sweeping.
+
+You stand there. Your face is the reason he's in trouble.
+
+The bill shows up quietly.
+
+First, the people. In one week, you get 14 marriage proposals, six of them in writing. A girl at school cuts her hair exactly like yours. A boy starts copying your walk. Everyone you know becomes a fan. They laugh at your jokes before you finish them. They agree with everything you say. They stop telling you things, because you seem to have everything already. You count the people who treat you like a normal person. One. Lena.
+
+Second, you. You get a job offer at a clothing store, an A on a paper, and a standing ovation at the science fair, and you can't tell which ones you earned. Was the filter good, or was the face good? Were you smart, or just easy to believe?
+
+Third, the meaning. Nothing you do is yours anymore. If you win, it was your face. If you fail, nobody believes it. When you're sad, people call it drama. When you ask for help, people hand you a camera. You are the most looked-at person alive, and the least seen.
+
+That's the part that wears you down.
+
+April. The Spring Formal. 800 students in the old gym, balloon arches in the corners, a fog machine by the stage. The committee put your face on every poster. "You're the face of the dance," the chair says. You stand beside the stage in a rented suit while hundreds of phones come up like a field of small stars.
+
+At 9:42, a stage light falls against the curtain. It's the last quiet minute of the night.
+
+Nobody sees it. The fog machine puffs. A tiny orange glow crawls up the fabric. Then the whole curtain is a sheet of flame, and the music cuts off.
+
+The fire alarm goes off. 800 students look around, half-smiling. A few lift their phones to film it. "Is it a drill?" "It's a prank." Scientists call it normalcy bias. In real emergencies, many people wait a minute or more before moving, because they can't believe it's real.
+
+Then smoke rolls across the ceiling.
+
+Everybody runs. For the main doors. The ones they came in through. Old doors, the kind that open inward. Within seconds, there are 400 people pressed against them, pushing. The doors don't budge.
+
+Smoke, not flames, kills most people in fires. In a crowded gym, it can fill the room in about two minutes.
+
+You look past the crowd. The side doors are 30 feet from the stage. Green signs. Unlocked. Wide open. Nobody sees them.
+
+You could walk out alone. Nobody would blame you. You're 20 feet from a side door, and there's no one in your way.
+
+Or you can climb onto the stage with a fire behind you and let 800 phones turn toward your face.
+
+You think of Mr. Aziz, sweeping alone. You pick up a microphone.
+
+"Everyone. Look at me."
+
+The room goes silent. 800 faces turn to you at the same time. For once, the flashes work. For once, you want every single one of them.
+
+"The side doors. Green signs. Walk. Don't run. Put the phones away and go."
+
+They go. Slowly at first, then all at once, in a long, steady line. You stand on the stage, pointing. "Left. Left. Walk." The smoke is a gray ceiling now. Your eyes burn. You count heads. 300. 500. 700.
+
+Then your phone buzzes. A message from Lena. "I can't see anything. We're behind the speakers." You see them. A group of fifteen kids behind the stage, in the corner, coughing, hiding behind a speaker. Lena is in the middle, with her sleeve over her mouth. They went the wrong way. The flames are 10 feet away.
+
+Nobody else is looking at them. Everyone is looking at you.
+
+You jump off the stage and run back. You grab a girl, then a boy. You shout, "This way!" and they follow. At 9:46, the curtain breaks loose from its rod and falls across the back of the stage. Fire catches along your jaw.
+
+It doesn't hurt. Not yet. Lena grabs your sleeve and doesn't let go. You keep walking.
+
+The last kid makes it through the door. You make it out after him.
+
+The cold air hits like a wall. Sirens. Firefighters in yellow coats run past you. 800 students stand in the parking lot, shaking, soot on their faces. Two are taken away with smoke inhalation. Everyone else is fine.
+
+In the ambulance, a paramedic puts a cold, wet cloth on the side of your face. Cool running water for 20 minutes is the best thing you can do for a burn. You hold it there and count. "You'll have a scar," she says gently. "From here to here." She draws a line from your ear to your chin, about the length of a hand.
+
+You nod.
+
+The next morning, nobody posts a photo.
+
+You wake up with a bandage on your cheek. Photographers go away. The sponsors cancel. The magazine never calls back. The lamppost is bare. Nobody in the hallway turns to stare. It's been a year since that happened.
+
+Lena walks in with a bag of oranges. She looks at your face for a long time. "You look terrible," she says.
+
+It's the first honest thing anyone has told you about your face since the day it changed. You're crying so hard you can barely breathe. She perches on your bedframe. "Good," she says. "You should."
+
+Back at school, you walk straight into the principal's office. "I knocked the trophy," you say. "Mr. Aziz didn't." She stares at you. "I believed you," she says slowly. "I believed you because of your face." "I know. That's the problem." She walks down the hall and apologizes to Mr. Aziz in front of the whole front office. He nods once and goes back to his mop.
+
+The scar is pink and tight. Kids are polite. Teachers look away. Some people stare. Some stare differently. Mr. Okoye stops you in the hall, hands in his pockets.
+
+"Quick question. What's the capital of Australia?"
+
+You look at him. You know the answer. You've known it all year. "Canberra."
+
+"Correct," he says. He writes it down. "That's your first real point."
+
+Seven days later, a woman in a yellow vest is waiting by the gym doors. She's from a fire-safety foundation. She slides a folder across a bench. "We train 20,000 volunteers a year," she says. "But people don't listen to us. People listen to a face. We want a face that tells the truth about exits."
+
+You laugh. She doesn't.
+
+"What do you say?"
+
+Would you take being the most beautiful person in the world, knowing you'd never be able to tell if anything you did was really yours? Tell me in the comments. And would you have gone back for the last row, knowing what the fire would take?
