@@ -1,0 +1,121 @@
+name: whatif-render
+on:
+  push:
+    branches: [ccr-0973eee5-500uoc]
+    paths: [whatif/render_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: whatif-render
+  cancel-in-progress: true
+env:
+  CHUNK: 600
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.c.outputs.chunks }}
+      total: ${{ steps.c.outputs.total }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: c
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, math
+          t = json.load(open('whatif/src/story/timeline.json'))['total']
+          n = math.ceil(t / 600)
+          print('total=%d' % t)
+          print('chunks=' + json.dumps(list(range(n))))
+          PY
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: whatif/package-lock.json
+      - name: system libs for Chrome
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libnss3 libdbus-1-3 libatk1.0-0 libgbm-dev libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 libcups2 >/dev/null
+      - name: install packages
+        working-directory: whatif
+        run: npm ci --no-audit --no-fund
+      - name: placeholder bed (picture is rendered muted)
+        working-directory: whatif
+        run: |
+          mkdir -p public/sfx
+          python3 -c "import wave;w=wave.open('public/sfx/bed.wav','wb');w.setnchannels(2);w.setsampwidth(2);w.setframerate(32000);w.writeframes(b'\x00'*128000);w.close()"
+      - name: render chunk ${{ matrix.chunk }}
+        working-directory: whatif
+        run: |
+          TOTAL=${{ needs.plan.outputs.total }}
+          S=$(( ${{ matrix.chunk }} * CHUNK ))
+          E=$(( S + CHUNK - 1 ))
+          if [ $E -ge $TOTAL ]; then E=$(( TOTAL - 1 )); fi
+          mkdir -p out/chunks_Long
+          N=$(printf '%02d' ${{ matrix.chunk }})
+          for attempt in 1 2 3; do
+            if npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=swangle --concurrency=4 --crf=18 --log=error --timeout=240000; then ok=1; break; fi
+            echo "attempt $attempt failed"; ok=0
+          done
+          [ "$ok" = 1 ]
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.chunk }}
+          path: whatif/out/chunks_Long/*.mp4
+          retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: [plan, render]
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: whatif/package-lock.json
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: whatif/out/chunks_Long
+          merge-multiple: true
+      - name: install + sound + join
+        working-directory: whatif
+        run: |
+          npm ci --no-audit --no-fund
+          ls out/chunks_Long | wc -l
+          node tools/make-sound.mjs
+          node tools/render.mjs Long --chunk $CHUNK
+          ls -la out
+      - name: phone-size copy
+        working-directory: whatif
+        run: |
+          FF=$(node -e "import('./tools/lib.mjs').then(m=>console.log(m.ffbin()))")
+          $FF -hide_banner -v error -y -i out/Long.mp4 -vf scale=1280:-2 -c:v libx264 -crf 24 -preset medium -c:a copy -movflags +faststart out/Long_720p.mp4
+          ls -la out/*.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: final-video
+          path: |
+            whatif/out/Long.mp4
+            whatif/out/Long_720p.mp4
+          retention-days: 14
+          compression-level: 0
+      - name: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG=whatif-$(date +%Y%m%d-%H%M%S)
+          gh release create "$TAG" whatif/out/Long.mp4 whatif/out/Long_720p.mp4 --title "Quentin dinner video" --notes "Rendered by whatif-render" --target "$GITHUB_SHA" || true
