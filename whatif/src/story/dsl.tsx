@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Easing, interpolate} from 'remotion';
 import {Pose, frontHand} from '../engine/Stickman';
 import {Layer, Svg} from '../engine/camera';
-import {blend, env, gesture, idle, run, walk, Gesture} from '../kit/actions';
+import {blend, env, gesture, idle, run, walk, SIT, Gesture} from '../kit/actions';
 import {Actor, LINES, L, SizeName, useShot, useSpeaking} from '../kit/core';
 import type {ShotDef} from '../kit/coverage';
 import {Cam} from '../engine/camera';
@@ -52,6 +52,7 @@ export type AnimalSpec = {
 	pose?: AnimalPose;
 	poses?: [AnimalPose, T, T][];
 	mv?: Mv[];
+	ym?: Mv[];
 	talk?: [T, T][];
 	wag?: number;
 	flap?: [T, T][];
@@ -107,6 +108,7 @@ const LOC: Record<string, (f: number) => React.ReactNode> = {
 	bedroom: (f) => <Bedroom f={f} />,
 	hall: (f) => <AptHall f={f} />,
 	hallNight: (f) => <AptHall f={f} night />,
+	hall3: (f) => <AptHall f={f} door="3C" />,
 	hallOpen: (f) => <AptHall f={f} night open={Math.min(1, Math.max(0, (f - 10) / 20))} />,
 	roof: (f) => <Roof f={f} />,
 	roofNight: (f) => <Roof f={f} night />,
@@ -273,7 +275,7 @@ export const scene = (spec: SceneSpec): {C: React.FC; spec: SceneSpec} => {
 		};
 		const animalPos = (a: AnimalSpec, ff: number) => {
 			const tr = track(a.x, a.mv, ff, tf);
-			const g = a.y ?? 900;
+			const g = a.ym ? track(a.y ?? 900, a.ym, ff, tf).x : a.y ?? 900;
 			return {x: tr.x, y: g - ANIMAL_H[a.an] * (a.s ?? 1) * 0.75, tr, g};
 		};
 		const pos = (id: string) => {
@@ -402,6 +404,7 @@ export const scene = (spec: SceneSpec): {C: React.FC; spec: SceneSpec} => {
 			x += drift;
 			let pose: Pose = idle(gf, seed);
 			pose = movePose(tr, f, seed, pose);
+			if (p.seat !== undefined) pose = {...SIT, head: Math.sin(f / 40 + seed) * 2};
 			let expr: string | undefined;
 			let mouth: string | undefined;
 			let armOver = false;
@@ -558,10 +561,10 @@ export const scene = (spec: SceneSpec): {C: React.FC; spec: SceneSpec} => {
 			for (const [t0, t1, d0, d1] of a.rot ?? []) if (f >= tf(t0) && f < tf(t1)) rot = d0 + (d1 - d0) * ((f - tf(t0)) / Math.max(1, tf(t1) - tf(t0)));
 			const hop = (a.hop ?? []).some(([t0, t1]) => f >= tf(t0) && f < tf(t1)) ? Math.abs(Math.sin(f / 3)) * 36 : 0;
 			const sad = a.sad && f >= tf(a.sad[0]) && f < tf(a.sad[1]) ? 1 : 0;
-			const sayEl = (a.say ?? []).map(([t0, t1, text], si) => <Say key={si} x={q.x + face * 30} y={(a.y ?? 900) - ANIMAL_H[a.an] * (a.s ?? 1) * 1.15 - 30 - hop} t={f - tf(t0)} dur={tf(t1) - tf(t0)} text={text} side={face} />);
+			const sayEl = (a.say ?? []).map(([t0, t1, text], si) => <Say key={si} x={q.x + face * 30} y={q.g - ANIMAL_H[a.an] * (a.s ?? 1) * 1.15 - 30 - hop} t={f - tf(t0)} dur={tf(t1) - tf(t0)} text={text} side={face} />);
 			return (
 				<g key={id}>
-					<Animal kind={a.an} x={q.x} y={(a.y ?? 900) - hop} s={a.s ?? 1} face={face} pose={pose} talk={talk} t={gf + ai * 13} wag={a.wag ?? 1} flap={flap} tilt={tilt} rot={rot} sad={sad} />
+					<Animal kind={a.an} x={q.x} y={q.g - hop} s={a.s ?? 1} face={face} pose={pose} talk={talk} t={gf + ai * 13} wag={a.wag ?? 1} flap={flap} tilt={tilt} rot={rot} sad={sad} />
 					{sayEl}
 				</g>
 			);
@@ -708,5 +711,5 @@ export const toShots = (specs: {C: React.FC; spec: SceneSpec}[]): ShotDef[] =>
 		const next = specs[i + 1]?.spec.at;
 		const sf = L(spec.at).from - 6;
 		const ef = next ? L(next).from - 6 : sf + 600;
-		return {at: spec.at, C, own: true, whip: spec.whip, ownCuts: spec.cam ? spec.cam.map((c) => (typeof c[0] === 'number' ? c[0] : 0)) : cutsOf(sf, ef).map((c) => c - sf)};
+		return {at: spec.at, C, own: true, whip: spec.whip, ownCuts: spec.cam ? spec.cam.map((c) => parseT(c[0], (n) => L(n).from - sf, (n) => L(n).from + L(n).dur - sf)).filter((v, k, a) => k === 0 || v !== a[k - 1]).map((v) => Math.max(0, v)) : cutsOf(sf, ef).map((c) => c - sf)};
 	});

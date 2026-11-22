@@ -53,3 +53,18 @@ export const Tag: React.FC<{f: number; t0: number; t1: number; x: number; y: num
 };
 
 export type {Ctx};
+
+/* a big stat card in world space: huge number + label */
+export const Stat: React.FC<{f: number; t0: number; t1: number; x: number; y: number; big: string; label: string; c?: string; s?: number}> = ({f, t0, t1, x, y, big, label, c = '#ffd84a', s = 1}) => {
+	if (f < t0 || f > t1) return null;
+	const k = Math.min(1, (f - t0) / 9);
+	const e = 1 - Math.pow(1 - k, 3);
+	const out = interpolate(f, [t1 - 6, t1], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+	return (
+		<g transform={`translate(${x},${y}) scale(${s * (0.5 + 0.5 * e)})`} opacity={Math.min(e, out)}>
+			<rect x={-300} y={-120} width={600} height={240} rx={36} fill="#10142e" stroke={c} strokeWidth={8} />
+			<text y={20} textAnchor="middle" fontFamily="Rubik" fontWeight={900} fontSize={120} fill={c}>{big}</text>
+			<text y={84} textAnchor="middle" fontFamily="Rubik" fontWeight={700} fontSize={38} fill="#fff">{label}</text>
+		</g>
+	);
+};

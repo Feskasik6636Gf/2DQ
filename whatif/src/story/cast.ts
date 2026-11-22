@@ -18,5 +18,6 @@ export const CAST: Record<string, CastMember> = {
 	sgt: {color: '#3a4256', outfit: 'suit', hair: 'cap', hairColor: '#28304a', acc: ['mustache'], skin: '#c98d63', eye: '#4a3a2a', legColor: '#22262e', rim: '#e6ecff', rimW: 2.4, shoe: '#111'},
 	fire: {color: '#e8741a', outfit: 'coat', hair: 'cap', hairColor: '#f2c230', skin: '#e0ac86', eye: '#3a2a1a', legColor: '#2b2f3a', rim: '#ffe0b0', rimW: 2.4, shoe: '#111'},
 	rep: {color: '#c0392b', outfit: 'suit', build: 'f', hair: 'long', hairColor: '#b8742a', skin: '#f6d2b4', eye: '#3aa0e0', legColor: '#2b2f3a', rim: R, rimW: 2.4, shoe: '#2b2f3a'},
+	sup: {color: '#2f8a9a', outfit: 'tee', hair: 'cap', hairColor: '#2b2b33', skin: '#c98d63', eye: '#3a2a1a', acc: ['mustache'], age: 0.5, legColor: '#3a3a44', rim: R, rimW: 2.4, shoe: '#2a2a2a'},
 	robe: {color: '#8a6bd0', outfit: 'tee', hair: 'spiky', hairColor: '#3a2a1a', skin: '#c98d63', eye: '#3a2a1a', legColor: '#6a5aa0', rim: R, rimW: 2.4, shoe: '#d8c8a0'},
 };
