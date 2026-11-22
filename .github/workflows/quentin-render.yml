@@ -1,0 +1,99 @@
+name: quentin-render
+on:
+  push:
+    branches: [ccr-2fba6931-329mzu]
+    paths: ['quentin/**', '.github/workflows/quentin-render.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: quentin-render
+  cancel-in-progress: true
+env:
+  CHUNK: 1000
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.c.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: c
+        working-directory: quentin
+        run: |
+          echo "chunks=$(node -e "const t=require('./src/story/timeline.json').total;const n=Math.ceil(t/$CHUNK);console.log(JSON.stringify([...Array(n).keys()]))")" >> "$GITHUB_OUTPUT"
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
+    defaults:
+      run:
+        working-directory: quentin
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: system libs for headless Chrome
+        working-directory: .
+        run: sudo apt-get update -y && sudo apt-get install -y libnss3 libdbus-1-3 libatk1.0-0 libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 libcups2 libgbm1
+      - run: npm ci
+      - name: sound bed (needed by the composition)
+        run: mkdir -p public/sfx && node tools/build-sound.mjs && node tools/make-sound.mjs
+      - name: render chunk
+        run: |
+          mkdir -p out/chunks_Long
+          TOTAL=$(node -e "console.log(require('./src/story/timeline.json').total)")
+          S=$(( ${{ matrix.chunk }} * CHUNK ))
+          E=$(( S + CHUNK - 1 )); if [ $E -ge $TOTAL ]; then E=$(( TOTAL - 1 )); fi
+          F=$(printf 'c%02d.mp4' ${{ matrix.chunk }})
+          echo "frames $S-$E -> $F"
+          for try in 1 2 3; do
+            npx remotion render Long out/chunks_Long/tmp.mp4 --frames=$S-$E --muted --gl=angle --concurrency=4 --crf=18 --log=error --timeout=180000 && break
+            echo "retry $try"; sleep 5
+          done
+          mv out/chunks_Long/tmp.mp4 out/chunks_Long/$F
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.chunk }}
+          path: quentin/out/chunks_Long/c*.mp4
+          retention-days: 3
+  join:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: quentin
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: quentin/out/chunks_Long
+          merge-multiple: true
+      - name: sound, join, loudness
+        run: |
+          mkdir -p public/sfx && node tools/build-sound.mjs && node tools/make-sound.mjs
+          ls out/chunks_Long
+          node tools/render.mjs Long --chunk $CHUNK
+          node tools/check-video.mjs out/Long.mp4 || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Quentin_chef_video
+          path: quentin/out/Long.mp4
+          retention-days: 30
+      - name: publish as a GitHub release (easy download)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp out/Long.mp4 Quentin_chef.mp4
+          gh release create "quentin-chef-${{ github.run_number }}" Quentin_chef.mp4 --repo "${{ github.repository }}" --target "${{ github.sha }}" --title "Quentin chef video (run ${{ github.run_number }})" --notes "Rendered by GitHub Actions" || true
