@@ -69,7 +69,7 @@ jobs:
           mkdir -p out/chunks_Long
           N=$(printf '%02d' ${{ matrix.chunk }})
           for attempt in 1 2 3; do
-            if npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=swangle --concurrency=2 --scale=0.6667 --crf=18 --log=info --timeout=300000; then ok=1; break; fi
+            if npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=swangle --concurrency=1 --scale=0.6667 --crf=18 --log=info --timeout=300000; then ok=1; break; fi
             echo "attempt $attempt failed"; ok=0
           done
           [ "$ok" = 1 ]
