@@ -9,7 +9,7 @@ description: Пишет оригинальные сценарии длинных
 
 ## Порядок работы
 1. Прочитай `script_system/channel_config.json`, затем `script_system/VIRAL_SCRIPT_DNA.md` и `script_system/GENERATOR.md` (если уже читал в этой сессии — повторно не нужно).
-2. Свери тему с `script_system/COMPETITOR_PREMISES.md` и `script_system/scripts/INDEX.md` (не повторять уже снятое).
+2. **Сначала выбери скелет и оси разнообразия по `script_system/VARIETY.md`** (не S1/подросток/школа три раза подряд). Затем свери тему с `script_system/COMPETITOR_PREMISES.md` и `script_system/scripts/INDEX.md` (не повторять уже снятое).
 3. Пройди конвейер GENERATOR.md: Premise Canvas → Beat sheet → Факты → Черновик (хук → кульминация → цена → остальное) → Правка.
 4. Проверь: `python3 script_system/tools/lint_script.py <script.md> --mode L`, затем 12 критериев `script_system/QA_CHECKLIST.md`. Слабые места переписывай, не выдавай слабый сценарий (до 3 кругов).
 5. Сохрани результат в `script_system/scripts/<YYYY-MM-DD>_<slug>/` (`script.md`, `beats.md`, `facts.md`, `qa.md`) и добавь строку в `scripts/INDEX.md`.

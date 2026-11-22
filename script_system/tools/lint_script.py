@@ -30,6 +30,11 @@ HARD = [
     r"since this morning,? you can", r"nobody else can (make|see|do|get)", r"only you\b",
     r"it'?s a scoreboard", r"scoreboard for",
 ]
+# Our OWN recurring tics (found in 5-6 of our first 6 scripts). Reuse = FAIL.
+SELF = [r"bill (shows up|arrives) quietly", r"for (today|now),? you (own|have)",
+        r"nobody would (ever )?blame you", r"stops being a (game|party trick)",
+        r"bet you a (week|day)", r"tell me in the comments\.? and would you have",
+        r"very (suspicious|confused) (friend|teacher)"]
 # Overused props/names. Reuse = WARN (rotate them).
 SOFT = [r"\b20 bucks\b", r"\bbest friend\b", r"\bJake\b", r"\bMaya\b", r"\bOliver\b",
         r"\bRiley\b", r"\bblack car\b", r"\bgray suit\b", r"\bpick ?up basketball\b",
@@ -86,7 +91,35 @@ def sentences(t):
     return [s for s in re.split(r"(?<=[.!?])[\"”']?\s+", t) if s.strip()]
 
 
-def analyse(text, mode, plag):
+def add_sameness(text, add, ws_fn, current=None):
+    """Compare with our previous scripts: shared 5-grams (>=3 content words) and same ending."""
+    import glob
+    cur = ws_fn(text)
+    def grams(ws):
+        return {g for g in zip(*[ws[i:] for i in range(5)]) if sum(1 for x in g if x not in STOP) >= 3}
+    mine = grams(cur)
+    hits = Counter()
+    tails = []
+    for f in sorted(glob.glob(str(ROOT / "scripts" / "*" / "script.md"))):
+        if current and pathlib.Path(f).resolve() == pathlib.Path(current).resolve():
+            continue
+        other = clean(pathlib.Path(f).read_text(encoding="utf8"))
+        ow = ws_fn(other)
+        for g in grams(ow) & mine:
+            hits[g] += 1
+        tails.append(" ".join(ow[-18:]))
+    rep = [g for g, c in hits.items() if c >= 1]
+    if len(rep) > 8:
+        sample = "; ".join(" ".join(g) for g in rep[:4])
+        add("WARN", "sameness", f"{len(rep)} 5-grams repeat our earlier scripts (e.g. {sample})")
+    me_tail = cur[-18:]
+    for tl in tails:
+        tw = tl.split()
+        if sum(1 for x in me_tail if x in tw) >= 14:
+            add("WARN", "sameness", "closing question is almost the same as an earlier script's; use another CTA form"); break
+
+
+def analyse(text, mode, plag, current=None):
     res, add = [], lambda lvl, name, msg: res.append((lvl, name, msg))
     S = sentences(text)
     W = text.split()
@@ -149,6 +182,10 @@ def analyse(text, mode, plag):
         c = len(re.findall(p, low))
         if c:
             add("WARN", "ai-tell", f"'{p}' x{c}")
+    for p in SELF:
+        for mm in re.finditer(p, low):
+            add("FAIL", "self-tic", f"our own recurring phrase: '{mm.group(0)}' (vary it)")
+    add_sameness(text, add, ws_fn=words, current=current)
     for p in SOFT:
         c = len(re.findall(p, text, re.I))
         if c:
@@ -216,7 +253,7 @@ def main():
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
     text = clean(pathlib.Path(a.file).read_text(encoding="utf8"))
-    m, res = analyse(text, a.mode, not a.no_plagiarism)
+    m, res = analyse(text, a.mode, not a.no_plagiarism, a.file)
     if a.json:
         print(json.dumps(dict(metrics=m, findings=res), ensure_ascii=False, indent=1)); sys.exit(any(r[0] == "FAIL" for r in res))
     print("METRICS", json.dumps(m))
