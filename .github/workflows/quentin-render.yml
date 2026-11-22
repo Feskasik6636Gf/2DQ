@@ -1,0 +1,102 @@
+name: quentin-render
+on:
+  push:
+    branches: [ccr-bda4a278-7qvy70]
+    paths: [quentin/render_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: quentin-render
+  cancel-in-progress: true
+env:
+  CHUNK: 740
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chunks: ${{ steps.c.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: c
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, math
+          t = json.load(open('quentin/src/story/timeline.json'))['total']
+          print("chunks=" + json.dumps(list(range(math.ceil(t / 740)))))
+          PY
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: install
+        working-directory: quentin
+        run: |
+          npm ci --no-audit --no-fund
+          npx remotion browser ensure
+      - name: render chunk
+        working-directory: quentin
+        run: |
+          mkdir -p out/chunks_Long
+          TOTAL=$(node -e "console.log(require('./src/story/timeline.json').total)")
+          S=$(( ${{ matrix.chunk }} * CHUNK ))
+          E=$(( S + CHUNK - 1 ))
+          if [ $E -ge $TOTAL ]; then E=$(( TOTAL - 1 )); fi
+          N=$(printf '%02d' ${{ matrix.chunk }})
+          echo "frames $S-$E"
+          for try in 1 2 3; do
+            npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=angle --concurrency=4 --crf=18 --log=error --timeout=180000 && break
+            echo "retry $try"; sleep 5
+          done
+          ls -la out/chunks_Long
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.chunk }}
+          path: quentin/out/chunks_Long/c*.mp4
+          retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: dl
+          merge-multiple: true
+      - name: assemble
+        working-directory: quentin
+        run: |
+          npm ci --no-audit --no-fund
+          mkdir -p out/chunks_Long
+          cp ../dl/c*.mp4 out/chunks_Long/
+          ls out/chunks_Long | wc -l
+          node tools/make-sound.mjs
+          node tools/render.mjs Long --chunk 740
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Quentin_final
+          path: quentin/out/Long.mp4
+          retention-days: 14
+          compression-level: 0
+      - name: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="quentin-${{ github.run_number }}"
+          gh release create "$TAG" quentin/out/Long.mp4 --title "Quentin - five more minutes ($TAG)" --notes "Final render" || true
