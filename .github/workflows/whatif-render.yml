@@ -26,7 +26,11 @@ jobs:
           t = json.load(open('whatif/src/story/timeline.json'))['total']
           n = math.ceil(t / 600)
           print('total=%d' % t)
-          print('chunks=' + json.dumps(list(range(n))))
+          lst = list(range(n))
+          req = open('whatif/render_request.txt').read().split('\n')
+          if len(req) > 1 and req[1].startswith('chunks:'):
+              lst = [int(x) for x in req[1][7:].split(',') if x.strip()]
+          print('chunks=' + json.dumps(lst))
           PY
   render:
     needs: plan
@@ -65,7 +69,7 @@ jobs:
           mkdir -p out/chunks_Long
           N=$(printf '%02d' ${{ matrix.chunk }})
           for attempt in 1 2 3; do
-            if npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=swangle --concurrency=4 --crf=18 --log=error --timeout=240000; then ok=1; break; fi
+            if npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=swangle --concurrency=2 --scale=0.6667 --crf=18 --log=info --timeout=300000; then ok=1; break; fi
             echo "attempt $attempt failed"; ok=0
           done
           [ "$ok" = 1 ]
@@ -92,6 +96,7 @@ jobs:
           path: whatif/out/chunks_Long
           merge-multiple: true
       - name: install + sound + join
+        if: always()
         working-directory: whatif
         run: |
           npm ci --no-audit --no-fund
