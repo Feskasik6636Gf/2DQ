@@ -46,20 +46,31 @@ jobs:
       - name: render chunk
         working-directory: quentin
         run: |
-          mkdir -p out/chunks_Long
+          mkdir -p out/chunks_Long out/sub
           TOTAL=$(node -e "console.log(require('./src/story/timeline.json').total)")
           S=$(( ${{ matrix.chunk }} * CHUNK ))
           E=$(( S + CHUNK - 1 ))
           if [ $E -ge $TOTAL ]; then E=$(( TOTAL - 1 )); fi
           N=$(printf '%02d' ${{ matrix.chunk }})
+          FF=$(ls node_modules/@remotion/compositor-*/ffmpeg | head -1)
+          chmod +x "$FF" || true
           echo "frames $S-$E"
-          OK=0
-          for try in 1 2 3; do
-            if npx remotion render Long out/chunks_Long/c$N.mp4 --frames=$S-$E --muted --gl=swangle --concurrency=2 --crf=18 --log=error --timeout=240000; then OK=1; break; fi
-            echo "retry $try"; sleep 5
+          : > out/sub/list.txt
+          K=0
+          for (( A=S; A<=E; A+=60 )); do
+            B=$(( A + 59 )); if [ $B -gt $E ]; then B=$E; fi
+            F=out/sub/s$(printf '%02d' $K).mp4
+            OK=0
+            for try in 1 2 3; do
+              if npx remotion render Long $F --frames=$A-$B --muted --gl=swangle --concurrency=2 --crf=18 --log=error --timeout=240000; then OK=1; break; fi
+              echo "retry $try for $A-$B"; sleep 3
+            done
+            if [ $OK -ne 1 ]; then echo "CHUNK FAILED at $A-$B"; exit 1; fi
+            echo "file 's$(printf '%02d' $K).mp4'" >> out/sub/list.txt
+            K=$(( K + 1 ))
           done
+          "$FF" -hide_banner -v error -y -f concat -safe 0 -i out/sub/list.txt -c copy out/chunks_Long/c$N.mp4
           ls -la out/chunks_Long
-          if [ $OK -ne 1 ]; then echo "CHUNK FAILED"; exit 1; fi
       - uses: actions/upload-artifact@v4
         with:
           name: chunk-${{ matrix.chunk }}
