@@ -1,0 +1,82 @@
+name: render-dyatlov
+on:
+  push:
+    branches: [ccr-485a77f4-fjn6ex]
+    paths: [dyatlov/render_request.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: render-dyatlov
+  cancel-in-progress: true
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: system libs
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libnss3 libdbus-1-3 libatk1.0-0 libgbm-dev libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 libcups2 >/dev/null
+      - name: install
+        working-directory: dyatlov
+        run: npm ci --no-audit --no-fund
+      - name: render part
+        working-directory: dyatlov
+        run: |
+          TOTAL=2852; PARTS=12
+          PER=$(( (TOTAL + PARTS - 1) / PARTS ))
+          A=$(( ${{ matrix.part }} * PER )); B=$(( A + PER - 1 )); if [ $B -ge $TOTAL ]; then B=$(( TOTAL - 1 )); fi
+          echo "frames $A-$B"
+          mkdir -p out
+          npx remotion render src/index.ts Dyatlov out/part_$(printf %02d ${{ matrix.part }}).mp4 --frames=$A-$B --muted --codec=h264 --crf=14 --pixel-format=yuv420p --gl=angle --concurrency=4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.part }}
+          path: dyatlov/out/part_*.mp4
+          retention-days: 3
+          compression-level: 0
+  assemble:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: part-*
+          path: parts
+          merge-multiple: true
+      - name: concat + mux + phone copy
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          ls -la parts
+          for f in $(ls parts/part_*.mp4 | sort); do echo "file '$PWD/$f'"; done > list.txt
+          ffmpeg -v error -y -f concat -safe 0 -i list.txt -c copy video_only.mp4
+          mkdir -p dyatlov/out
+          ffmpeg -v error -y -i video_only.mp4 -i dyatlov/public/audio/mix.m4a -map 0:v -map 1:a -c:v copy -c:a copy -shortest dyatlov/out/dyatlov_full.mp4
+          # phone copy < 30 MB, two-pass
+          ffmpeg -v error -y -i dyatlov/out/dyatlov_full.mp4 -c:v libx264 -preset slow -b:v 2100k -maxrate 3000k -bufsize 6000k -pass 1 -an -f null /dev/null
+          ffmpeg -v error -y -i dyatlov/out/dyatlov_full.mp4 -c:v libx264 -preset slow -b:v 2100k -maxrate 3000k -bufsize 6000k -pass 2 -c:a aac -b:a 128k -movflags +faststart dyatlov/out/dyatlov_phone.mp4
+          ls -la dyatlov/out
+          ffprobe -v error -show_entries format=duration,size -of csv=p=0 dyatlov/out/dyatlov_phone.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dyatlov-final
+          path: dyatlov/out/dyatlov_full.mp4
+          retention-days: 7
+          compression-level: 0
+      - name: commit phone copy
+        run: |
+          rm dyatlov/out/dyatlov_full.mp4
+          git config user.name "render-bot"
+          git config user.email "render-bot@users.noreply.github.com"
+          git add -f dyatlov/out/dyatlov_phone.mp4
+          git commit -m "Dyatlov video: phone copy (<30MB)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
