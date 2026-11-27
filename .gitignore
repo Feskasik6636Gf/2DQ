@@ -8,3 +8,4 @@ studio/videos/liars/audio/*.wav
 studio/videos/liars/audio/*.m4a
 studio/videos/liars/audio/raw.mp3
 studio/videos/*/sheet*.jpg
+studio/videos/*/render_log_*.txt
