@@ -1,0 +1,1332 @@
+[
+{
+"word": "Every",
+"start": 0.0,
+"end": 0.32
+},
+{
+"word": "lie",
+"start": 0.32,
+"end": 0.6
+},
+{
+"word": "you",
+"start": 0.6,
+"end": 0.8
+},
+{
+"word": "tell",
+"start": 0.8,
+"end": 1.04
+},
+{
+"word": "crawls",
+"start": 1.21,
+"end": 1.58
+},
+{
+"word": "out",
+"start": 1.58,
+"end": 1.74
+},
+{
+"word": "of",
+"start": 1.74,
+"end": 1.82
+},
+{
+"word": "your",
+"start": 1.82,
+"end": 1.96
+},
+{
+"word": "mouth",
+"start": 1.96,
+"end": 2.26
+},
+{
+"word": "as",
+"start": 2.26,
+"end": 2.48
+},
+{
+"word": "a",
+"start": 2.48,
+"end": 2.72
+},
+{
+"word": "monster.",
+"start": 2.72,
+"end": 3.16
+},
+{
+"word": "Say,",
+"start": 3.52,
+"end": 3.7
+},
+{
+"word": "\"I",
+"start": 3.98,
+"end": 4.02
+},
+{
+"word": "love",
+"start": 4.02,
+"end": 4.14
+},
+{
+"word": "your",
+"start": 4.14,
+"end": 4.28
+},
+{
+"word": "haircut,\"",
+"start": 4.28,
+"end": 4.6
+},
+{
+"word": "and",
+"start": 4.74,
+"end": 4.84
+},
+{
+"word": "a",
+"start": 4.84,
+"end": 4.904
+},
+{
+"word": "moth-sized",
+"start": 4.904,
+"end": 5.48
+},
+{
+"word": "creature",
+"start": 5.48,
+"end": 5.88
+},
+{
+"word": "bites",
+"start": 5.95,
+"end": 6.22
+},
+{
+"word": "you.",
+"start": 6.22,
+"end": 6.54
+},
+{
+"word": "Nobody",
+"start": 6.82,
+"end": 7.04
+},
+{
+"word": "lies",
+"start": 7.04,
+"end": 7.32
+},
+{
+"word": "for",
+"start": 7.32,
+"end": 7.5
+},
+{
+"word": "long",
+"start": 7.5,
+"end": 7.7
+},
+{
+"word": "here.",
+"start": 7.7,
+"end": 7.98
+},
+{
+"word": "You",
+"start": 8.28,
+"end": 8.4
+},
+{
+"word": "can't",
+"start": 8.4,
+"end": 8.78
+},
+{
+"word": "hide",
+"start": 8.78,
+"end": 8.92
+},
+{
+"word": "a",
+"start": 8.92,
+"end": 9.08
+},
+{
+"word": "monster.",
+"start": 9.08,
+"end": 9.44
+},
+{
+"word": "Except",
+"start": 9.72,
+"end": 9.92
+},
+{
+"word": "my",
+"start": 9.92,
+"end": 10.14
+},
+{
+"word": "dad.",
+"start": 10.14,
+"end": 10.34
+},
+{
+"word": "He",
+"start": 10.62,
+"end": 10.74
+},
+{
+"word": "has",
+"start": 10.74,
+"end": 10.86
+},
+{
+"word": "never",
+"start": 10.86,
+"end": 11.18
+},
+{
+"word": "had",
+"start": 11.18,
+"end": 11.42
+},
+{
+"word": "one.",
+"start": 11.42,
+"end": 11.64
+},
+{
+"word": "People",
+"start": 11.88,
+"end": 12.04
+},
+{
+"word": "call",
+"start": 12.04,
+"end": 12.28
+},
+{
+"word": "him",
+"start": 12.28,
+"end": 12.52
+},
+{
+"word": "Honest",
+"start": 12.52,
+"end": 12.86
+},
+{
+"word": "Ben.",
+"start": 12.86,
+"end": 13.12
+},
+{
+"word": "I'm",
+"start": 13.46,
+"end": 13.8
+},
+{
+"word": "Mia.",
+"start": 13.8,
+"end": 13.82
+},
+{
+"word": "I'm",
+"start": 14.06,
+"end": 14.26
+},
+{
+"word": "11,",
+"start": 14.26,
+"end": 14.46
+},
+{
+"word": "and",
+"start": 14.62,
+"end": 14.78
+},
+{
+"word": "I",
+"start": 14.78,
+"end": 14.92
+},
+{
+"word": "have",
+"start": 14.92,
+"end": 15.02
+},
+{
+"word": "never",
+"start": 15.02,
+"end": 15.42
+},
+{
+"word": "heard",
+"start": 15.42,
+"end": 15.68
+},
+{
+"word": "him",
+"start": 15.68,
+"end": 15.88
+},
+{
+"word": "fib.",
+"start": 15.88,
+"end": 16.04
+},
+{
+"word": "Then",
+"start": 16.4,
+"end": 16.58
+},
+{
+"word": "one",
+"start": 16.58,
+"end": 16.8
+},
+{
+"word": "night,",
+"start": 16.8,
+"end": 17.08
+},
+{
+"word": "something",
+"start": 17.36,
+"end": 17.56
+},
+{
+"word": "started",
+"start": 17.56,
+"end": 17.84
+},
+{
+"word": "tearing",
+"start": 17.84,
+"end": 18.28
+},
+{
+"word": "through",
+"start": 18.28,
+"end": 18.54
+},
+{
+"word": "town.",
+"start": 18.54,
+"end": 18.9
+},
+{
+"word": "It",
+"start": 19.16,
+"end": 19.24
+},
+{
+"word": "was",
+"start": 19.24,
+"end": 19.36
+},
+{
+"word": "the",
+"start": 19.36,
+"end": 19.52
+},
+{
+"word": "size",
+"start": 19.52,
+"end": 19.78
+},
+{
+"word": "of",
+"start": 19.78,
+"end": 19.92
+},
+{
+"word": "a",
+"start": 20.0,
+"end": 20.18
+},
+{
+"word": "barn.",
+"start": 20.18,
+"end": 20.44
+},
+{
+"word": "Sixty",
+"start": 20.94,
+"end": 21.24
+},
+{
+"word": "feet",
+"start": 21.33,
+"end": 21.58
+},
+{
+"word": "of",
+"start": 21.58,
+"end": 21.82
+},
+{
+"word": "fur",
+"start": 21.82,
+"end": 22.14
+},
+{
+"word": "and",
+"start": 22.14,
+"end": 22.4
+},
+{
+"word": "teeth.",
+"start": 22.4,
+"end": 22.78
+},
+{
+"word": "It",
+"start": 23.1,
+"end": 23.2
+},
+{
+"word": "flattened",
+"start": 23.23,
+"end": 23.64
+},
+{
+"word": "the",
+"start": 23.64,
+"end": 23.86
+},
+{
+"word": "bakery.",
+"start": 23.86,
+"end": 24.16
+},
+{
+"word": "It",
+"start": 24.44,
+"end": 24.58
+},
+{
+"word": "swallowed",
+"start": 24.58,
+"end": 24.94
+},
+{
+"word": "the",
+"start": 24.94,
+"end": 25.14
+},
+{
+"word": "mayor's",
+"start": 25.14,
+"end": 25.48
+},
+{
+"word": "car.",
+"start": 25.48,
+"end": 25.7
+},
+{
+"word": "At",
+"start": 26.0,
+"end": 26.16
+},
+{
+"word": "dawn,",
+"start": 26.16,
+"end": 26.46
+},
+{
+"word": "it",
+"start": 26.68,
+"end": 26.78
+},
+{
+"word": "vanished.",
+"start": 26.95,
+"end": 27.18
+},
+{
+"word": "Whose",
+"start": 27.48,
+"end": 27.72
+},
+{
+"word": "lie",
+"start": 27.72,
+"end": 28.0
+},
+{
+"word": "could",
+"start": 28.0,
+"end": 28.18
+},
+{
+"word": "be",
+"start": 28.18,
+"end": 28.38
+},
+{
+"word": "that",
+"start": 28.38,
+"end": 28.6
+},
+{
+"word": "big?",
+"start": 28.6,
+"end": 28.98
+},
+{
+"word": "\"Whoever",
+"start": 29.16,
+"end": 29.48
+},
+{
+"word": "owns",
+"start": 29.48,
+"end": 29.76
+},
+{
+"word": "that",
+"start": 29.76,
+"end": 30.0
+},
+{
+"word": "beast,",
+"start": 30.0,
+"end": 30.26
+},
+{
+"word": "confess",
+"start": 30.72,
+"end": 30.76
+},
+{
+"word": "now!\"",
+"start": 30.76,
+"end": 31.26
+},
+{
+"word": "the",
+"start": 31.5,
+"end": 31.58
+},
+{
+"word": "mayor",
+"start": 31.58,
+"end": 31.78
+},
+{
+"word": "shouted.",
+"start": 31.78,
+"end": 32.14
+},
+{
+"word": "Nobody",
+"start": 32.54,
+"end": 32.72
+},
+{
+"word": "spoke.",
+"start": 32.72,
+"end": 33.12
+},
+{
+"word": "So",
+"start": 33.6,
+"end": 33.66
+},
+{
+"word": "my",
+"start": 33.74,
+"end": 34.0
+},
+{
+"word": "brother",
+"start": 34.0,
+"end": 34.2
+},
+{
+"word": "Sam",
+"start": 34.2,
+"end": 34.44
+},
+{
+"word": "and",
+"start": 34.44,
+"end": 34.56
+},
+{
+"word": "I",
+"start": 34.56,
+"end": 34.72
+},
+{
+"word": "followed",
+"start": 34.76,
+"end": 35.04
+},
+{
+"word": "the",
+"start": 35.04,
+"end": 35.24
+},
+{
+"word": "claw",
+"start": 35.24,
+"end": 35.42
+},
+{
+"word": "marks.",
+"start": 35.42,
+"end": 35.64
+},
+{
+"word": "They",
+"start": 36.04,
+"end": 36.08
+},
+{
+"word": "stopped",
+"start": 36.08,
+"end": 36.38
+},
+{
+"word": "at",
+"start": 36.38,
+"end": 36.56
+},
+{
+"word": "our",
+"start": 36.56,
+"end": 36.72
+},
+{
+"word": "cellar",
+"start": 36.72,
+"end": 36.9
+},
+{
+"word": "door.",
+"start": 36.9,
+"end": 37.2
+},
+{
+"word": "We",
+"start": 37.5,
+"end": 37.56
+},
+{
+"word": "opened",
+"start": 37.56,
+"end": 37.82
+},
+{
+"word": "it.",
+"start": 37.82,
+"end": 38.06
+},
+{
+"word": "Inside,",
+"start": 38.24,
+"end": 38.66
+},
+{
+"word": "curled",
+"start": 38.86,
+"end": 39.14
+},
+{
+"word": "around",
+"start": 39.14,
+"end": 39.4
+},
+{
+"word": "the",
+"start": 39.4,
+"end": 39.56
+},
+{
+"word": "furnace,",
+"start": 39.56,
+"end": 39.84
+},
+{
+"word": "was",
+"start": 40.06,
+"end": 40.2
+},
+{
+"word": "the",
+"start": 40.2,
+"end": 40.38
+},
+{
+"word": "monster.",
+"start": 40.38,
+"end": 40.78
+},
+{
+"word": "And",
+"start": 41.08,
+"end": 41.2
+},
+{
+"word": "there",
+"start": 41.2,
+"end": 41.3
+},
+{
+"word": "was",
+"start": 41.3,
+"end": 41.5
+},
+{
+"word": "Dad,",
+"start": 41.5,
+"end": 41.72
+},
+{
+"word": "holding",
+"start": 41.96,
+"end": 42.14
+},
+{
+"word": "out",
+"start": 42.14,
+"end": 42.3
+},
+{
+"word": "a",
+"start": 42.3,
+"end": 42.44
+},
+{
+"word": "bowl",
+"start": 42.44,
+"end": 42.52
+},
+{
+"word": "of",
+"start": 42.52,
+"end": 42.7
+},
+{
+"word": "food.",
+"start": 42.7,
+"end": 42.96
+},
+{
+"word": "\"Hello,",
+"start": 43.22,
+"end": 43.36
+},
+{
+"word": "old",
+"start": 43.48,
+"end": 43.62
+},
+{
+"word": "friend.\"",
+"start": 43.62,
+"end": 43.88
+},
+{
+"word": "He",
+"start": 44.22,
+"end": 44.32
+},
+{
+"word": "saw",
+"start": 44.32,
+"end": 44.58
+},
+{
+"word": "us",
+"start": 44.58,
+"end": 44.86
+},
+{
+"word": "and",
+"start": 44.86,
+"end": 45.04
+},
+{
+"word": "went",
+"start": 45.04,
+"end": 45.18
+},
+{
+"word": "pale.",
+"start": 45.18,
+"end": 45.6
+},
+{
+"word": "\"How",
+"start": 45.86,
+"end": 46.0
+},
+{
+"word": "long?\"",
+"start": 46.0,
+"end": 46.32
+},
+{
+"word": "I",
+"start": 46.68,
+"end": 46.7
+},
+{
+"word": "asked.",
+"start": 46.7,
+"end": 47.02
+},
+{
+"word": "\"Nine",
+"start": 47.38,
+"end": 47.5
+},
+{
+"word": "years.\"",
+"start": 47.5,
+"end": 47.88
+},
+{
+"word": "Nine",
+"start": 48.32,
+"end": 48.46
+},
+{
+"word": "years.",
+"start": 48.46,
+"end": 48.96
+},
+{
+"word": "Since",
+"start": 49.32,
+"end": 49.5
+},
+{
+"word": "Mom.",
+"start": 49.5,
+"end": 49.78
+},
+{
+"word": "\"When",
+"start": 49.94,
+"end": 50.02
+},
+{
+"word": "people",
+"start": 50.02,
+"end": 50.26
+},
+{
+"word": "ask",
+"start": 50.26,
+"end": 50.5
+},
+{
+"word": "where",
+"start": 50.5,
+"end": 50.64
+},
+{
+"word": "she",
+"start": 50.64,
+"end": 50.82
+},
+{
+"word": "is,",
+"start": 50.82,
+"end": 51.14
+},
+{
+"word": "I",
+"start": 51.32,
+"end": 51.4
+},
+{
+"word": "say",
+"start": 51.4,
+"end": 51.64
+},
+{
+"word": "she's",
+"start": 51.71,
+"end": 52.16
+},
+{
+"word": "traveling,\"",
+"start": 52.16,
+"end": 52.44
+},
+{
+"word": "he",
+"start": 52.6,
+"end": 52.72
+},
+{
+"word": "whispered.",
+"start": 52.72,
+"end": 53.02
+},
+{
+"word": "\"And",
+"start": 53.32,
+"end": 53.44
+},
+{
+"word": "it",
+"start": 53.44,
+"end": 53.62
+},
+{
+"word": "grows.\"",
+"start": 53.62,
+"end": 53.92
+},
+{
+"word": "My",
+"start": 54.28,
+"end": 54.44
+},
+{
+"word": "throat",
+"start": 54.45,
+"end": 54.7
+},
+{
+"word": "burned.",
+"start": 54.7,
+"end": 55.14
+},
+{
+"word": "Mom",
+"start": 55.44,
+"end": 55.62
+},
+{
+"word": "wasn't",
+"start": 55.62,
+"end": 55.92
+},
+{
+"word": "traveling.",
+"start": 55.92,
+"end": 56.3
+},
+{
+"word": "Mom",
+"start": 56.64,
+"end": 56.84
+},
+{
+"word": "was",
+"start": 56.84,
+"end": 57.06
+},
+{
+"word": "gone.",
+"start": 57.06,
+"end": 57.38
+},
+{
+"word": "\"Dad,",
+"start": 57.74,
+"end": 57.96
+},
+{
+"word": "say",
+"start": 58.3,
+"end": 58.46
+},
+{
+"word": "it.\"",
+"start": 58.46,
+"end": 58.7
+},
+{
+"word": "\"I",
+"start": 58.79,
+"end": 59.04
+},
+{
+"word": "can't.\"",
+"start": 59.04,
+"end": 59.44
+},
+{
+"word": "The",
+"start": 59.66,
+"end": 59.74
+},
+{
+"word": "monster",
+"start": 59.74,
+"end": 60.02
+},
+{
+"word": "opened",
+"start": 60.02,
+"end": 60.38
+},
+{
+"word": "one",
+"start": 60.38,
+"end": 60.66
+},
+{
+"word": "yellow",
+"start": 60.66,
+"end": 60.98
+},
+{
+"word": "eye.",
+"start": 60.98,
+"end": 61.32
+},
+{
+"word": "Outside,",
+"start": 61.6,
+"end": 62.0
+},
+{
+"word": "sirens.",
+"start": 62.44,
+"end": 62.68
+},
+{
+"word": "The",
+"start": 63.04,
+"end": 63.16
+},
+{
+"word": "town",
+"start": 63.16,
+"end": 63.42
+},
+{
+"word": "was",
+"start": 63.42,
+"end": 63.6
+},
+{
+"word": "coming",
+"start": 63.6,
+"end": 63.84
+},
+{
+"word": "with",
+"start": 63.84,
+"end": 64.06
+},
+{
+"word": "torches.",
+"start": 64.06,
+"end": 64.42
+},
+{
+"word": "\"Please,\"",
+"start": 64.81,
+"end": 65.12
+},
+{
+"word": "I",
+"start": 65.46,
+"end": 65.56
+},
+{
+"word": "said.",
+"start": 65.56,
+"end": 65.8
+},
+{
+"word": "Dad",
+"start": 66.12,
+"end": 66.26
+},
+{
+"word": "knelt.",
+"start": 66.26,
+"end": 66.56
+},
+{
+"word": "His",
+"start": 66.86,
+"end": 66.98
+},
+{
+"word": "voice",
+"start": 66.98,
+"end": 67.2
+},
+{
+"word": "cracked.",
+"start": 67.2,
+"end": 67.56
+},
+{
+"word": "\"Your",
+"start": 67.84,
+"end": 67.98
+},
+{
+"word": "mother",
+"start": 67.98,
+"end": 68.2
+},
+{
+"word": "died.\"",
+"start": 68.2,
+"end": 68.58
+},
+{
+"word": "The",
+"start": 68.84,
+"end": 68.98
+},
+{
+"word": "monster",
+"start": 68.98,
+"end": 69.3
+},
+{
+"word": "shuddered.",
+"start": 69.3,
+"end": 69.72
+},
+{
+"word": "It",
+"start": 69.98,
+"end": 70.1
+},
+{
+"word": "shrank.",
+"start": 70.1,
+"end": 70.5
+},
+{
+"word": "It",
+"start": 70.76,
+"end": 70.86
+},
+{
+"word": "melted",
+"start": 70.86,
+"end": 71.2
+},
+{
+"word": "into",
+"start": 71.2,
+"end": 71.46
+},
+{
+"word": "smoke",
+"start": 71.46,
+"end": 71.8
+},
+{
+"word": "and",
+"start": 71.84,
+"end": 72.06
+},
+{
+"word": "drifted",
+"start": 72.06,
+"end": 72.38
+},
+{
+"word": "up",
+"start": 72.38,
+"end": 72.62
+},
+{
+"word": "like",
+"start": 72.62,
+"end": 72.76
+},
+{
+"word": "a",
+"start": 72.76,
+"end": 72.98
+},
+{
+"word": "sigh.",
+"start": 72.98,
+"end": 73.18
+},
+{
+"word": "Dad",
+"start": 73.5,
+"end": 73.62
+},
+{
+"word": "pulled",
+"start": 73.62,
+"end": 73.84
+},
+{
+"word": "us",
+"start": 73.84,
+"end": 74.0
+},
+{
+"word": "close,",
+"start": 74.0,
+"end": 74.32
+},
+{
+"word": "and",
+"start": 74.56,
+"end": 74.66
+},
+{
+"word": "we",
+"start": 74.66,
+"end": 74.78
+},
+{
+"word": "cried",
+"start": 74.78,
+"end": 75.08
+},
+{
+"word": "until",
+"start": 75.08,
+"end": 75.32
+},
+{
+"word": "the",
+"start": 75.32,
+"end": 75.52
+},
+{
+"word": "sirens",
+"start": 75.52,
+"end": 75.76
+},
+{
+"word": "faded.",
+"start": 75.76,
+"end": 76.1
+},
+{
+"word": "Then",
+"start": 76.42,
+"end": 76.62
+},
+{
+"word": "he",
+"start": 76.78,
+"end": 76.88
+},
+{
+"word": "wiped",
+"start": 76.88,
+"end": 77.08
+},
+{
+"word": "his",
+"start": 77.08,
+"end": 77.28
+},
+{
+"word": "eyes",
+"start": 77.28,
+"end": 77.42
+},
+{
+"word": "and",
+"start": 77.42,
+"end": 77.58
+},
+{
+"word": "asked,",
+"start": 77.58,
+"end": 77.82
+},
+{
+"word": "\"Are",
+"start": 77.98,
+"end": 78.1
+},
+{
+"word": "you",
+"start": 78.1,
+"end": 78.2
+},
+{
+"word": "two",
+"start": 78.2,
+"end": 78.36
+},
+{
+"word": "okay?\"",
+"start": 78.36,
+"end": 78.64
+},
+{
+"word": "I",
+"start": 78.96,
+"end": 79.08
+},
+{
+"word": "smiled.",
+"start": 79.08,
+"end": 79.44
+},
+{
+"word": "\"I'm",
+"start": 79.74,
+"end": 79.98
+},
+{
+"word": "fine.\"",
+"start": 79.98,
+"end": 80.18
+},
+{
+"word": "Behind",
+"start": 80.48,
+"end": 80.68
+},
+{
+"word": "me,",
+"start": 80.68,
+"end": 80.94
+},
+{
+"word": "something",
+"start": 81.18,
+"end": 81.4
+},
+{
+"word": "huge",
+"start": 81.44,
+"end": 81.94
+},
+{
+"word": "opened",
+"start": 81.94,
+"end": 82.32
+},
+{
+"word": "its",
+"start": 82.32,
+"end": 82.52
+},
+{
+"word": "eyes.",
+"start": 82.52,
+"end": 82.78
+}
+]
